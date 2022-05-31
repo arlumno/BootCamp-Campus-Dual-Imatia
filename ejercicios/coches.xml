@@ -1,0 +1,12 @@
+<!--  Crea un xml de los componentes de un coche, indicando la cantidad de cada uno de ellos-->
+<?xml version="1.0" encoding="UTF-8"?>
+<coches>
+	<coche>
+		<componente unidades="4">rueda</componente>
+		<componente unidades="5">puerta</componente>
+		<componente unidades="1">motor</componente>
+		<componente unidades="5">asiento</componente>
+		<componente unidades="1">volante</componente>
+	</coche>
+</coches>
+
