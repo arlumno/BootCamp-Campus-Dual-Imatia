@@ -1,6 +1,6 @@
 import Excepciones.SuperPilotException;
 
-public class Coche {
+public class Coche implements Comparable{
 	private final String BRAND;
 	private final String MODEL;
 	private String pegatinaGaraje = "";
@@ -58,20 +58,23 @@ public class Coche {
 			speedometer = MAX_SPEED;
 		} else {
 			speedometer += GAP_ACCELERATION;
-		}
-		
-
+		}		
+		updateCounterKm();
 	}
-
+		
 	public void brake() {
 		if ((speedometer - GAP_ACCELERATION) < 0) {
 			speedometer = 0;
 		} else {
 			speedometer -= GAP_ACCELERATION;
 		}
-
+		updateCounterKm();
 	}
 
+	private void updateCounterKm() {
+		counterKm += speedometer / 60D;
+	}
+	
 	public String getBRAND() {
 		return BRAND;
 	}
@@ -91,4 +94,42 @@ public class Coche {
 		return speedometer;
 	}
 
+	public int getCounterKm() {
+		return counterKm;
+	}
+
+	public void setCounterKm(int counterKm) {
+		this.counterKm = counterKm;
+	}
+
+	@Override
+	public int hashCode() {	
+		return getBRAND().hashCode() * getMODEL().hashCode();
+	}
+	
+	@Override
+	public boolean equals(Object obj) {
+		if(obj instanceof Coche) {
+			return ((Coche) obj).getBRAND().equals(getBRAND()) && ((Coche) obj).getMODEL().equals(getMODEL());
+		}
+		return super.equals(obj);
+	}
+
+	@Override
+	public int compareTo(Object o) {		
+		if(((Coche) o).getCounterKm() > getCounterKm()){
+			return 1;
+		}else {
+			return -1;
+		}		
+	}
+
+	@Override
+	public String toString() {
+		return "Coche [BRAND=" + BRAND + ", MODEL=" + MODEL + ", counterKm=" + counterKm + ", habilidadPiloto="
+				+ habilidadPiloto + "]\n";
+	}
+	
+	
+	
 }

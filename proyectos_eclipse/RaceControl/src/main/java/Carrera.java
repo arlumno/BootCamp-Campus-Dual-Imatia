@@ -87,12 +87,12 @@ public class Carrera {
 		for (int i = 0; i < DURACION_MINUTOS; i++) {
 			for (Coche coche : coches) {
 				coche.conducir();
-				tramo = ((double) coche.getSpeedometer()) / 60D;// paso km/h a minutos
-				distanciaRecorrida.put(coche, distanciaRecorrida.get(coche) + tramo);
+				//tramo = ((double) coche.getSpeedometer()) / 60D;// paso km/h a minutos
+				//distanciaRecorrida.put(coche, distanciaRecorrida.get(coche) + tramo);
 
 			}
 		}
-
+		
 		// https://www.delftstack.com/es/howto/java/how-to-sort-a-map-by-value-in-java/
 		List<Entry<Coche, Double>> resultados  = new ArrayList<Entry<Coche, Double>>(distanciaRecorrida.entrySet());
 		resultados.sort(Entry.comparingByValue());
