@@ -12,6 +12,9 @@ public class ControlErrors {
 	public static final String ERROR_GEAR_WRONG= "GRRRGggIIiGGgggGgIii";
 	public static final String ERROR_GEAR_NOT_EXIST= "No se como, pero has arrancado el cambio de marchas";
 	public static final String ERROR_CARRERA_SIN_COCHES= "La carrena no tiene vehículos";
+	public static final String ERROR_TORNEO_NO_EXISTE= "El torneo no existe";
+	public static final String ERROR_CARRERA_NO_EXISTE= "La carrera no existe";
+	public static final String ERROR_GARAJE_NO_EXISTE= "El garaje no existe";
 	public static String getLast() {
 		return ERRORS_HISTORY.getLast();
 	}

@@ -2,17 +2,24 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 public class Garaje {
-	private ArrayList<Coche> coches = new ArrayList<Coche>();
 	private final String NOMBRE;
+	private ArrayList<Coche> coches = new ArrayList<Coche>();
+		
 	
-	
-	public Garaje(String nOMBRE) {			
+	public Garaje(String nOMBRE,ArrayList<Coche> coches) {		
 		NOMBRE = nOMBRE;
+		for(Coche coche: coches) {
+			addCoche(coche);
+		}
+	}
+
+	public Garaje(String nOMBRE) {					
+		NOMBRE = nOMBRE;		
 	}
 	
 	public boolean addCoche(Coche coche) {
 		boolean resultado = false;
-		if(coche.setPegatinaGaraje(NOMBRE)) {
+		if(coche.setPegatinaGaraje(NOMBRE) && !coches.contains(coche)) {
 			coches.add(coche);
 			resultado = true;			
 		}
@@ -43,4 +50,19 @@ public class Garaje {
 	public int hashCode() {		 
 		return NOMBRE.hashCode();
 	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if(obj instanceof Garaje) {
+			return ((Garaje) obj).getNOMBRE().equals(NOMBRE);
+		}
+		return super.equals(obj);
+	}
+
+	@Override
+	public String toString() {
+		return "\n Garaje [NOMBRE=" + NOMBRE + ", coches=\n" + coches + "]";
+	}
+	
+	
 }

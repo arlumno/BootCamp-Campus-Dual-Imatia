@@ -1,3 +1,4 @@
+
 import Excepciones.SuperPilotException;
 
 public class Coche implements Comparable{
@@ -7,7 +8,7 @@ public class Coche implements Comparable{
 	public final int MAX_SPEED = 180;
 	public final int GAP_ACCELERATION = 10;
 	private int speedometer = 0;
-	private int counterKm = 0;
+	private float counterKm = 0;
 	private int habilidadPiloto; // % de probabilidades de acelerar
 
 	/**
@@ -26,31 +27,39 @@ public class Coche implements Comparable{
 			throw new SuperPilotException(Integer.toString(habilidadPiloto));
 		}
 	}
-
+	
+	public Coche(String bRAND, String mODEL) throws SuperPilotException {
+		this(bRAND, mODEL, (int) Math.random()*61+30); //piloto con habilidad aleatoria entre 30 y 90%		
+	}
+	
 	public void preparar() {
 		speedometer = 0;
 		counterKm = 0;
 	}
 
 	public void conducir() {
-		if (((int) Math.random() * 100 + 1) <= habilidadPiloto) {
+		int aleatorio = ((int) (Math.random() * 100 + 1));
+		if (aleatorio <= habilidadPiloto) {
 			accelerate();
 		} else {
 			brake();
 		}
 	}
 
-	public String getPegatinaGaraje() {
-		return pegatinaGaraje;
-	}
 
 	public boolean setPegatinaGaraje(String pegatinaGaraje) {
 		boolean resultado = false;
 		if (this.pegatinaGaraje.equals("")) {
 			this.pegatinaGaraje = pegatinaGaraje;
 			resultado = true;
+		}else if(this.pegatinaGaraje.equals(pegatinaGaraje)) {
+			resultado = true;
 		}
 		return resultado;
+	}
+	
+	public String getPegatinaGaraje() {
+		return pegatinaGaraje;
 	}
 
 	public void accelerate() {
@@ -72,7 +81,7 @@ public class Coche implements Comparable{
 	}
 
 	private void updateCounterKm() {
-		counterKm += speedometer / 60D;
+		counterKm += speedometer / 60F;
 	}
 	
 	public String getBRAND() {
@@ -94,7 +103,7 @@ public class Coche implements Comparable{
 		return speedometer;
 	}
 
-	public int getCounterKm() {
+	public float getCounterKm() {
 		return counterKm;
 	}
 
@@ -103,14 +112,14 @@ public class Coche implements Comparable{
 	}
 
 	@Override
-	public int hashCode() {	
-		return getBRAND().hashCode() * getMODEL().hashCode();
+	public int hashCode() {
+		return  BRAND.hashCode() * MODEL.hashCode();
 	}
 	
 	@Override
 	public boolean equals(Object obj) {
 		if(obj instanceof Coche) {
-			return ((Coche) obj).getBRAND().equals(getBRAND()) && ((Coche) obj).getMODEL().equals(getMODEL());
+			return ((Coche) obj).getBRAND().equals(BRAND) && ((Coche) obj).getMODEL().equals(MODEL);
 		}
 		return super.equals(obj);
 	}
@@ -119,6 +128,8 @@ public class Coche implements Comparable{
 	public int compareTo(Object o) {		
 		if(((Coche) o).getCounterKm() > getCounterKm()){
 			return 1;
+		}else if(((Coche) o).getCounterKm() == getCounterKm()){
+			return 0;
 		}else {
 			return -1;
 		}		
@@ -126,7 +137,7 @@ public class Coche implements Comparable{
 
 	@Override
 	public String toString() {
-		return "Coche [BRAND=" + BRAND + ", MODEL=" + MODEL + ", counterKm=" + counterKm + ", habilidadPiloto="
+		return "Coche [BRAND=" + BRAND + ", MODEL=" + MODEL + ", counterKm=" + counterKm + ", garaje="+ pegatinaGaraje+" habilidadPiloto="
 				+ habilidadPiloto + "]\n";
 	}
 	

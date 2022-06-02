@@ -1,46 +1,44 @@
 import java.util.ArrayList;
-import java.util.List;
-import java.util.Map.Entry;
-import java.util.TreeMap;
+import java.util.Collections;
 
 import Excepciones.IncompleteException;
 
 public class Carrera {
-	private final String NOMBRE;
-	private final int DURACION_MINUTOS;
+	protected final String NOMBRE;
+	protected final int DURACION_MINUTOS;
 	public final static int DURACION_MINUTOS_DEFAULT = 180;
-	private ArrayList<Garaje> garajes;
-	private ArrayList<Coche> coches = new ArrayList<Coche>();
-
-	private TreeMap<Coche, Double> distanciaRecorrida = new TreeMap<Coche, Double>();
-	//private List<Entry<Coche, Double>> resultados;
-	
+	private ArrayList<Garaje> garajes = new ArrayList<Garaje>();;
+	protected ArrayList<Coche> coches = new ArrayList<Coche>();
 	private ArrayList<ArrayList<Coche>> podio;
 	boolean carreraFinalizada = false;
+	protected int puestosPodio = 3;
 
-	public Carrera(String nOMBRE, ArrayList<Garaje> garajes,int dURACION_MINUTOS) {
+	/**
+	 * 
+	 * @param nOMBRE           Nombre de la carrera
+	 * @param garajes          Listado de garajes participantes
+	 * @param dURACION_MINUTOS Duración de la carrera, por defecto 180
+	 */
+	public Carrera(String nOMBRE, ArrayList<Garaje> garajes, int dURACION_MINUTOS) {
 		NOMBRE = nOMBRE;
 		DURACION_MINUTOS = dURACION_MINUTOS;
-		this.garajes = garajes;		
-				
-		podio.add(new ArrayList<Coche>());//puesto 1
-		podio.add(new ArrayList<Coche>());//puesto 2
-		podio.add(new ArrayList<Coche>());//puesto 3
+		for (Garaje garaje : garajes) {
+			addGaraje(garaje);
+		}
 	}
-	
+
 	public Carrera(String nOMBRE, ArrayList<Garaje> garajes) {
-		this(nOMBRE,garajes, DURACION_MINUTOS_DEFAULT);		
+		this(nOMBRE, garajes, DURACION_MINUTOS_DEFAULT);
 	}
-	
+
 	public Carrera(String nOMBRE, int dURACION_MINUTOS) {
-		this(nOMBRE,new ArrayList<Garaje>(), dURACION_MINUTOS);		
+		this(nOMBRE, new ArrayList<Garaje>(), dURACION_MINUTOS);
 	}
 
 	public Carrera(String nOMBRE) {
 		this(nOMBRE, DURACION_MINUTOS_DEFAULT);
 	}
-	
-	
+
 	public ArrayList<Garaje> getGarajes() {
 		return garajes;
 	}
@@ -55,80 +53,100 @@ public class Carrera {
 		}
 	}
 
-	private void preparar() throws IncompleteException {
-		coches.clear();
-		if(garajes.size() > 1) {
-			for(Garaje garaje: garajes) {
-				coches.add(garaje.getCoche());
-			}
-		}else if(garajes.size() == 1) {
-			coches.addAll(garajes.get(0).getCoches());
-		}
-		if(coches.size() < 3) {
-			throw new IncompleteException("La carrena requiere mínimo 3 vehículos");
-		}
-		
-		for(Coche coche: coches) {
-			coche.preparar();
-			distanciaRecorrida.clear();
-			distanciaRecorrida.put(coche, 0D);
-		}
-		
-		
-	}
-
 	public void iniciar() throws IncompleteException {
 		// preparamos la carrera:
 		preparar();
-
-
 		// empieza la carrera.
-		double tramo = 0;
 		for (int i = 0; i < DURACION_MINUTOS; i++) {
 			for (Coche coche : coches) {
 				coche.conducir();
-				//tramo = ((double) coche.getSpeedometer()) / 60D;// paso km/h a minutos
-				//distanciaRecorrida.put(coche, distanciaRecorrida.get(coche) + tramo);
-
 			}
-		}
-		
-		// https://www.delftstack.com/es/howto/java/how-to-sort-a-map-by-value-in-java/
-		List<Entry<Coche, Double>> resultados  = new ArrayList<Entry<Coche, Double>>(distanciaRecorrida.entrySet());
-		resultados.sort(Entry.comparingByValue());
-		
-		int puestoPodio = 0;
-		double aux= -1;
-		
-		for (int i = resultados.size() - 1; i >= 0; i--) {
-			if(aux == -1) {//primero a añadir
-				podio.get(puestoPodio).add(resultados.get(i).getKey());				
-			} else {
-				if (aux > resultados.get(i).getValue()) {
-					puestoPodio++;				
-					if(puestoPodio == 3) { // se excede el podio
-						break;
-					}
-				}
-				podio.get(puestoPodio).add(resultados.get(i).getKey());				
-			}
-			aux = resultados.get(i).getValue();
 		}
 		carreraFinalizada = true;
+		calcularPodio();
+
 	}
 
-	
+	protected void preparar() throws IncompleteException {
+		coches.clear();
+
+		if (garajes.size() > 1) {
+			for (Garaje garaje : garajes) {
+				coches.add(garaje.getCoche());
+			}
+		} else if (garajes.size() == 1) {
+			coches.addAll(garajes.get(0).getCoches());
+		}
+
+		if (coches.size() < 3) {
+			throw new IncompleteException("La carrena \"" + NOMBRE + "\" requiere mínimo 3 vehículos");
+		}
+
+		for (Coche coche : coches) {
+			coche.preparar();
+		}
+
+	}
+
+	protected void calcularPodio() {
+		if (carreraFinalizada) {
+			// creo el podio
+			podio = new ArrayList<ArrayList<Coche>>();
+			for (int i = 0; i < puestosPodio; i++) {
+				podio.add(new ArrayList<Coche>());// puesto i
+			}
+
+			// ordeno el arraylist de mayor a menor distancia recorrida
+			Collections.sort(coches);
+
+			int puestoPodio = 0;
+			podio.get(puestoPodio).add(coches.get(0));
+			for (int i = 1; i < coches.size() && puestoPodio < podio.size(); i++) {
+				if (coches.get(i - 1).getCounterKm() > coches.get(i).getCounterKm()) {
+					puestoPodio++;
+				}
+				podio.get(puestoPodio).add(coches.get(i));
+			}
+		}
+	}
+
+	public boolean isCarreraFinalizada() {
+		return carreraFinalizada;
+	}
+
+	public String getNOMBRE() {
+		return NOMBRE;
+	}
+
 	public ArrayList<ArrayList<Coche>> getPodio() {
-		if(carreraFinalizada) {
-			return podio;			
-		}else {
+		if (carreraFinalizada) {
+			return podio;
+		} else {
 			return null;
 		}
+	}
+
+	public ArrayList<Coche> getCoches() {
+		return coches;
 	}
 
 	@Override
 	public int hashCode() {
 		return NOMBRE.hashCode();
 	}
-	
+
+	@Override
+	public boolean equals(Object obj) {
+		if (obj instanceof Carrera) {
+			return ((Carrera) obj).getNOMBRE().equals(NOMBRE);
+		}
+		return super.equals(obj);
+	}
+
+	@Override
+	public String toString() {
+		return "Carrera [NOMBRE=" + NOMBRE + ", DURACION_MINUTOS=" + DURACION_MINUTOS + ", coches=\n" + coches
+				+ ", podio=" + podio + ", carreraFinalizada=" + carreraFinalizada + ", garajes=" + garajes + "]";
+	}
+
 }
