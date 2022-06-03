@@ -28,13 +28,13 @@ public class ProbandoCosas {
 		String resultadoJson = gson.toJson(p);
 		System.out.println(resultadoJson);
 
-		Pruebas pFromJson = gson.fromJson(resultadoJson, Pruebas.class);
+		Pruebas P = gson.fromJson(resultadoJson, Pruebas.class);
 
 		System.out.println("***");
 		System.out.println(p);
 		System.out.println("***");
 
-		p.get(0).setTexto("00");
+		P.get(0).setTexto("00");
 		p.get(1).setTexto("11");
 		p.get(2).setTexto("22");
 

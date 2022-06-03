@@ -57,7 +57,7 @@ public class Control {
 		}		
 	}
 	
-	public void mostrarResultadoTorneos() {
+	public void mostrarResultadosTorneos() {
 		System.out.println("Resultado Torneos (" + torneos.size()+"):");
 		for(Torneo torneo: torneos) {
 			System.out.println(torneo.mostrarPuntuacionesCoches());
@@ -132,6 +132,7 @@ public class Control {
 		t01.addCarrera(c04);
 		
 	}
+	
 	@Override
 	public String toString() {
 		return "Control [garajes=" + garajes + ", carreras=" + carreras + ", torneos=" + torneos + "]";

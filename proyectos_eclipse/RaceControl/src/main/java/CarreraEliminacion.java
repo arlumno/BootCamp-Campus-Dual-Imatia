@@ -1,5 +1,7 @@
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.LinkedList;
+
 import Excepciones.IncompleteException;
 
 public class CarreraEliminacion extends Carrera {
@@ -28,6 +30,37 @@ public class CarreraEliminacion extends Carrera {
 		super(nOMBRE,DURACION_MINUTOS_DEFAULT);
 	}
 
+//	@Override
+//	public void iniciar() throws IncompleteException {
+//		// preparamos la carrera:
+//		super.preparar();
+//		// empieza la carrera.
+//		for (int i = 0; i < DURACION_MINUTOS; i++) {
+//			for (Coche coche : coches) {
+//				coche.conducir();
+//			}
+//		}
+//		// clono la lista de participantes a una nueva lista de eliminatoria para no
+//		// modificar la original
+//		LinkedList<Coche> enCarrera = (LinkedList<Coche>) coches.clone();		
+//		float minDistancia = 0;
+//		
+//
+//		// rondas de eliminación
+//		while (!enCarrera.isEmpty()) {
+//			for (Coche coche : enCarrera) {
+//				coche.conducir();
+//			}
+//			Collections.sort(enCarrera);				
+//			minDistancia = enCarrera.getLast().getCounterKm();
+//			enCarrera.removeLast();
+//			enCarrera.removeIf((it) -> it.getCounterKm() == minDistancia);			
+//			
+//		}
+//		carreraFinalizada = true;
+//		calcularPodio();
+//	}
+	
 	@Override
 	public void iniciar() throws IncompleteException {
 		// preparamos la carrera:

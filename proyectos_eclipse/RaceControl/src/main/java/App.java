@@ -3,7 +3,6 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
-import java.util.ArrayList;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -37,17 +36,10 @@ public class App {
 			}
 
 		}
-
-		System.out.println(control);
-
-//			int option = -1;
-//			do {
-//				
-//			
-//			}while(option != 0);
-
-//			Gson gson = new Gson();
-		// System.out.println(resultado);
+		
+		
+		MenuApp menu = new MenuApp(control);
+		menu.run();
 
 		salir();
 	}
