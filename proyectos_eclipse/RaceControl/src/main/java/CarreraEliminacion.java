@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.LinkedList;
+import java.util.List;
 
 import Excepciones.IncompleteException;
 
@@ -73,7 +74,8 @@ public class CarreraEliminacion extends Carrera {
 		}
 		// clono la lista de participantes a una nueva lista de eliminatoria para no
 		// modificar la original
-		ArrayList<Coche> enCarrera = (ArrayList<Coche>) coches.clone();
+		List<Coche> enCarrera = new ArrayList<>();
+		enCarrera.addAll(coches);				
 		boolean seguirEliminado;
 		float minDistancia = 0;
 		ArrayList<Coche> eliminadosRonda;

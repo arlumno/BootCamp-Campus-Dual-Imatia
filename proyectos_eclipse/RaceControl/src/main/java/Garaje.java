@@ -1,12 +1,13 @@
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
 
 public class Garaje {
 	private final String NOMBRE;
-	private ArrayList<Coche> coches = new ArrayList<Coche>();
+	private List<Coche> coches = new ArrayList<>();
 		
 	
-	public Garaje(String nOMBRE,ArrayList<Coche> coches) {		
+	public Garaje(String nOMBRE,List<Coche> coches) {		
 		NOMBRE = nOMBRE;
 		for(Coche coche: coches) {
 			addCoche(coche);
@@ -28,7 +29,7 @@ public class Garaje {
 
 	public Coche getCoche() {
 		Coche coche = null;
-		if(coches.size()>0) {
+		if(!coches.isEmpty()) {
 			coche = coches.get((int) Math.random()*coches.size());
 		}
 		return coche;
@@ -38,12 +39,16 @@ public class Garaje {
 		return coches;
 	}
 
-	public void setCoches(ArrayList<Coche> coches) {
+	public void setCoches(List<Coche> coches) {
 		this.coches = coches;
 	}
 
 	public String getNOMBRE() {
 		return NOMBRE;
+	}
+	
+	public void syncReferences(List<Coche> cochesMain) {
+		Control.syncReferences(cochesMain, coches);		
 	}
 	
 	@Override

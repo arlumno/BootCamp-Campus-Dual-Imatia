@@ -1,20 +1,53 @@
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.TreeSet;
 
 import Excepciones.IncompleteException;
 
 public class Torneo {
 	private final String NOMBRE;
-	private ArrayList<Carrera> carreras = new ArrayList<Carrera>();
-	private ArrayList<Garaje> garajes = new ArrayList<Garaje>();
-	private HashMap<Coche, Integer> puntuacionCoches = new HashMap<Coche, Integer>();
+	private List<Carrera> carreras = new ArrayList<>();
+	private List<Garaje> garajes = new ArrayList<>();
+	private HashMap<Coche, Integer> puntuacionCoches = new HashMap<>();
 	boolean torneoFinalizado = false;
 	private int[] puntosPodio = { 100, 50, 25 };
 	private int premioEuros = 100_000;
 
-	public Torneo(String nOMBRE, ArrayList<Carrera> carreras) {
+//	class Puntuacion implements Comparable {
+//		Coche coche;
+//		int puntos = 0;
+//
+//		public Puntuacion(Coche coche) {
+//			super();
+//			this.coche = coche;
+//		}
+//
+//		@Override
+//		public int compareTo(Object o) {
+//			if (((Puntuacion) o).puntos > puntos) {
+//				return 1;
+//			} else if (((Puntuacion) o).puntos < puntos) {
+//				return -1;
+//			} else {
+//				return 0;
+//			}
+//		}
+//
+//		@Override
+//		public int hashCode() {
+//			return coche.hashCode();
+//		}
+//
+//		@Override
+//		public boolean equals(Object obj) {		
+//			return coche.equals(((Puntuacion) obj).coche);
+//		}
+//	}
+
+	public Torneo(String nOMBRE, List<Carrera> carreras) {
 		NOMBRE = nOMBRE;
 		this.carreras = carreras;
 
@@ -24,7 +57,7 @@ public class Torneo {
 	}
 
 	public Torneo(String nOMBRE) {
-		this(nOMBRE, new ArrayList<Carrera>());
+		this(nOMBRE, new ArrayList<>());
 	}
 
 	public void addCarrera(Carrera carrera) {
@@ -59,31 +92,28 @@ public class Torneo {
 		torneoFinalizado = true;
 	}
 
-	private ArrayList<Coche> obtenerGanadores() {
-		if (torneoFinalizado) {
-			TreeSet<Integer> rankingFinal = new TreeSet<Integer>(puntuacionCoches.values());
-			Integer maxPuntuacion = rankingFinal.last();
-			ArrayList<Coche> ganador = new ArrayList<Coche>();
-			for (Map.Entry<Coche, Integer> entry : puntuacionCoches.entrySet()) {
-				if (entry.getValue() == maxPuntuacion) {
-					ganador.add(entry.getKey());
-				}
+	private List<Coche> obtenerGanadores() {
+		TreeSet<Integer> rankingFinal = new TreeSet<Integer>(puntuacionCoches.values());
+		Integer maxPuntuacion = rankingFinal.last();
+		List<Coche> ganadores = new ArrayList<Coche>();
+		for (Map.Entry<Coche, Integer> entry : puntuacionCoches.entrySet()) {
+			if (entry.getValue() == maxPuntuacion) {
+				ganadores.add(entry.getKey());
 			}
-			return ganador;
-		} else {
-			return null;
 		}
+		return ganadores;
+
 	}
 
 	private void guardarPuntuacion(Carrera carrera) {
-		ArrayList<ArrayList<Coche>> podio = carrera.getPodio();
+		List<List<Coche>> podio = carrera.getPodio();
 		for (Coche coche : carrera.getCoches()) { // añado nuevos coches participantes a las puntuaciones
 			if (!puntuacionCoches.containsKey(coche)) {
 				puntuacionCoches.put(coche, 0);
 			}
 		}
 
-		if (podio != null) {
+		if (!podio.isEmpty()) {
 			for (int i = 0; i < podio.size() && i < puntosPodio.length; i++) {
 				for (Coche coche : podio.get(i)) {
 					puntuacionCoches.put(coche, puntuacionCoches.get(coche) + (puntosPodio[i]) / podio.get(i).size());
@@ -111,7 +141,7 @@ public class Torneo {
 			}
 			texto.append(mostrarGanadores());
 		} else {
-			texto.append("El torneo " + NOMBRE + " aún no se ha realizado" );
+			texto.append("El torneo " + NOMBRE + " aún no se ha realizado");
 		}
 		return texto.toString();
 	}
@@ -123,8 +153,8 @@ public class Torneo {
 		texto.append(separador);
 		texto.append("\n\t\tGANADOR/ES:");
 		texto.append(separador);
-		for (Coche coche : obtenerGanadores()) {			
-			texto.append("\n\t" + coche.getBRAND() + " - " + coche.getMODEL()+ " - " + coche.getPegatinaGaraje());			
+		for (Coche coche : obtenerGanadores()) {
+			texto.append("\n\t" + coche.getBRAND() + " - " + coche.getMODEL() + " - " + coche.getPegatinaGaraje());
 		}
 		texto.append(separador);
 		if (obtenerGanadores().size() > 1) {
@@ -138,6 +168,20 @@ public class Torneo {
 
 	public String getNOMBRE() {
 		return NOMBRE;
+	}
+
+	public void syncReferences(List<Carrera> carrerasMain, List<Garaje> garajesMain, List<Coche> cochesMain) {
+		Control.syncReferences(garajesMain, garajes);
+		Control.syncReferences(carrerasMain, carreras);
+
+		for (Entry<Coche, Integer> entry : puntuacionCoches.entrySet()) {
+			if (cochesMain.contains(entry.getKey())) {
+				puntuacionCoches.put(cochesMain.get(cochesMain.indexOf(entry.getKey())), entry.getValue());
+			} else {
+				cochesMain.add(entry.getKey());
+			}
+		}
+
 	}
 
 	@Override

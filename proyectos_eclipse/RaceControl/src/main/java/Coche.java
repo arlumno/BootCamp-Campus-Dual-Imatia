@@ -1,7 +1,7 @@
 
 import Excepciones.SuperPilotException;
 
-public class Coche implements Comparable{
+public class Coche implements Comparable {
 	private final String BRAND;
 	private final String MODEL;
 	private String pegatinaGaraje = "";
@@ -16,22 +16,24 @@ public class Coche implements Comparable{
 	 * @param bRAND
 	 * @param mODEL
 	 * @param habilidadPiloto debe ser un numero entre 1 y 100
-	 * @throws SuperPilotException 
+	 * @throws SuperPilotException
 	 */
 	public Coche(String bRAND, String mODEL, int habilidadPiloto) throws SuperPilotException {
 		BRAND = bRAND;
 		MODEL = mODEL;
-		if(habilidadPiloto > 0 && habilidadPiloto <101 ) {
-			this.habilidadPiloto = habilidadPiloto;		
-		}else{
+		if (habilidadPiloto > 0 && habilidadPiloto < 101) {
+			this.habilidadPiloto = habilidadPiloto;
+		} else {
 			throw new SuperPilotException(Integer.toString(habilidadPiloto));
 		}
 	}
-	
-	public Coche(String bRAND, String mODEL) throws SuperPilotException {
-		this(bRAND, mODEL, (int) Math.random()*61+30); //piloto con habilidad aleatoria entre 30 y 90%		
+
+	public Coche(String bRAND, String mODEL){
+		BRAND = bRAND;
+		MODEL = mODEL;		
+		this.habilidadPiloto = (int) (Math.random()*61+30);								
 	}
-	
+
 	public void preparar() {
 		speedometer = 0;
 		counterKm = 0;
@@ -46,18 +48,17 @@ public class Coche implements Comparable{
 		}
 	}
 
-
 	public boolean setPegatinaGaraje(String pegatinaGaraje) {
 		boolean resultado = false;
 		if (this.pegatinaGaraje.equals("")) {
 			this.pegatinaGaraje = pegatinaGaraje;
 			resultado = true;
-		}else if(this.pegatinaGaraje.equals(pegatinaGaraje)) {
+		} else if (this.pegatinaGaraje.equals(pegatinaGaraje)) {
 			resultado = true;
 		}
 		return resultado;
 	}
-	
+
 	public String getPegatinaGaraje() {
 		return pegatinaGaraje;
 	}
@@ -67,10 +68,10 @@ public class Coche implements Comparable{
 			speedometer = MAX_SPEED;
 		} else {
 			speedometer += GAP_ACCELERATION;
-		}		
+		}
 		updateCounterKm();
 	}
-		
+
 	public void brake() {
 		if ((speedometer - GAP_ACCELERATION) < 0) {
 			speedometer = 0;
@@ -83,7 +84,7 @@ public class Coche implements Comparable{
 	private void updateCounterKm() {
 		counterKm += speedometer / 60F;
 	}
-	
+
 	public String getBRAND() {
 		return BRAND;
 	}
@@ -99,6 +100,7 @@ public class Coche implements Comparable{
 	public int getGAP_ACCELERATION() {
 		return GAP_ACCELERATION;
 	}
+
 	public int getSpeedometer() {
 		return speedometer;
 	}
@@ -113,34 +115,32 @@ public class Coche implements Comparable{
 
 	@Override
 	public int hashCode() {
-		return  BRAND.hashCode() * MODEL.hashCode();
+		return BRAND.hashCode() * MODEL.hashCode();
 	}
-	
+
 	@Override
 	public boolean equals(Object obj) {
-		if(obj instanceof Coche) {
+		if (obj instanceof Coche) {
 			return ((Coche) obj).getBRAND().equals(BRAND) && ((Coche) obj).getMODEL().equals(MODEL);
 		}
 		return super.equals(obj);
 	}
 
 	@Override
-	public int compareTo(Object o) {		
-		if(((Coche) o).getCounterKm() > getCounterKm()){
+	public int compareTo(Object o) {
+		if (((Coche) o).getCounterKm() > getCounterKm()) {
 			return 1;
-		}else if(((Coche) o).getCounterKm() == getCounterKm()){
+		} else if (((Coche) o).getCounterKm() == getCounterKm()) {
 			return 0;
-		}else {
+		} else {
 			return -1;
-		}		
+		}
 	}
 
 	@Override
 	public String toString() {
-		return "Coche [BRAND=" + BRAND + ", MODEL=" + MODEL + ", counterKm=" + counterKm + ", garaje="+ pegatinaGaraje+" habilidadPiloto="
-				+ habilidadPiloto + "]\n";
+		return "Coche [BRAND=" + BRAND + ", MODEL=" + MODEL + ", counterKm=" + counterKm + ", garaje=" + pegatinaGaraje
+				+ " habilidadPiloto=" + habilidadPiloto + "]\n";
 	}
-	
-	
-	
+
 }

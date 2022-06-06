@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
 
 import Excepciones.IncompleteException;
 
@@ -7,9 +8,9 @@ public class Carrera {
 	protected final String NOMBRE;
 	protected final int DURACION_MINUTOS;
 	public final static int DURACION_MINUTOS_DEFAULT = 180;
-	private ArrayList<Garaje> garajes = new ArrayList<Garaje>();;
-	protected ArrayList<Coche> coches = new ArrayList<Coche>();
-	private ArrayList<ArrayList<Coche>> podio;
+	private List<Garaje> garajes = new ArrayList<>();
+	protected List<Coche> coches = new ArrayList<>();
+	private List<List<Coche>> podio = new ArrayList<>();
 	boolean carreraFinalizada = false;
 	protected int puestosPodio = 3;
 
@@ -19,7 +20,7 @@ public class Carrera {
 	 * @param garajes          Listado de garajes participantes
 	 * @param dURACION_MINUTOS Duración de la carrera, por defecto 180
 	 */
-	public Carrera(String nOMBRE, ArrayList<Garaje> garajes, int dURACION_MINUTOS) {
+	public Carrera(String nOMBRE, List<Garaje> garajes, int dURACION_MINUTOS) {
 		NOMBRE = nOMBRE;
 		DURACION_MINUTOS = dURACION_MINUTOS;
 		for (Garaje garaje : garajes) {
@@ -27,7 +28,7 @@ public class Carrera {
 		}
 	}
 
-	public Carrera(String nOMBRE, ArrayList<Garaje> garajes) {
+	public Carrera(String nOMBRE, List<Garaje> garajes) {
 		this(nOMBRE, garajes, DURACION_MINUTOS_DEFAULT);
 	}
 
@@ -39,11 +40,11 @@ public class Carrera {
 		this(nOMBRE, DURACION_MINUTOS_DEFAULT);
 	}
 
-	public ArrayList<Garaje> getGarajes() {
+	public List<Garaje> getGarajes() {
 		return garajes;
 	}
 
-	public void setGarajes(ArrayList<Garaje> garajes) {
+	public void setGarajes(List<Garaje> garajes) {
 		this.garajes = garajes;
 	}
 
@@ -52,7 +53,8 @@ public class Carrera {
 			garajes.add(garaje);
 		}
 	}
-
+	
+	
 	public void iniciar() throws IncompleteException {
 		// preparamos la carrera:
 		preparar();
@@ -91,21 +93,21 @@ public class Carrera {
 	protected void calcularPodio() {
 		if (carreraFinalizada) {
 			// creo el podio
-			podio = new ArrayList<ArrayList<Coche>>();
 			for (int i = 0; i < puestosPodio; i++) {
-				podio.add(new ArrayList<Coche>());// puesto i
+				podio.add(new ArrayList<>());// puesto i
 			}
 
 			// ordeno el arraylist de mayor a menor distancia recorrida
 			Collections.sort(coches);
-
 			int puestoPodio = 0;
 			podio.get(puestoPodio).add(coches.get(0));
 			for (int i = 1; i < coches.size() && puestoPodio < podio.size(); i++) {
 				if (coches.get(i - 1).getCounterKm() > coches.get(i).getCounterKm()) {
 					puestoPodio++;
 				}
-				podio.get(puestoPodio).add(coches.get(i));
+				if(puestoPodio < podio.size()) {
+					podio.get(puestoPodio).add(coches.get(i));				
+				}
 			}
 		}
 	}
@@ -118,18 +120,24 @@ public class Carrera {
 		return NOMBRE;
 	}
 
-	public ArrayList<ArrayList<Coche>> getPodio() {
-		if (carreraFinalizada) {
-			return podio;
-		} else {
-			return null;
-		}
+	public List<List<Coche>> getPodio() {
+		return podio;
 	}
 
-	public ArrayList<Coche> getCoches() {
+	public List<Coche> getCoches() {
 		return coches;
 	}
 
+	public void syncReferences(List<Garaje> garajesMain, List<Coche> cochesMain) {
+		Control.syncReferences(garajesMain, garajes);
+		Control.syncReferences(cochesMain, coches);
+		if(!podio.isEmpty()) {
+			for(List<Coche> puesto: podio) {
+				Control.syncReferences(cochesMain, puesto);
+			}		
+		}
+	}
+	
 	@Override
 	public int hashCode() {
 		return NOMBRE.hashCode();
