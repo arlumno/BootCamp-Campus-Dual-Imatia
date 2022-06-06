@@ -1,8 +1,10 @@
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
+import java.io.IOException;
 import java.util.Scanner;
 
 import com.google.gson.Gson;
@@ -24,7 +26,7 @@ public class App {
 				}
 				control = gson.fromJson(dataJsonSB.toString(), Control.class);
 				control.syncAllReferences();
-			} catch (Exception e) {
+			} catch (IOException e) {
 				System.out.println(e.getMessage());
 			}
 		} else {

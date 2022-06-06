@@ -13,7 +13,7 @@ public class Carrera {
 	private List<List<Coche>> podio = new ArrayList<>();
 	boolean carreraFinalizada = false;
 	protected int puestosPodio = 3;
-
+	
 	/**
 	 * 
 	 * @param nOMBRE           Nombre de la carrera

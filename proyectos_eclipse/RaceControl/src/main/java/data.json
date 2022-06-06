@@ -1,126 +1,5 @@
 {
-  "coches": [
-    {
-      "BRAND": "Renaul",
-      "MODEL": "Clio",
-      "pegatinaGaraje": "Los Manquiñas",
-      "MAX_SPEED": 180,
-      "GAP_ACCELERATION": 10,
-      "speedometer": 40,
-      "counterKm": 4.5,
-      "habilidadPiloto": 65
-    },
-    {
-      "BRAND": "Ford",
-      "MODEL": "Fiesta",
-      "pegatinaGaraje": "Los Manquiñas",
-      "MAX_SPEED": 180,
-      "GAP_ACCELERATION": 10,
-      "speedometer": 0,
-      "counterKm": 0.0,
-      "habilidadPiloto": 67
-    },
-    {
-      "BRAND": "Renaul",
-      "MODEL": "Traffic",
-      "pegatinaGaraje": "Los Manquiñas",
-      "MAX_SPEED": 180,
-      "GAP_ACCELERATION": 10,
-      "speedometer": 0,
-      "counterKm": 0.0,
-      "habilidadPiloto": 55
-    },
-    {
-      "BRAND": "Seat",
-      "MODEL": "F1",
-      "pegatinaGaraje": "Los Flipados",
-      "MAX_SPEED": 180,
-      "GAP_ACCELERATION": 10,
-      "speedometer": 10,
-      "counterKm": 0.5,
-      "habilidadPiloto": 37
-    },
-    {
-      "BRAND": "Seat",
-      "MODEL": "F2",
-      "pegatinaGaraje": "Los Flipados",
-      "MAX_SPEED": 180,
-      "GAP_ACCELERATION": 10,
-      "speedometer": 0,
-      "counterKm": 0.0,
-      "habilidadPiloto": 36
-    },
-    {
-      "BRAND": "Seat",
-      "MODEL": "F3",
-      "pegatinaGaraje": "Los Flipados",
-      "MAX_SPEED": 180,
-      "GAP_ACCELERATION": 10,
-      "speedometer": 0,
-      "counterKm": 0.0,
-      "habilidadPiloto": 66
-    },
-    {
-      "BRAND": "Seat",
-      "MODEL": "F4",
-      "pegatinaGaraje": "Los Flipados",
-      "MAX_SPEED": 180,
-      "GAP_ACCELERATION": 10,
-      "speedometer": 0,
-      "counterKm": 0.0,
-      "habilidadPiloto": 31
-    },
-    {
-      "BRAND": "Seat",
-      "MODEL": "F5",
-      "pegatinaGaraje": "Los Flipados",
-      "MAX_SPEED": 180,
-      "GAP_ACCELERATION": 10,
-      "speedometer": 0,
-      "counterKm": 0.0,
-      "habilidadPiloto": 72
-    },
-    {
-      "BRAND": "5-Ferrari",
-      "MODEL": "F50",
-      "pegatinaGaraje": "Lone Wolf",
-      "MAX_SPEED": 180,
-      "GAP_ACCELERATION": 10,
-      "speedometer": 70,
-      "counterKm": 4.8333335,
-      "habilidadPiloto": 60
-    },
-    {
-      "BRAND": "Fiat",
-      "MODEL": "500",
-      "pegatinaGaraje": "Mancato",
-      "MAX_SPEED": 180,
-      "GAP_ACCELERATION": 10,
-      "speedometer": 0,
-      "counterKm": 0.6666667,
-      "habilidadPiloto": 51
-    },
-    {
-      "BRAND": "Fiat",
-      "MODEL": "600",
-      "pegatinaGaraje": "Mancato",
-      "MAX_SPEED": 180,
-      "GAP_ACCELERATION": 10,
-      "speedometer": 90,
-      "counterKm": 210.49997,
-      "habilidadPiloto": 49
-    },
-    {
-      "BRAND": "Fiat",
-      "MODEL": "700",
-      "pegatinaGaraje": "Mancato",
-      "MAX_SPEED": 180,
-      "GAP_ACCELERATION": 10,
-      "speedometer": 170,
-      "counterKm": 479.5001,
-      "habilidadPiloto": 77
-    }
-  ],
+  "coches": [],
   "garajes": [
     {
       "NOMBRE": "Los Manquiñas",
@@ -131,9 +10,9 @@
           "pegatinaGaraje": "Los Manquiñas",
           "MAX_SPEED": 180,
           "GAP_ACCELERATION": 10,
-          "speedometer": 40,
-          "counterKm": 4.5,
-          "habilidadPiloto": 65
+          "speedometer": 10,
+          "counterKm": 1.0,
+          "habilidadPiloto": 62
         },
         {
           "BRAND": "Ford",
@@ -143,7 +22,7 @@
           "GAP_ACCELERATION": 10,
           "speedometer": 0,
           "counterKm": 0.0,
-          "habilidadPiloto": 67
+          "habilidadPiloto": 72
         },
         {
           "BRAND": "Renaul",
@@ -153,7 +32,7 @@
           "GAP_ACCELERATION": 10,
           "speedometer": 0,
           "counterKm": 0.0,
-          "habilidadPiloto": 55
+          "habilidadPiloto": 34
         }
       ]
     },
@@ -166,9 +45,9 @@
           "pegatinaGaraje": "Los Flipados",
           "MAX_SPEED": 180,
           "GAP_ACCELERATION": 10,
-          "speedometer": 10,
-          "counterKm": 0.5,
-          "habilidadPiloto": 37
+          "speedometer": 0,
+          "counterKm": 0.16666667,
+          "habilidadPiloto": 36
         },
         {
           "BRAND": "Seat",
@@ -178,7 +57,7 @@
           "GAP_ACCELERATION": 10,
           "speedometer": 0,
           "counterKm": 0.0,
-          "habilidadPiloto": 36
+          "habilidadPiloto": 90
         },
         {
           "BRAND": "Seat",
@@ -188,7 +67,7 @@
           "GAP_ACCELERATION": 10,
           "speedometer": 0,
           "counterKm": 0.0,
-          "habilidadPiloto": 66
+          "habilidadPiloto": 42
         },
         {
           "BRAND": "Seat",
@@ -198,7 +77,7 @@
           "GAP_ACCELERATION": 10,
           "speedometer": 0,
           "counterKm": 0.0,
-          "habilidadPiloto": 31
+          "habilidadPiloto": 53
         },
         {
           "BRAND": "Seat",
@@ -208,7 +87,7 @@
           "GAP_ACCELERATION": 10,
           "speedometer": 0,
           "counterKm": 0.0,
-          "habilidadPiloto": 72
+          "habilidadPiloto": 44
         }
       ]
     },
@@ -221,8 +100,8 @@
           "pegatinaGaraje": "Lone Wolf",
           "MAX_SPEED": 180,
           "GAP_ACCELERATION": 10,
-          "speedometer": 70,
-          "counterKm": 4.8333335,
+          "speedometer": 30,
+          "counterKm": 4.1666665,
           "habilidadPiloto": 60
         }
       ]
@@ -236,9 +115,9 @@
           "pegatinaGaraje": "Mancato",
           "MAX_SPEED": 180,
           "GAP_ACCELERATION": 10,
-          "speedometer": 0,
-          "counterKm": 0.6666667,
-          "habilidadPiloto": 51
+          "speedometer": 20,
+          "counterKm": 5.5,
+          "habilidadPiloto": 68
         },
         {
           "BRAND": "Fiat",
@@ -246,9 +125,9 @@
           "pegatinaGaraje": "Mancato",
           "MAX_SPEED": 180,
           "GAP_ACCELERATION": 10,
-          "speedometer": 90,
-          "counterKm": 210.49997,
-          "habilidadPiloto": 49
+          "speedometer": 10,
+          "counterKm": 24.833326,
+          "habilidadPiloto": 30
         },
         {
           "BRAND": "Fiat",
@@ -256,9 +135,9 @@
           "pegatinaGaraje": "Mancato",
           "MAX_SPEED": 180,
           "GAP_ACCELERATION": 10,
-          "speedometer": 170,
-          "counterKm": 479.5001,
-          "habilidadPiloto": 77
+          "speedometer": 0,
+          "counterKm": 18.166664,
+          "habilidadPiloto": 35
         }
       ]
     }
@@ -277,9 +156,9 @@
               "pegatinaGaraje": "Los Manquiñas",
               "MAX_SPEED": 180,
               "GAP_ACCELERATION": 10,
-              "speedometer": 40,
-              "counterKm": 4.5,
-              "habilidadPiloto": 65
+              "speedometer": 10,
+              "counterKm": 1.0,
+              "habilidadPiloto": 62
             },
             {
               "BRAND": "Ford",
@@ -289,7 +168,7 @@
               "GAP_ACCELERATION": 10,
               "speedometer": 0,
               "counterKm": 0.0,
-              "habilidadPiloto": 67
+              "habilidadPiloto": 72
             },
             {
               "BRAND": "Renaul",
@@ -299,7 +178,7 @@
               "GAP_ACCELERATION": 10,
               "speedometer": 0,
               "counterKm": 0.0,
-              "habilidadPiloto": 55
+              "habilidadPiloto": 34
             }
           ]
         },
@@ -312,9 +191,9 @@
               "pegatinaGaraje": "Los Flipados",
               "MAX_SPEED": 180,
               "GAP_ACCELERATION": 10,
-              "speedometer": 10,
-              "counterKm": 0.5,
-              "habilidadPiloto": 37
+              "speedometer": 0,
+              "counterKm": 0.16666667,
+              "habilidadPiloto": 36
             },
             {
               "BRAND": "Seat",
@@ -324,7 +203,7 @@
               "GAP_ACCELERATION": 10,
               "speedometer": 0,
               "counterKm": 0.0,
-              "habilidadPiloto": 36
+              "habilidadPiloto": 90
             },
             {
               "BRAND": "Seat",
@@ -334,7 +213,7 @@
               "GAP_ACCELERATION": 10,
               "speedometer": 0,
               "counterKm": 0.0,
-              "habilidadPiloto": 66
+              "habilidadPiloto": 42
             },
             {
               "BRAND": "Seat",
@@ -344,7 +223,7 @@
               "GAP_ACCELERATION": 10,
               "speedometer": 0,
               "counterKm": 0.0,
-              "habilidadPiloto": 31
+              "habilidadPiloto": 53
             },
             {
               "BRAND": "Seat",
@@ -354,7 +233,7 @@
               "GAP_ACCELERATION": 10,
               "speedometer": 0,
               "counterKm": 0.0,
-              "habilidadPiloto": 72
+              "habilidadPiloto": 44
             }
           ]
         },
@@ -367,8 +246,8 @@
               "pegatinaGaraje": "Lone Wolf",
               "MAX_SPEED": 180,
               "GAP_ACCELERATION": 10,
-              "speedometer": 70,
-              "counterKm": 4.8333335,
+              "speedometer": 30,
+              "counterKm": 4.1666665,
               "habilidadPiloto": 60
             }
           ]
@@ -376,24 +255,24 @@
       ],
       "coches": [
         {
-          "BRAND": "Renaul",
-          "MODEL": "Clio",
-          "pegatinaGaraje": "Los Manquiñas",
-          "MAX_SPEED": 180,
-          "GAP_ACCELERATION": 10,
-          "speedometer": 40,
-          "counterKm": 4.5,
-          "habilidadPiloto": 65
-        },
-        {
           "BRAND": "5-Ferrari",
           "MODEL": "F50",
           "pegatinaGaraje": "Lone Wolf",
           "MAX_SPEED": 180,
           "GAP_ACCELERATION": 10,
-          "speedometer": 70,
-          "counterKm": 4.8333335,
+          "speedometer": 30,
+          "counterKm": 4.1666665,
           "habilidadPiloto": 60
+        },
+        {
+          "BRAND": "Renaul",
+          "MODEL": "Clio",
+          "pegatinaGaraje": "Los Manquiñas",
+          "MAX_SPEED": 180,
+          "GAP_ACCELERATION": 10,
+          "speedometer": 10,
+          "counterKm": 1.0,
+          "habilidadPiloto": 62
         },
         {
           "BRAND": "Seat",
@@ -401,24 +280,12 @@
           "pegatinaGaraje": "Los Flipados",
           "MAX_SPEED": 180,
           "GAP_ACCELERATION": 10,
-          "speedometer": 10,
-          "counterKm": 0.5,
-          "habilidadPiloto": 37
+          "speedometer": 0,
+          "counterKm": 0.16666667,
+          "habilidadPiloto": 36
         }
       ],
       "podio": [
-        [
-          {
-            "BRAND": "Renaul",
-            "MODEL": "Clio",
-            "pegatinaGaraje": "Los Manquiñas",
-            "MAX_SPEED": 180,
-            "GAP_ACCELERATION": 10,
-            "speedometer": 40,
-            "counterKm": 4.5,
-            "habilidadPiloto": 65
-          }
-        ],
         [
           {
             "BRAND": "5-Ferrari",
@@ -426,9 +293,21 @@
             "pegatinaGaraje": "Lone Wolf",
             "MAX_SPEED": 180,
             "GAP_ACCELERATION": 10,
-            "speedometer": 70,
-            "counterKm": 4.8333335,
+            "speedometer": 30,
+            "counterKm": 4.1666665,
             "habilidadPiloto": 60
+          }
+        ],
+        [
+          {
+            "BRAND": "Renaul",
+            "MODEL": "Clio",
+            "pegatinaGaraje": "Los Manquiñas",
+            "MAX_SPEED": 180,
+            "GAP_ACCELERATION": 10,
+            "speedometer": 10,
+            "counterKm": 1.0,
+            "habilidadPiloto": 62
           }
         ],
         [
@@ -438,9 +317,9 @@
             "pegatinaGaraje": "Los Flipados",
             "MAX_SPEED": 180,
             "GAP_ACCELERATION": 10,
-            "speedometer": 10,
-            "counterKm": 0.5,
-            "habilidadPiloto": 37
+            "speedometer": 0,
+            "counterKm": 0.16666667,
+            "habilidadPiloto": 36
           }
         ]
       ],
@@ -460,9 +339,9 @@
               "pegatinaGaraje": "Mancato",
               "MAX_SPEED": 180,
               "GAP_ACCELERATION": 10,
-              "speedometer": 0,
-              "counterKm": 0.6666667,
-              "habilidadPiloto": 51
+              "speedometer": 20,
+              "counterKm": 5.5,
+              "habilidadPiloto": 68
             },
             {
               "BRAND": "Fiat",
@@ -470,9 +349,9 @@
               "pegatinaGaraje": "Mancato",
               "MAX_SPEED": 180,
               "GAP_ACCELERATION": 10,
-              "speedometer": 90,
-              "counterKm": 210.49997,
-              "habilidadPiloto": 49
+              "speedometer": 10,
+              "counterKm": 24.833326,
+              "habilidadPiloto": 30
             },
             {
               "BRAND": "Fiat",
@@ -480,9 +359,9 @@
               "pegatinaGaraje": "Mancato",
               "MAX_SPEED": 180,
               "GAP_ACCELERATION": 10,
-              "speedometer": 170,
-              "counterKm": 479.5001,
-              "habilidadPiloto": 77
+              "speedometer": 0,
+              "counterKm": 18.166664,
+              "habilidadPiloto": 35
             }
           ]
         }
@@ -490,13 +369,13 @@
       "coches": [
         {
           "BRAND": "Fiat",
-          "MODEL": "700",
+          "MODEL": "500",
           "pegatinaGaraje": "Mancato",
           "MAX_SPEED": 180,
           "GAP_ACCELERATION": 10,
-          "speedometer": 170,
-          "counterKm": 479.5001,
-          "habilidadPiloto": 77
+          "speedometer": 20,
+          "counterKm": 5.5,
+          "habilidadPiloto": 68
         },
         {
           "BRAND": "Fiat",
@@ -504,32 +383,32 @@
           "pegatinaGaraje": "Mancato",
           "MAX_SPEED": 180,
           "GAP_ACCELERATION": 10,
-          "speedometer": 90,
-          "counterKm": 210.49997,
-          "habilidadPiloto": 49
+          "speedometer": 10,
+          "counterKm": 24.833326,
+          "habilidadPiloto": 30
         },
         {
           "BRAND": "Fiat",
-          "MODEL": "500",
+          "MODEL": "700",
           "pegatinaGaraje": "Mancato",
           "MAX_SPEED": 180,
           "GAP_ACCELERATION": 10,
           "speedometer": 0,
-          "counterKm": 0.6666667,
-          "habilidadPiloto": 51
+          "counterKm": 18.166664,
+          "habilidadPiloto": 35
         }
       ],
       "podio": [
         [
           {
             "BRAND": "Fiat",
-            "MODEL": "700",
+            "MODEL": "500",
             "pegatinaGaraje": "Mancato",
             "MAX_SPEED": 180,
             "GAP_ACCELERATION": 10,
-            "speedometer": 170,
-            "counterKm": 479.5001,
-            "habilidadPiloto": 77
+            "speedometer": 20,
+            "counterKm": 5.5,
+            "habilidadPiloto": 68
           }
         ],
         [
@@ -539,21 +418,21 @@
             "pegatinaGaraje": "Mancato",
             "MAX_SPEED": 180,
             "GAP_ACCELERATION": 10,
-            "speedometer": 90,
-            "counterKm": 210.49997,
-            "habilidadPiloto": 49
+            "speedometer": 10,
+            "counterKm": 24.833326,
+            "habilidadPiloto": 30
           }
         ],
         [
           {
             "BRAND": "Fiat",
-            "MODEL": "500",
+            "MODEL": "700",
             "pegatinaGaraje": "Mancato",
             "MAX_SPEED": 180,
             "GAP_ACCELERATION": 10,
             "speedometer": 0,
-            "counterKm": 0.6666667,
-            "habilidadPiloto": 51
+            "counterKm": 18.166664,
+            "habilidadPiloto": 35
           }
         ]
       ],
@@ -573,9 +452,9 @@
               "pegatinaGaraje": "Los Manquiñas",
               "MAX_SPEED": 180,
               "GAP_ACCELERATION": 10,
-              "speedometer": 40,
-              "counterKm": 4.5,
-              "habilidadPiloto": 65
+              "speedometer": 10,
+              "counterKm": 1.0,
+              "habilidadPiloto": 62
             },
             {
               "BRAND": "Ford",
@@ -585,7 +464,7 @@
               "GAP_ACCELERATION": 10,
               "speedometer": 0,
               "counterKm": 0.0,
-              "habilidadPiloto": 67
+              "habilidadPiloto": 72
             },
             {
               "BRAND": "Renaul",
@@ -595,7 +474,7 @@
               "GAP_ACCELERATION": 10,
               "speedometer": 0,
               "counterKm": 0.0,
-              "habilidadPiloto": 55
+              "habilidadPiloto": 34
             }
           ]
         },
@@ -608,9 +487,9 @@
               "pegatinaGaraje": "Los Flipados",
               "MAX_SPEED": 180,
               "GAP_ACCELERATION": 10,
-              "speedometer": 10,
-              "counterKm": 0.5,
-              "habilidadPiloto": 37
+              "speedometer": 0,
+              "counterKm": 0.16666667,
+              "habilidadPiloto": 36
             },
             {
               "BRAND": "Seat",
@@ -620,7 +499,7 @@
               "GAP_ACCELERATION": 10,
               "speedometer": 0,
               "counterKm": 0.0,
-              "habilidadPiloto": 36
+              "habilidadPiloto": 90
             },
             {
               "BRAND": "Seat",
@@ -630,7 +509,7 @@
               "GAP_ACCELERATION": 10,
               "speedometer": 0,
               "counterKm": 0.0,
-              "habilidadPiloto": 66
+              "habilidadPiloto": 42
             },
             {
               "BRAND": "Seat",
@@ -640,7 +519,7 @@
               "GAP_ACCELERATION": 10,
               "speedometer": 0,
               "counterKm": 0.0,
-              "habilidadPiloto": 31
+              "habilidadPiloto": 53
             },
             {
               "BRAND": "Seat",
@@ -650,7 +529,7 @@
               "GAP_ACCELERATION": 10,
               "speedometer": 0,
               "counterKm": 0.0,
-              "habilidadPiloto": 72
+              "habilidadPiloto": 44
             }
           ]
         },
@@ -663,8 +542,8 @@
               "pegatinaGaraje": "Lone Wolf",
               "MAX_SPEED": 180,
               "GAP_ACCELERATION": 10,
-              "speedometer": 70,
-              "counterKm": 4.8333335,
+              "speedometer": 30,
+              "counterKm": 4.1666665,
               "habilidadPiloto": 60
             }
           ]
@@ -678,9 +557,9 @@
               "pegatinaGaraje": "Mancato",
               "MAX_SPEED": 180,
               "GAP_ACCELERATION": 10,
-              "speedometer": 0,
-              "counterKm": 0.6666667,
-              "habilidadPiloto": 51
+              "speedometer": 20,
+              "counterKm": 5.5,
+              "habilidadPiloto": 68
             },
             {
               "BRAND": "Fiat",
@@ -688,9 +567,9 @@
               "pegatinaGaraje": "Mancato",
               "MAX_SPEED": 180,
               "GAP_ACCELERATION": 10,
-              "speedometer": 90,
-              "counterKm": 210.49997,
-              "habilidadPiloto": 49
+              "speedometer": 10,
+              "counterKm": 24.833326,
+              "habilidadPiloto": 30
             },
             {
               "BRAND": "Fiat",
@@ -698,33 +577,23 @@
               "pegatinaGaraje": "Mancato",
               "MAX_SPEED": 180,
               "GAP_ACCELERATION": 10,
-              "speedometer": 170,
-              "counterKm": 479.5001,
-              "habilidadPiloto": 77
+              "speedometer": 0,
+              "counterKm": 18.166664,
+              "habilidadPiloto": 35
             }
           ]
         }
       ],
       "coches": [
         {
-          "BRAND": "Renaul",
-          "MODEL": "Clio",
-          "pegatinaGaraje": "Los Manquiñas",
-          "MAX_SPEED": 180,
-          "GAP_ACCELERATION": 10,
-          "speedometer": 40,
-          "counterKm": 4.5,
-          "habilidadPiloto": 65
-        },
-        {
           "BRAND": "Fiat",
           "MODEL": "500",
           "pegatinaGaraje": "Mancato",
           "MAX_SPEED": 180,
           "GAP_ACCELERATION": 10,
-          "speedometer": 0,
-          "counterKm": 0.6666667,
-          "habilidadPiloto": 51
+          "speedometer": 20,
+          "counterKm": 5.5,
+          "habilidadPiloto": 68
         },
         {
           "BRAND": "5-Ferrari",
@@ -732,9 +601,19 @@
           "pegatinaGaraje": "Lone Wolf",
           "MAX_SPEED": 180,
           "GAP_ACCELERATION": 10,
-          "speedometer": 70,
-          "counterKm": 4.8333335,
+          "speedometer": 30,
+          "counterKm": 4.1666665,
           "habilidadPiloto": 60
+        },
+        {
+          "BRAND": "Renaul",
+          "MODEL": "Clio",
+          "pegatinaGaraje": "Los Manquiñas",
+          "MAX_SPEED": 180,
+          "GAP_ACCELERATION": 10,
+          "speedometer": 10,
+          "counterKm": 1.0,
+          "habilidadPiloto": 62
         },
         {
           "BRAND": "Seat",
@@ -742,24 +621,12 @@
           "pegatinaGaraje": "Los Flipados",
           "MAX_SPEED": 180,
           "GAP_ACCELERATION": 10,
-          "speedometer": 10,
-          "counterKm": 0.5,
-          "habilidadPiloto": 37
+          "speedometer": 0,
+          "counterKm": 0.16666667,
+          "habilidadPiloto": 36
         }
       ],
       "podio": [
-        [
-          {
-            "BRAND": "Renaul",
-            "MODEL": "Clio",
-            "pegatinaGaraje": "Los Manquiñas",
-            "MAX_SPEED": 180,
-            "GAP_ACCELERATION": 10,
-            "speedometer": 40,
-            "counterKm": 4.5,
-            "habilidadPiloto": 65
-          }
-        ],
         [
           {
             "BRAND": "Fiat",
@@ -767,9 +634,9 @@
             "pegatinaGaraje": "Mancato",
             "MAX_SPEED": 180,
             "GAP_ACCELERATION": 10,
-            "speedometer": 0,
-            "counterKm": 0.6666667,
-            "habilidadPiloto": 51
+            "speedometer": 20,
+            "counterKm": 5.5,
+            "habilidadPiloto": 68
           }
         ],
         [
@@ -779,9 +646,21 @@
             "pegatinaGaraje": "Lone Wolf",
             "MAX_SPEED": 180,
             "GAP_ACCELERATION": 10,
-            "speedometer": 70,
-            "counterKm": 4.8333335,
+            "speedometer": 30,
+            "counterKm": 4.1666665,
             "habilidadPiloto": 60
+          }
+        ],
+        [
+          {
+            "BRAND": "Renaul",
+            "MODEL": "Clio",
+            "pegatinaGaraje": "Los Manquiñas",
+            "MAX_SPEED": 180,
+            "GAP_ACCELERATION": 10,
+            "speedometer": 10,
+            "counterKm": 1.0,
+            "habilidadPiloto": 62
           }
         ]
       ],
@@ -801,9 +680,9 @@
               "pegatinaGaraje": "Los Manquiñas",
               "MAX_SPEED": 180,
               "GAP_ACCELERATION": 10,
-              "speedometer": 40,
-              "counterKm": 4.5,
-              "habilidadPiloto": 65
+              "speedometer": 10,
+              "counterKm": 1.0,
+              "habilidadPiloto": 62
             },
             {
               "BRAND": "Ford",
@@ -813,7 +692,7 @@
               "GAP_ACCELERATION": 10,
               "speedometer": 0,
               "counterKm": 0.0,
-              "habilidadPiloto": 67
+              "habilidadPiloto": 72
             },
             {
               "BRAND": "Renaul",
@@ -823,7 +702,7 @@
               "GAP_ACCELERATION": 10,
               "speedometer": 0,
               "counterKm": 0.0,
-              "habilidadPiloto": 55
+              "habilidadPiloto": 34
             }
           ]
         },
@@ -836,9 +715,9 @@
               "pegatinaGaraje": "Los Flipados",
               "MAX_SPEED": 180,
               "GAP_ACCELERATION": 10,
-              "speedometer": 10,
-              "counterKm": 0.5,
-              "habilidadPiloto": 37
+              "speedometer": 0,
+              "counterKm": 0.16666667,
+              "habilidadPiloto": 36
             },
             {
               "BRAND": "Seat",
@@ -848,7 +727,7 @@
               "GAP_ACCELERATION": 10,
               "speedometer": 0,
               "counterKm": 0.0,
-              "habilidadPiloto": 36
+              "habilidadPiloto": 90
             },
             {
               "BRAND": "Seat",
@@ -858,7 +737,7 @@
               "GAP_ACCELERATION": 10,
               "speedometer": 0,
               "counterKm": 0.0,
-              "habilidadPiloto": 66
+              "habilidadPiloto": 42
             },
             {
               "BRAND": "Seat",
@@ -868,7 +747,7 @@
               "GAP_ACCELERATION": 10,
               "speedometer": 0,
               "counterKm": 0.0,
-              "habilidadPiloto": 31
+              "habilidadPiloto": 53
             },
             {
               "BRAND": "Seat",
@@ -878,7 +757,7 @@
               "GAP_ACCELERATION": 10,
               "speedometer": 0,
               "counterKm": 0.0,
-              "habilidadPiloto": 72
+              "habilidadPiloto": 44
             }
           ]
         },
@@ -891,8 +770,8 @@
               "pegatinaGaraje": "Lone Wolf",
               "MAX_SPEED": 180,
               "GAP_ACCELERATION": 10,
-              "speedometer": 70,
-              "counterKm": 4.8333335,
+              "speedometer": 30,
+              "counterKm": 4.1666665,
               "habilidadPiloto": 60
             }
           ]
@@ -906,9 +785,9 @@
               "pegatinaGaraje": "Mancato",
               "MAX_SPEED": 180,
               "GAP_ACCELERATION": 10,
-              "speedometer": 0,
-              "counterKm": 0.6666667,
-              "habilidadPiloto": 51
+              "speedometer": 20,
+              "counterKm": 5.5,
+              "habilidadPiloto": 68
             },
             {
               "BRAND": "Fiat",
@@ -916,9 +795,9 @@
               "pegatinaGaraje": "Mancato",
               "MAX_SPEED": 180,
               "GAP_ACCELERATION": 10,
-              "speedometer": 90,
-              "counterKm": 210.49997,
-              "habilidadPiloto": 49
+              "speedometer": 10,
+              "counterKm": 24.833326,
+              "habilidadPiloto": 30
             },
             {
               "BRAND": "Fiat",
@@ -926,22 +805,32 @@
               "pegatinaGaraje": "Mancato",
               "MAX_SPEED": 180,
               "GAP_ACCELERATION": 10,
-              "speedometer": 170,
-              "counterKm": 479.5001,
-              "habilidadPiloto": 77
+              "speedometer": 0,
+              "counterKm": 18.166664,
+              "habilidadPiloto": 35
             }
           ]
         }
       ],
       "coches": [
         {
+          "BRAND": "Fiat",
+          "MODEL": "500",
+          "pegatinaGaraje": "Mancato",
+          "MAX_SPEED": 180,
+          "GAP_ACCELERATION": 10,
+          "speedometer": 20,
+          "counterKm": 5.5,
+          "habilidadPiloto": 68
+        },
+        {
           "BRAND": "5-Ferrari",
           "MODEL": "F50",
           "pegatinaGaraje": "Lone Wolf",
           "MAX_SPEED": 180,
           "GAP_ACCELERATION": 10,
-          "speedometer": 70,
-          "counterKm": 4.8333335,
+          "speedometer": 30,
+          "counterKm": 4.1666665,
           "habilidadPiloto": 60
         },
         {
@@ -950,19 +839,9 @@
           "pegatinaGaraje": "Los Manquiñas",
           "MAX_SPEED": 180,
           "GAP_ACCELERATION": 10,
-          "speedometer": 40,
-          "counterKm": 4.5,
-          "habilidadPiloto": 65
-        },
-        {
-          "BRAND": "Fiat",
-          "MODEL": "500",
-          "pegatinaGaraje": "Mancato",
-          "MAX_SPEED": 180,
-          "GAP_ACCELERATION": 10,
-          "speedometer": 0,
-          "counterKm": 0.6666667,
-          "habilidadPiloto": 51
+          "speedometer": 10,
+          "counterKm": 1.0,
+          "habilidadPiloto": 62
         },
         {
           "BRAND": "Seat",
@@ -970,12 +849,24 @@
           "pegatinaGaraje": "Los Flipados",
           "MAX_SPEED": 180,
           "GAP_ACCELERATION": 10,
-          "speedometer": 10,
-          "counterKm": 0.5,
-          "habilidadPiloto": 37
+          "speedometer": 0,
+          "counterKm": 0.16666667,
+          "habilidadPiloto": 36
         }
       ],
       "podio": [
+        [
+          {
+            "BRAND": "Fiat",
+            "MODEL": "500",
+            "pegatinaGaraje": "Mancato",
+            "MAX_SPEED": 180,
+            "GAP_ACCELERATION": 10,
+            "speedometer": 20,
+            "counterKm": 5.5,
+            "habilidadPiloto": 68
+          }
+        ],
         [
           {
             "BRAND": "5-Ferrari",
@@ -983,8 +874,8 @@
             "pegatinaGaraje": "Lone Wolf",
             "MAX_SPEED": 180,
             "GAP_ACCELERATION": 10,
-            "speedometer": 70,
-            "counterKm": 4.8333335,
+            "speedometer": 30,
+            "counterKm": 4.1666665,
             "habilidadPiloto": 60
           }
         ],
@@ -995,21 +886,9 @@
             "pegatinaGaraje": "Los Manquiñas",
             "MAX_SPEED": 180,
             "GAP_ACCELERATION": 10,
-            "speedometer": 40,
-            "counterKm": 4.5,
-            "habilidadPiloto": 65
-          }
-        ],
-        [
-          {
-            "BRAND": "Fiat",
-            "MODEL": "500",
-            "pegatinaGaraje": "Mancato",
-            "MAX_SPEED": 180,
-            "GAP_ACCELERATION": 10,
-            "speedometer": 0,
-            "counterKm": 0.6666667,
-            "habilidadPiloto": 51
+            "speedometer": 10,
+            "counterKm": 1.0,
+            "habilidadPiloto": 62
           }
         ]
       ],
@@ -1034,9 +913,9 @@
                   "pegatinaGaraje": "Los Manquiñas",
                   "MAX_SPEED": 180,
                   "GAP_ACCELERATION": 10,
-                  "speedometer": 40,
-                  "counterKm": 4.5,
-                  "habilidadPiloto": 65
+                  "speedometer": 10,
+                  "counterKm": 1.0,
+                  "habilidadPiloto": 62
                 },
                 {
                   "BRAND": "Ford",
@@ -1046,7 +925,7 @@
                   "GAP_ACCELERATION": 10,
                   "speedometer": 0,
                   "counterKm": 0.0,
-                  "habilidadPiloto": 67
+                  "habilidadPiloto": 72
                 },
                 {
                   "BRAND": "Renaul",
@@ -1056,7 +935,7 @@
                   "GAP_ACCELERATION": 10,
                   "speedometer": 0,
                   "counterKm": 0.0,
-                  "habilidadPiloto": 55
+                  "habilidadPiloto": 34
                 }
               ]
             },
@@ -1069,9 +948,9 @@
                   "pegatinaGaraje": "Los Flipados",
                   "MAX_SPEED": 180,
                   "GAP_ACCELERATION": 10,
-                  "speedometer": 10,
-                  "counterKm": 0.5,
-                  "habilidadPiloto": 37
+                  "speedometer": 0,
+                  "counterKm": 0.16666667,
+                  "habilidadPiloto": 36
                 },
                 {
                   "BRAND": "Seat",
@@ -1081,7 +960,7 @@
                   "GAP_ACCELERATION": 10,
                   "speedometer": 0,
                   "counterKm": 0.0,
-                  "habilidadPiloto": 36
+                  "habilidadPiloto": 90
                 },
                 {
                   "BRAND": "Seat",
@@ -1091,7 +970,7 @@
                   "GAP_ACCELERATION": 10,
                   "speedometer": 0,
                   "counterKm": 0.0,
-                  "habilidadPiloto": 66
+                  "habilidadPiloto": 42
                 },
                 {
                   "BRAND": "Seat",
@@ -1101,7 +980,7 @@
                   "GAP_ACCELERATION": 10,
                   "speedometer": 0,
                   "counterKm": 0.0,
-                  "habilidadPiloto": 31
+                  "habilidadPiloto": 53
                 },
                 {
                   "BRAND": "Seat",
@@ -1111,7 +990,7 @@
                   "GAP_ACCELERATION": 10,
                   "speedometer": 0,
                   "counterKm": 0.0,
-                  "habilidadPiloto": 72
+                  "habilidadPiloto": 44
                 }
               ]
             },
@@ -1124,8 +1003,8 @@
                   "pegatinaGaraje": "Lone Wolf",
                   "MAX_SPEED": 180,
                   "GAP_ACCELERATION": 10,
-                  "speedometer": 70,
-                  "counterKm": 4.8333335,
+                  "speedometer": 30,
+                  "counterKm": 4.1666665,
                   "habilidadPiloto": 60
                 }
               ]
@@ -1133,24 +1012,24 @@
           ],
           "coches": [
             {
-              "BRAND": "Renaul",
-              "MODEL": "Clio",
-              "pegatinaGaraje": "Los Manquiñas",
-              "MAX_SPEED": 180,
-              "GAP_ACCELERATION": 10,
-              "speedometer": 40,
-              "counterKm": 4.5,
-              "habilidadPiloto": 65
-            },
-            {
               "BRAND": "5-Ferrari",
               "MODEL": "F50",
               "pegatinaGaraje": "Lone Wolf",
               "MAX_SPEED": 180,
               "GAP_ACCELERATION": 10,
-              "speedometer": 70,
-              "counterKm": 4.8333335,
+              "speedometer": 30,
+              "counterKm": 4.1666665,
               "habilidadPiloto": 60
+            },
+            {
+              "BRAND": "Renaul",
+              "MODEL": "Clio",
+              "pegatinaGaraje": "Los Manquiñas",
+              "MAX_SPEED": 180,
+              "GAP_ACCELERATION": 10,
+              "speedometer": 10,
+              "counterKm": 1.0,
+              "habilidadPiloto": 62
             },
             {
               "BRAND": "Seat",
@@ -1158,24 +1037,12 @@
               "pegatinaGaraje": "Los Flipados",
               "MAX_SPEED": 180,
               "GAP_ACCELERATION": 10,
-              "speedometer": 10,
-              "counterKm": 0.5,
-              "habilidadPiloto": 37
+              "speedometer": 0,
+              "counterKm": 0.16666667,
+              "habilidadPiloto": 36
             }
           ],
           "podio": [
-            [
-              {
-                "BRAND": "Renaul",
-                "MODEL": "Clio",
-                "pegatinaGaraje": "Los Manquiñas",
-                "MAX_SPEED": 180,
-                "GAP_ACCELERATION": 10,
-                "speedometer": 40,
-                "counterKm": 4.5,
-                "habilidadPiloto": 65
-              }
-            ],
             [
               {
                 "BRAND": "5-Ferrari",
@@ -1183,9 +1050,21 @@
                 "pegatinaGaraje": "Lone Wolf",
                 "MAX_SPEED": 180,
                 "GAP_ACCELERATION": 10,
-                "speedometer": 70,
-                "counterKm": 4.8333335,
+                "speedometer": 30,
+                "counterKm": 4.1666665,
                 "habilidadPiloto": 60
+              }
+            ],
+            [
+              {
+                "BRAND": "Renaul",
+                "MODEL": "Clio",
+                "pegatinaGaraje": "Los Manquiñas",
+                "MAX_SPEED": 180,
+                "GAP_ACCELERATION": 10,
+                "speedometer": 10,
+                "counterKm": 1.0,
+                "habilidadPiloto": 62
               }
             ],
             [
@@ -1195,9 +1074,9 @@
                 "pegatinaGaraje": "Los Flipados",
                 "MAX_SPEED": 180,
                 "GAP_ACCELERATION": 10,
-                "speedometer": 10,
-                "counterKm": 0.5,
-                "habilidadPiloto": 37
+                "speedometer": 0,
+                "counterKm": 0.16666667,
+                "habilidadPiloto": 36
               }
             ]
           ],
@@ -1217,9 +1096,9 @@
                   "pegatinaGaraje": "Mancato",
                   "MAX_SPEED": 180,
                   "GAP_ACCELERATION": 10,
-                  "speedometer": 0,
-                  "counterKm": 0.6666667,
-                  "habilidadPiloto": 51
+                  "speedometer": 20,
+                  "counterKm": 5.5,
+                  "habilidadPiloto": 68
                 },
                 {
                   "BRAND": "Fiat",
@@ -1227,9 +1106,9 @@
                   "pegatinaGaraje": "Mancato",
                   "MAX_SPEED": 180,
                   "GAP_ACCELERATION": 10,
-                  "speedometer": 90,
-                  "counterKm": 210.49997,
-                  "habilidadPiloto": 49
+                  "speedometer": 10,
+                  "counterKm": 24.833326,
+                  "habilidadPiloto": 30
                 },
                 {
                   "BRAND": "Fiat",
@@ -1237,9 +1116,9 @@
                   "pegatinaGaraje": "Mancato",
                   "MAX_SPEED": 180,
                   "GAP_ACCELERATION": 10,
-                  "speedometer": 170,
-                  "counterKm": 479.5001,
-                  "habilidadPiloto": 77
+                  "speedometer": 0,
+                  "counterKm": 18.166664,
+                  "habilidadPiloto": 35
                 }
               ]
             }
@@ -1247,13 +1126,13 @@
           "coches": [
             {
               "BRAND": "Fiat",
-              "MODEL": "700",
+              "MODEL": "500",
               "pegatinaGaraje": "Mancato",
               "MAX_SPEED": 180,
               "GAP_ACCELERATION": 10,
-              "speedometer": 170,
-              "counterKm": 479.5001,
-              "habilidadPiloto": 77
+              "speedometer": 20,
+              "counterKm": 5.5,
+              "habilidadPiloto": 68
             },
             {
               "BRAND": "Fiat",
@@ -1261,32 +1140,32 @@
               "pegatinaGaraje": "Mancato",
               "MAX_SPEED": 180,
               "GAP_ACCELERATION": 10,
-              "speedometer": 90,
-              "counterKm": 210.49997,
-              "habilidadPiloto": 49
+              "speedometer": 10,
+              "counterKm": 24.833326,
+              "habilidadPiloto": 30
             },
             {
               "BRAND": "Fiat",
-              "MODEL": "500",
+              "MODEL": "700",
               "pegatinaGaraje": "Mancato",
               "MAX_SPEED": 180,
               "GAP_ACCELERATION": 10,
               "speedometer": 0,
-              "counterKm": 0.6666667,
-              "habilidadPiloto": 51
+              "counterKm": 18.166664,
+              "habilidadPiloto": 35
             }
           ],
           "podio": [
             [
               {
                 "BRAND": "Fiat",
-                "MODEL": "700",
+                "MODEL": "500",
                 "pegatinaGaraje": "Mancato",
                 "MAX_SPEED": 180,
                 "GAP_ACCELERATION": 10,
-                "speedometer": 170,
-                "counterKm": 479.5001,
-                "habilidadPiloto": 77
+                "speedometer": 20,
+                "counterKm": 5.5,
+                "habilidadPiloto": 68
               }
             ],
             [
@@ -1296,21 +1175,21 @@
                 "pegatinaGaraje": "Mancato",
                 "MAX_SPEED": 180,
                 "GAP_ACCELERATION": 10,
-                "speedometer": 90,
-                "counterKm": 210.49997,
-                "habilidadPiloto": 49
+                "speedometer": 10,
+                "counterKm": 24.833326,
+                "habilidadPiloto": 30
               }
             ],
             [
               {
                 "BRAND": "Fiat",
-                "MODEL": "500",
+                "MODEL": "700",
                 "pegatinaGaraje": "Mancato",
                 "MAX_SPEED": 180,
                 "GAP_ACCELERATION": 10,
                 "speedometer": 0,
-                "counterKm": 0.6666667,
-                "habilidadPiloto": 51
+                "counterKm": 18.166664,
+                "habilidadPiloto": 35
               }
             ]
           ],
@@ -1330,9 +1209,9 @@
                   "pegatinaGaraje": "Los Manquiñas",
                   "MAX_SPEED": 180,
                   "GAP_ACCELERATION": 10,
-                  "speedometer": 40,
-                  "counterKm": 4.5,
-                  "habilidadPiloto": 65
+                  "speedometer": 10,
+                  "counterKm": 1.0,
+                  "habilidadPiloto": 62
                 },
                 {
                   "BRAND": "Ford",
@@ -1342,7 +1221,7 @@
                   "GAP_ACCELERATION": 10,
                   "speedometer": 0,
                   "counterKm": 0.0,
-                  "habilidadPiloto": 67
+                  "habilidadPiloto": 72
                 },
                 {
                   "BRAND": "Renaul",
@@ -1352,7 +1231,7 @@
                   "GAP_ACCELERATION": 10,
                   "speedometer": 0,
                   "counterKm": 0.0,
-                  "habilidadPiloto": 55
+                  "habilidadPiloto": 34
                 }
               ]
             },
@@ -1365,9 +1244,9 @@
                   "pegatinaGaraje": "Los Flipados",
                   "MAX_SPEED": 180,
                   "GAP_ACCELERATION": 10,
-                  "speedometer": 10,
-                  "counterKm": 0.5,
-                  "habilidadPiloto": 37
+                  "speedometer": 0,
+                  "counterKm": 0.16666667,
+                  "habilidadPiloto": 36
                 },
                 {
                   "BRAND": "Seat",
@@ -1377,7 +1256,7 @@
                   "GAP_ACCELERATION": 10,
                   "speedometer": 0,
                   "counterKm": 0.0,
-                  "habilidadPiloto": 36
+                  "habilidadPiloto": 90
                 },
                 {
                   "BRAND": "Seat",
@@ -1387,7 +1266,7 @@
                   "GAP_ACCELERATION": 10,
                   "speedometer": 0,
                   "counterKm": 0.0,
-                  "habilidadPiloto": 66
+                  "habilidadPiloto": 42
                 },
                 {
                   "BRAND": "Seat",
@@ -1397,7 +1276,7 @@
                   "GAP_ACCELERATION": 10,
                   "speedometer": 0,
                   "counterKm": 0.0,
-                  "habilidadPiloto": 31
+                  "habilidadPiloto": 53
                 },
                 {
                   "BRAND": "Seat",
@@ -1407,7 +1286,7 @@
                   "GAP_ACCELERATION": 10,
                   "speedometer": 0,
                   "counterKm": 0.0,
-                  "habilidadPiloto": 72
+                  "habilidadPiloto": 44
                 }
               ]
             },
@@ -1420,8 +1299,8 @@
                   "pegatinaGaraje": "Lone Wolf",
                   "MAX_SPEED": 180,
                   "GAP_ACCELERATION": 10,
-                  "speedometer": 70,
-                  "counterKm": 4.8333335,
+                  "speedometer": 30,
+                  "counterKm": 4.1666665,
                   "habilidadPiloto": 60
                 }
               ]
@@ -1435,9 +1314,9 @@
                   "pegatinaGaraje": "Mancato",
                   "MAX_SPEED": 180,
                   "GAP_ACCELERATION": 10,
-                  "speedometer": 0,
-                  "counterKm": 0.6666667,
-                  "habilidadPiloto": 51
+                  "speedometer": 20,
+                  "counterKm": 5.5,
+                  "habilidadPiloto": 68
                 },
                 {
                   "BRAND": "Fiat",
@@ -1445,9 +1324,9 @@
                   "pegatinaGaraje": "Mancato",
                   "MAX_SPEED": 180,
                   "GAP_ACCELERATION": 10,
-                  "speedometer": 90,
-                  "counterKm": 210.49997,
-                  "habilidadPiloto": 49
+                  "speedometer": 10,
+                  "counterKm": 24.833326,
+                  "habilidadPiloto": 30
                 },
                 {
                   "BRAND": "Fiat",
@@ -1455,33 +1334,23 @@
                   "pegatinaGaraje": "Mancato",
                   "MAX_SPEED": 180,
                   "GAP_ACCELERATION": 10,
-                  "speedometer": 170,
-                  "counterKm": 479.5001,
-                  "habilidadPiloto": 77
+                  "speedometer": 0,
+                  "counterKm": 18.166664,
+                  "habilidadPiloto": 35
                 }
               ]
             }
           ],
           "coches": [
             {
-              "BRAND": "Renaul",
-              "MODEL": "Clio",
-              "pegatinaGaraje": "Los Manquiñas",
-              "MAX_SPEED": 180,
-              "GAP_ACCELERATION": 10,
-              "speedometer": 40,
-              "counterKm": 4.5,
-              "habilidadPiloto": 65
-            },
-            {
               "BRAND": "Fiat",
               "MODEL": "500",
               "pegatinaGaraje": "Mancato",
               "MAX_SPEED": 180,
               "GAP_ACCELERATION": 10,
-              "speedometer": 0,
-              "counterKm": 0.6666667,
-              "habilidadPiloto": 51
+              "speedometer": 20,
+              "counterKm": 5.5,
+              "habilidadPiloto": 68
             },
             {
               "BRAND": "5-Ferrari",
@@ -1489,9 +1358,19 @@
               "pegatinaGaraje": "Lone Wolf",
               "MAX_SPEED": 180,
               "GAP_ACCELERATION": 10,
-              "speedometer": 70,
-              "counterKm": 4.8333335,
+              "speedometer": 30,
+              "counterKm": 4.1666665,
               "habilidadPiloto": 60
+            },
+            {
+              "BRAND": "Renaul",
+              "MODEL": "Clio",
+              "pegatinaGaraje": "Los Manquiñas",
+              "MAX_SPEED": 180,
+              "GAP_ACCELERATION": 10,
+              "speedometer": 10,
+              "counterKm": 1.0,
+              "habilidadPiloto": 62
             },
             {
               "BRAND": "Seat",
@@ -1499,24 +1378,12 @@
               "pegatinaGaraje": "Los Flipados",
               "MAX_SPEED": 180,
               "GAP_ACCELERATION": 10,
-              "speedometer": 10,
-              "counterKm": 0.5,
-              "habilidadPiloto": 37
+              "speedometer": 0,
+              "counterKm": 0.16666667,
+              "habilidadPiloto": 36
             }
           ],
           "podio": [
-            [
-              {
-                "BRAND": "Renaul",
-                "MODEL": "Clio",
-                "pegatinaGaraje": "Los Manquiñas",
-                "MAX_SPEED": 180,
-                "GAP_ACCELERATION": 10,
-                "speedometer": 40,
-                "counterKm": 4.5,
-                "habilidadPiloto": 65
-              }
-            ],
             [
               {
                 "BRAND": "Fiat",
@@ -1524,9 +1391,9 @@
                 "pegatinaGaraje": "Mancato",
                 "MAX_SPEED": 180,
                 "GAP_ACCELERATION": 10,
-                "speedometer": 0,
-                "counterKm": 0.6666667,
-                "habilidadPiloto": 51
+                "speedometer": 20,
+                "counterKm": 5.5,
+                "habilidadPiloto": 68
               }
             ],
             [
@@ -1536,9 +1403,21 @@
                 "pegatinaGaraje": "Lone Wolf",
                 "MAX_SPEED": 180,
                 "GAP_ACCELERATION": 10,
-                "speedometer": 70,
-                "counterKm": 4.8333335,
+                "speedometer": 30,
+                "counterKm": 4.1666665,
                 "habilidadPiloto": 60
+              }
+            ],
+            [
+              {
+                "BRAND": "Renaul",
+                "MODEL": "Clio",
+                "pegatinaGaraje": "Los Manquiñas",
+                "MAX_SPEED": 180,
+                "GAP_ACCELERATION": 10,
+                "speedometer": 10,
+                "counterKm": 1.0,
+                "habilidadPiloto": 62
               }
             ]
           ],
@@ -1558,9 +1437,9 @@
                   "pegatinaGaraje": "Los Manquiñas",
                   "MAX_SPEED": 180,
                   "GAP_ACCELERATION": 10,
-                  "speedometer": 40,
-                  "counterKm": 4.5,
-                  "habilidadPiloto": 65
+                  "speedometer": 10,
+                  "counterKm": 1.0,
+                  "habilidadPiloto": 62
                 },
                 {
                   "BRAND": "Ford",
@@ -1570,7 +1449,7 @@
                   "GAP_ACCELERATION": 10,
                   "speedometer": 0,
                   "counterKm": 0.0,
-                  "habilidadPiloto": 67
+                  "habilidadPiloto": 72
                 },
                 {
                   "BRAND": "Renaul",
@@ -1580,7 +1459,7 @@
                   "GAP_ACCELERATION": 10,
                   "speedometer": 0,
                   "counterKm": 0.0,
-                  "habilidadPiloto": 55
+                  "habilidadPiloto": 34
                 }
               ]
             },
@@ -1593,9 +1472,9 @@
                   "pegatinaGaraje": "Los Flipados",
                   "MAX_SPEED": 180,
                   "GAP_ACCELERATION": 10,
-                  "speedometer": 10,
-                  "counterKm": 0.5,
-                  "habilidadPiloto": 37
+                  "speedometer": 0,
+                  "counterKm": 0.16666667,
+                  "habilidadPiloto": 36
                 },
                 {
                   "BRAND": "Seat",
@@ -1605,7 +1484,7 @@
                   "GAP_ACCELERATION": 10,
                   "speedometer": 0,
                   "counterKm": 0.0,
-                  "habilidadPiloto": 36
+                  "habilidadPiloto": 90
                 },
                 {
                   "BRAND": "Seat",
@@ -1615,7 +1494,7 @@
                   "GAP_ACCELERATION": 10,
                   "speedometer": 0,
                   "counterKm": 0.0,
-                  "habilidadPiloto": 66
+                  "habilidadPiloto": 42
                 },
                 {
                   "BRAND": "Seat",
@@ -1625,7 +1504,7 @@
                   "GAP_ACCELERATION": 10,
                   "speedometer": 0,
                   "counterKm": 0.0,
-                  "habilidadPiloto": 31
+                  "habilidadPiloto": 53
                 },
                 {
                   "BRAND": "Seat",
@@ -1635,7 +1514,7 @@
                   "GAP_ACCELERATION": 10,
                   "speedometer": 0,
                   "counterKm": 0.0,
-                  "habilidadPiloto": 72
+                  "habilidadPiloto": 44
                 }
               ]
             },
@@ -1648,8 +1527,8 @@
                   "pegatinaGaraje": "Lone Wolf",
                   "MAX_SPEED": 180,
                   "GAP_ACCELERATION": 10,
-                  "speedometer": 70,
-                  "counterKm": 4.8333335,
+                  "speedometer": 30,
+                  "counterKm": 4.1666665,
                   "habilidadPiloto": 60
                 }
               ]
@@ -1663,9 +1542,9 @@
                   "pegatinaGaraje": "Mancato",
                   "MAX_SPEED": 180,
                   "GAP_ACCELERATION": 10,
-                  "speedometer": 0,
-                  "counterKm": 0.6666667,
-                  "habilidadPiloto": 51
+                  "speedometer": 20,
+                  "counterKm": 5.5,
+                  "habilidadPiloto": 68
                 },
                 {
                   "BRAND": "Fiat",
@@ -1673,9 +1552,9 @@
                   "pegatinaGaraje": "Mancato",
                   "MAX_SPEED": 180,
                   "GAP_ACCELERATION": 10,
-                  "speedometer": 90,
-                  "counterKm": 210.49997,
-                  "habilidadPiloto": 49
+                  "speedometer": 10,
+                  "counterKm": 24.833326,
+                  "habilidadPiloto": 30
                 },
                 {
                   "BRAND": "Fiat",
@@ -1683,22 +1562,32 @@
                   "pegatinaGaraje": "Mancato",
                   "MAX_SPEED": 180,
                   "GAP_ACCELERATION": 10,
-                  "speedometer": 170,
-                  "counterKm": 479.5001,
-                  "habilidadPiloto": 77
+                  "speedometer": 0,
+                  "counterKm": 18.166664,
+                  "habilidadPiloto": 35
                 }
               ]
             }
           ],
           "coches": [
             {
+              "BRAND": "Fiat",
+              "MODEL": "500",
+              "pegatinaGaraje": "Mancato",
+              "MAX_SPEED": 180,
+              "GAP_ACCELERATION": 10,
+              "speedometer": 20,
+              "counterKm": 5.5,
+              "habilidadPiloto": 68
+            },
+            {
               "BRAND": "5-Ferrari",
               "MODEL": "F50",
               "pegatinaGaraje": "Lone Wolf",
               "MAX_SPEED": 180,
               "GAP_ACCELERATION": 10,
-              "speedometer": 70,
-              "counterKm": 4.8333335,
+              "speedometer": 30,
+              "counterKm": 4.1666665,
               "habilidadPiloto": 60
             },
             {
@@ -1707,19 +1596,9 @@
               "pegatinaGaraje": "Los Manquiñas",
               "MAX_SPEED": 180,
               "GAP_ACCELERATION": 10,
-              "speedometer": 40,
-              "counterKm": 4.5,
-              "habilidadPiloto": 65
-            },
-            {
-              "BRAND": "Fiat",
-              "MODEL": "500",
-              "pegatinaGaraje": "Mancato",
-              "MAX_SPEED": 180,
-              "GAP_ACCELERATION": 10,
-              "speedometer": 0,
-              "counterKm": 0.6666667,
-              "habilidadPiloto": 51
+              "speedometer": 10,
+              "counterKm": 1.0,
+              "habilidadPiloto": 62
             },
             {
               "BRAND": "Seat",
@@ -1727,12 +1606,24 @@
               "pegatinaGaraje": "Los Flipados",
               "MAX_SPEED": 180,
               "GAP_ACCELERATION": 10,
-              "speedometer": 10,
-              "counterKm": 0.5,
-              "habilidadPiloto": 37
+              "speedometer": 0,
+              "counterKm": 0.16666667,
+              "habilidadPiloto": 36
             }
           ],
           "podio": [
+            [
+              {
+                "BRAND": "Fiat",
+                "MODEL": "500",
+                "pegatinaGaraje": "Mancato",
+                "MAX_SPEED": 180,
+                "GAP_ACCELERATION": 10,
+                "speedometer": 20,
+                "counterKm": 5.5,
+                "habilidadPiloto": 68
+              }
+            ],
             [
               {
                 "BRAND": "5-Ferrari",
@@ -1740,8 +1631,8 @@
                 "pegatinaGaraje": "Lone Wolf",
                 "MAX_SPEED": 180,
                 "GAP_ACCELERATION": 10,
-                "speedometer": 70,
-                "counterKm": 4.8333335,
+                "speedometer": 30,
+                "counterKm": 4.1666665,
                 "habilidadPiloto": 60
               }
             ],
@@ -1752,21 +1643,9 @@
                 "pegatinaGaraje": "Los Manquiñas",
                 "MAX_SPEED": 180,
                 "GAP_ACCELERATION": 10,
-                "speedometer": 40,
-                "counterKm": 4.5,
-                "habilidadPiloto": 65
-              }
-            ],
-            [
-              {
-                "BRAND": "Fiat",
-                "MODEL": "500",
-                "pegatinaGaraje": "Mancato",
-                "MAX_SPEED": 180,
-                "GAP_ACCELERATION": 10,
-                "speedometer": 0,
-                "counterKm": 0.6666667,
-                "habilidadPiloto": 51
+                "speedometer": 10,
+                "counterKm": 1.0,
+                "habilidadPiloto": 62
               }
             ]
           ],
@@ -1784,9 +1663,9 @@
               "pegatinaGaraje": "Los Manquiñas",
               "MAX_SPEED": 180,
               "GAP_ACCELERATION": 10,
-              "speedometer": 40,
-              "counterKm": 4.5,
-              "habilidadPiloto": 65
+              "speedometer": 10,
+              "counterKm": 1.0,
+              "habilidadPiloto": 62
             },
             {
               "BRAND": "Ford",
@@ -1796,7 +1675,7 @@
               "GAP_ACCELERATION": 10,
               "speedometer": 0,
               "counterKm": 0.0,
-              "habilidadPiloto": 67
+              "habilidadPiloto": 72
             },
             {
               "BRAND": "Renaul",
@@ -1806,7 +1685,7 @@
               "GAP_ACCELERATION": 10,
               "speedometer": 0,
               "counterKm": 0.0,
-              "habilidadPiloto": 55
+              "habilidadPiloto": 34
             }
           ]
         },
@@ -1819,9 +1698,9 @@
               "pegatinaGaraje": "Los Flipados",
               "MAX_SPEED": 180,
               "GAP_ACCELERATION": 10,
-              "speedometer": 10,
-              "counterKm": 0.5,
-              "habilidadPiloto": 37
+              "speedometer": 0,
+              "counterKm": 0.16666667,
+              "habilidadPiloto": 36
             },
             {
               "BRAND": "Seat",
@@ -1831,7 +1710,7 @@
               "GAP_ACCELERATION": 10,
               "speedometer": 0,
               "counterKm": 0.0,
-              "habilidadPiloto": 36
+              "habilidadPiloto": 90
             },
             {
               "BRAND": "Seat",
@@ -1841,7 +1720,7 @@
               "GAP_ACCELERATION": 10,
               "speedometer": 0,
               "counterKm": 0.0,
-              "habilidadPiloto": 66
+              "habilidadPiloto": 42
             },
             {
               "BRAND": "Seat",
@@ -1851,7 +1730,7 @@
               "GAP_ACCELERATION": 10,
               "speedometer": 0,
               "counterKm": 0.0,
-              "habilidadPiloto": 31
+              "habilidadPiloto": 53
             },
             {
               "BRAND": "Seat",
@@ -1861,7 +1740,7 @@
               "GAP_ACCELERATION": 10,
               "speedometer": 0,
               "counterKm": 0.0,
-              "habilidadPiloto": 72
+              "habilidadPiloto": 44
             }
           ]
         },
@@ -1874,8 +1753,8 @@
               "pegatinaGaraje": "Lone Wolf",
               "MAX_SPEED": 180,
               "GAP_ACCELERATION": 10,
-              "speedometer": 70,
-              "counterKm": 4.8333335,
+              "speedometer": 30,
+              "counterKm": 4.1666665,
               "habilidadPiloto": 60
             }
           ]
@@ -1889,9 +1768,9 @@
               "pegatinaGaraje": "Mancato",
               "MAX_SPEED": 180,
               "GAP_ACCELERATION": 10,
-              "speedometer": 0,
-              "counterKm": 0.6666667,
-              "habilidadPiloto": 51
+              "speedometer": 20,
+              "counterKm": 5.5,
+              "habilidadPiloto": 68
             },
             {
               "BRAND": "Fiat",
@@ -1899,9 +1778,9 @@
               "pegatinaGaraje": "Mancato",
               "MAX_SPEED": 180,
               "GAP_ACCELERATION": 10,
-              "speedometer": 90,
-              "counterKm": 210.49997,
-              "habilidadPiloto": 49
+              "speedometer": 10,
+              "counterKm": 24.833326,
+              "habilidadPiloto": 30
             },
             {
               "BRAND": "Fiat",
@@ -1909,21 +1788,93 @@
               "pegatinaGaraje": "Mancato",
               "MAX_SPEED": 180,
               "GAP_ACCELERATION": 10,
-              "speedometer": 170,
-              "counterKm": 479.5001,
-              "habilidadPiloto": 77
+              "speedometer": 0,
+              "counterKm": 18.166664,
+              "habilidadPiloto": 35
             }
           ]
         }
       ],
-      "puntuacionCoches": {
-        "Coche [BRAND\u003d5-Ferrari, MODEL\u003dF50, counterKm\u003d4.8333335, garaje\u003dLone Wolf habilidadPiloto\u003d60]\n": 175,
-        "Coche [BRAND\u003dFiat, MODEL\u003d600, counterKm\u003d210.49997, garaje\u003dMancato habilidadPiloto\u003d49]\n": 50,
-        "Coche [BRAND\u003dFiat, MODEL\u003d500, counterKm\u003d0.6666667, garaje\u003dMancato habilidadPiloto\u003d51]\n": 100,
-        "Coche [BRAND\u003dFiat, MODEL\u003d700, counterKm\u003d479.5001, garaje\u003dMancato habilidadPiloto\u003d77]\n": 100,
-        "Coche [BRAND\u003dRenaul, MODEL\u003dClio, counterKm\u003d4.5, garaje\u003dLos Manquiñas habilidadPiloto\u003d65]\n": 250,
-        "Coche [BRAND\u003dSeat, MODEL\u003dF1, counterKm\u003d0.5, garaje\u003dLos Flipados habilidadPiloto\u003d37]\n": 25
-      },
+      "puntuacionCoches": [
+        {
+          "coche": {
+            "BRAND": "Fiat",
+            "MODEL": "500",
+            "pegatinaGaraje": "Mancato",
+            "MAX_SPEED": 180,
+            "GAP_ACCELERATION": 10,
+            "speedometer": 20,
+            "counterKm": 5.5,
+            "habilidadPiloto": 68
+          },
+          "puntos": 300
+        },
+        {
+          "coche": {
+            "BRAND": "5-Ferrari",
+            "MODEL": "F50",
+            "pegatinaGaraje": "Lone Wolf",
+            "MAX_SPEED": 180,
+            "GAP_ACCELERATION": 10,
+            "speedometer": 30,
+            "counterKm": 4.1666665,
+            "habilidadPiloto": 60
+          },
+          "puntos": 200
+        },
+        {
+          "coche": {
+            "BRAND": "Renaul",
+            "MODEL": "Clio",
+            "pegatinaGaraje": "Los Manquiñas",
+            "MAX_SPEED": 180,
+            "GAP_ACCELERATION": 10,
+            "speedometer": 10,
+            "counterKm": 1.0,
+            "habilidadPiloto": 62
+          },
+          "puntos": 100
+        },
+        {
+          "coche": {
+            "BRAND": "Fiat",
+            "MODEL": "600",
+            "pegatinaGaraje": "Mancato",
+            "MAX_SPEED": 180,
+            "GAP_ACCELERATION": 10,
+            "speedometer": 10,
+            "counterKm": 24.833326,
+            "habilidadPiloto": 30
+          },
+          "puntos": 50
+        },
+        {
+          "coche": {
+            "BRAND": "Seat",
+            "MODEL": "F1",
+            "pegatinaGaraje": "Los Flipados",
+            "MAX_SPEED": 180,
+            "GAP_ACCELERATION": 10,
+            "speedometer": 0,
+            "counterKm": 0.16666667,
+            "habilidadPiloto": 36
+          },
+          "puntos": 25
+        },
+        {
+          "coche": {
+            "BRAND": "Fiat",
+            "MODEL": "700",
+            "pegatinaGaraje": "Mancato",
+            "MAX_SPEED": 180,
+            "GAP_ACCELERATION": 10,
+            "speedometer": 0,
+            "counterKm": 18.166664,
+            "habilidadPiloto": 35
+          },
+          "puntos": 25
+        }
+      ],
       "torneoFinalizado": true,
       "puntosPodio": [
         100,

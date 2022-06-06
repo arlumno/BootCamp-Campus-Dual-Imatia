@@ -69,7 +69,7 @@ public class Menu {
 					} else {
 						error = false;
 					}
-				} catch (InputMismatchException e) {
+				} catch (NumberFormatException e) {
 					error = true;
 				}
 				if (error) {
