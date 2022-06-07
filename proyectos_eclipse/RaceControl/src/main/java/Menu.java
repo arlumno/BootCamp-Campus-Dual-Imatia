@@ -4,6 +4,11 @@ import java.util.Scanner;
 
 import Excepciones.IncompleteException;
 
+
+/**
+ * @author Ar
+ *
+ */
 public class Menu {
 	Control control;
 	Scanner lector;
@@ -18,6 +23,9 @@ public class Menu {
 		this(true);
 	}
 
+	/**
+	 * @param infinito a True el menú se repite tras elegir opciones, hasta selecionar "0". \n False el menú aparece una sola vez.
+	 */
 	public Menu(boolean infinito) {
 		this.infinito = infinito;
 		addOpcion("Salir", this::salir);
@@ -29,6 +37,10 @@ public class Menu {
 
 	public void setSubTitulo(String subTitulo) {
 		this.subTitulo = subTitulo;
+	}
+
+	public int getSeleccion() {
+		return seleccion;
 	}
 
 	public void run() {
@@ -84,7 +96,12 @@ public class Menu {
 			if (seleccion == 0 || !infinito) {
 				continuar = false;
 			} else {
-				System.out.println(">> Pulse ENTER para continuar");
+				try {
+					Thread.sleep(50);
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
+				System.err.println(">> Pulse ENTER para continuar");
 				lector.nextLine();
 			}
 
@@ -104,10 +121,15 @@ public class Menu {
 		opciones.add(opcion);
 		accionOpciones.add(accion);
 	}
+	public void resetOptions() {
+		opciones.clear();
+		accionOpciones.clear();
+		addOpcion("Salir", this::salir);
 
+	}
 	private void limpiarConsola() {
 		StringBuilder saltos = new StringBuilder();
-		int nSaltos = 20;
+		int nSaltos = 50;
 		for (int i = 0; i < nSaltos; i++) {
 			saltos.append("\n");
 		}

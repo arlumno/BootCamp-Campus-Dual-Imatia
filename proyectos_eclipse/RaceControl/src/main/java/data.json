@@ -1,41 +1,157 @@
 {
-  "coches": [],
-  "garajes": [
+  "coches": [
     {
-      "NOMBRE": "Los Manquiñas",
-      "coches": [
-        {
-          "BRAND": "Renaul",
-          "MODEL": "Clio",
-          "pegatinaGaraje": "Los Manquiñas",
-          "MAX_SPEED": 180,
-          "GAP_ACCELERATION": 10,
-          "speedometer": 10,
-          "counterKm": 1.0,
-          "habilidadPiloto": 62
-        },
-        {
-          "BRAND": "Ford",
-          "MODEL": "Fiesta",
-          "pegatinaGaraje": "Los Manquiñas",
-          "MAX_SPEED": 180,
-          "GAP_ACCELERATION": 10,
-          "speedometer": 0,
-          "counterKm": 0.0,
-          "habilidadPiloto": 72
-        },
-        {
-          "BRAND": "Renaul",
-          "MODEL": "Traffic",
-          "pegatinaGaraje": "Los Manquiñas",
-          "MAX_SPEED": 180,
-          "GAP_ACCELERATION": 10,
-          "speedometer": 0,
-          "counterKm": 0.0,
-          "habilidadPiloto": 34
-        }
-      ]
+      "BRAND": "Renaul",
+      "MODEL": "Clio",
+      "pegatinaGaraje": "Los Manquiñas",
+      "MAX_SPEED": 180,
+      "GAP_ACCELERATION": 10,
+      "speedometer": 10,
+      "counterKm": 1.0,
+      "habilidadPiloto": 62
     },
+    {
+      "BRAND": "Ford",
+      "MODEL": "Fiesta",
+      "pegatinaGaraje": "Los Manquiñas",
+      "MAX_SPEED": 180,
+      "GAP_ACCELERATION": 10,
+      "speedometer": 0,
+      "counterKm": 0.0,
+      "habilidadPiloto": 72
+    },
+    {
+      "BRAND": "Renaul",
+      "MODEL": "Traffic",
+      "pegatinaGaraje": "Los Manquiñas",
+      "MAX_SPEED": 180,
+      "GAP_ACCELERATION": 10,
+      "speedometer": 0,
+      "counterKm": 0.0,
+      "habilidadPiloto": 34
+    },
+    {
+      "BRAND": "Seat",
+      "MODEL": "F1",
+      "pegatinaGaraje": "Los Flipados",
+      "MAX_SPEED": 180,
+      "GAP_ACCELERATION": 10,
+      "speedometer": 0,
+      "counterKm": 0.16666667,
+      "habilidadPiloto": 36
+    },
+    {
+      "BRAND": "Seat",
+      "MODEL": "F2",
+      "pegatinaGaraje": "Los Flipados",
+      "MAX_SPEED": 180,
+      "GAP_ACCELERATION": 10,
+      "speedometer": 0,
+      "counterKm": 0.0,
+      "habilidadPiloto": 90
+    },
+    {
+      "BRAND": "Seat",
+      "MODEL": "F3",
+      "pegatinaGaraje": "Los Flipados",
+      "MAX_SPEED": 180,
+      "GAP_ACCELERATION": 10,
+      "speedometer": 0,
+      "counterKm": 0.0,
+      "habilidadPiloto": 42
+    },
+    {
+      "BRAND": "Seat",
+      "MODEL": "F4",
+      "pegatinaGaraje": "Los Flipados",
+      "MAX_SPEED": 180,
+      "GAP_ACCELERATION": 10,
+      "speedometer": 0,
+      "counterKm": 0.0,
+      "habilidadPiloto": 53
+    },
+    {
+      "BRAND": "Seat",
+      "MODEL": "F5",
+      "pegatinaGaraje": "Los Flipados",
+      "MAX_SPEED": 180,
+      "GAP_ACCELERATION": 10,
+      "speedometer": 0,
+      "counterKm": 0.0,
+      "habilidadPiloto": 44
+    },
+    {
+      "BRAND": "5-Ferrari",
+      "MODEL": "F50",
+      "pegatinaGaraje": "Lone Wolf",
+      "MAX_SPEED": 180,
+      "GAP_ACCELERATION": 10,
+      "speedometer": 30,
+      "counterKm": 4.1666665,
+      "habilidadPiloto": 60
+    },
+    {
+      "BRAND": "Fiat",
+      "MODEL": "500",
+      "pegatinaGaraje": "Mancato",
+      "MAX_SPEED": 180,
+      "GAP_ACCELERATION": 10,
+      "speedometer": 20,
+      "counterKm": 5.5,
+      "habilidadPiloto": 68
+    },
+    {
+      "BRAND": "Fiat",
+      "MODEL": "600",
+      "pegatinaGaraje": "Mancato",
+      "MAX_SPEED": 180,
+      "GAP_ACCELERATION": 10,
+      "speedometer": 10,
+      "counterKm": 24.833326,
+      "habilidadPiloto": 30
+    },
+    {
+      "BRAND": "Fiat",
+      "MODEL": "700",
+      "pegatinaGaraje": "Mancato",
+      "MAX_SPEED": 180,
+      "GAP_ACCELERATION": 10,
+      "speedometer": 0,
+      "counterKm": 18.166664,
+      "habilidadPiloto": 35
+    },
+    {
+      "BRAND": "Ford",
+      "MODEL": "Mustang",
+      "pegatinaGaraje": "Fordinans",
+      "MAX_SPEED": 180,
+      "GAP_ACCELERATION": 10,
+      "speedometer": 0,
+      "counterKm": 0.0,
+      "habilidadPiloto": 86
+    },
+    {
+      "BRAND": "Ford",
+      "MODEL": "Mondeo",
+      "pegatinaGaraje": "Fordinans",
+      "MAX_SPEED": 180,
+      "GAP_ACCELERATION": 10,
+      "speedometer": 0,
+      "counterKm": 0.0,
+      "habilidadPiloto": 53
+    },
+    {
+      "BRAND": "Ford",
+      "MODEL": "Kuga",
+      "pegatinaGaraje": "Fordinans",
+      "MAX_SPEED": 180,
+      "GAP_ACCELERATION": 10,
+      "speedometer": 0,
+      "counterKm": 0.0,
+      "habilidadPiloto": 40
+    }
+  ],
+  "garajes": [
     {
       "NOMBRE": "Los Flipados",
       "coches": [
@@ -88,21 +204,6 @@
           "speedometer": 0,
           "counterKm": 0.0,
           "habilidadPiloto": 44
-        }
-      ]
-    },
-    {
-      "NOMBRE": "Lone Wolf",
-      "coches": [
-        {
-          "BRAND": "5-Ferrari",
-          "MODEL": "F50",
-          "pegatinaGaraje": "Lone Wolf",
-          "MAX_SPEED": 180,
-          "GAP_ACCELERATION": 10,
-          "speedometer": 30,
-          "counterKm": 4.1666665,
-          "habilidadPiloto": 60
         }
       ]
     },
@@ -893,6 +994,110 @@
         ]
       ],
       "carreraFinalizada": true,
+      "puestosPodio": 3
+    },
+    {
+      "NOMBRE": "Ruta99",
+      "DURACION_MINUTOS": 180,
+      "garajes": [],
+      "coches": [],
+      "podio": [],
+      "carreraFinalizada": false,
+      "puestosPodio": 3
+    },
+    {
+      "NOMBRE": "Los 100m de Indunápolis",
+      "DURACION_MINUTOS": 180,
+      "garajes": [
+        {
+          "NOMBRE": "Fordinans",
+          "coches": [
+            {
+              "BRAND": "Ford",
+              "MODEL": "Mustang",
+              "pegatinaGaraje": "Fordinans",
+              "MAX_SPEED": 180,
+              "GAP_ACCELERATION": 10,
+              "speedometer": 0,
+              "counterKm": 0.0,
+              "habilidadPiloto": 86
+            },
+            {
+              "BRAND": "Ford",
+              "MODEL": "Mondeo",
+              "pegatinaGaraje": "Fordinans",
+              "MAX_SPEED": 180,
+              "GAP_ACCELERATION": 10,
+              "speedometer": 0,
+              "counterKm": 0.0,
+              "habilidadPiloto": 53
+            },
+            {
+              "BRAND": "Ford",
+              "MODEL": "Kuga",
+              "pegatinaGaraje": "Fordinans",
+              "MAX_SPEED": 180,
+              "GAP_ACCELERATION": 10,
+              "speedometer": 0,
+              "counterKm": 0.0,
+              "habilidadPiloto": 40
+            }
+          ]
+        },
+        {
+          "NOMBRE": "Lone Wolf",
+          "coches": [
+            {
+              "BRAND": "5-Ferrari",
+              "MODEL": "F50",
+              "pegatinaGaraje": "Lone Wolf",
+              "MAX_SPEED": 180,
+              "GAP_ACCELERATION": 10,
+              "speedometer": 30,
+              "counterKm": 4.1666665,
+              "habilidadPiloto": 60
+            }
+          ]
+        },
+        {
+          "NOMBRE": "Los Manquiñas",
+          "coches": [
+            {
+              "BRAND": "Renaul",
+              "MODEL": "Clio",
+              "pegatinaGaraje": "Los Manquiñas",
+              "MAX_SPEED": 180,
+              "GAP_ACCELERATION": 10,
+              "speedometer": 10,
+              "counterKm": 1.0,
+              "habilidadPiloto": 62
+            },
+            {
+              "BRAND": "Ford",
+              "MODEL": "Fiesta",
+              "pegatinaGaraje": "Los Manquiñas",
+              "MAX_SPEED": 180,
+              "GAP_ACCELERATION": 10,
+              "speedometer": 0,
+              "counterKm": 0.0,
+              "habilidadPiloto": 72
+            },
+            {
+              "BRAND": "Renaul",
+              "MODEL": "Traffic",
+              "pegatinaGaraje": "Los Manquiñas",
+              "MAX_SPEED": 180,
+              "GAP_ACCELERATION": 10,
+              "speedometer": 0,
+              "counterKm": 0.0,
+              "habilidadPiloto": 34
+            }
+          ]
+        }
+      ],
+      "coches": [],
+      "podio": [],
+      "carreraFinalizada": false,
       "puestosPodio": 3
     }
   ],
@@ -1876,6 +2081,210 @@
         }
       ],
       "torneoFinalizado": true,
+      "puntosPodio": [
+        100,
+        50,
+        25
+      ],
+      "premioEuros": 100000
+    },
+    {
+      "NOMBRE": "Maratonton",
+      "carreras": [
+        {
+          "NOMBRE": "Ruta99",
+          "DURACION_MINUTOS": 180,
+          "garajes": [],
+          "coches": [],
+          "podio": [],
+          "carreraFinalizada": false,
+          "puestosPodio": 3
+        },
+        {
+          "NOMBRE": "Los 100m de Indunápolis",
+          "DURACION_MINUTOS": 180,
+          "garajes": [
+            {
+              "NOMBRE": "Fordinans",
+              "coches": [
+                {
+                  "BRAND": "Ford",
+                  "MODEL": "Mustang",
+                  "pegatinaGaraje": "Fordinans",
+                  "MAX_SPEED": 180,
+                  "GAP_ACCELERATION": 10,
+                  "speedometer": 0,
+                  "counterKm": 0.0,
+                  "habilidadPiloto": 86
+                },
+                {
+                  "BRAND": "Ford",
+                  "MODEL": "Mondeo",
+                  "pegatinaGaraje": "Fordinans",
+                  "MAX_SPEED": 180,
+                  "GAP_ACCELERATION": 10,
+                  "speedometer": 0,
+                  "counterKm": 0.0,
+                  "habilidadPiloto": 53
+                },
+                {
+                  "BRAND": "Ford",
+                  "MODEL": "Kuga",
+                  "pegatinaGaraje": "Fordinans",
+                  "MAX_SPEED": 180,
+                  "GAP_ACCELERATION": 10,
+                  "speedometer": 0,
+                  "counterKm": 0.0,
+                  "habilidadPiloto": 40
+                }
+              ]
+            },
+            {
+              "NOMBRE": "Lone Wolf",
+              "coches": [
+                {
+                  "BRAND": "5-Ferrari",
+                  "MODEL": "F50",
+                  "pegatinaGaraje": "Lone Wolf",
+                  "MAX_SPEED": 180,
+                  "GAP_ACCELERATION": 10,
+                  "speedometer": 30,
+                  "counterKm": 4.1666665,
+                  "habilidadPiloto": 60
+                }
+              ]
+            },
+            {
+              "NOMBRE": "Los Manquiñas",
+              "coches": [
+                {
+                  "BRAND": "Renaul",
+                  "MODEL": "Clio",
+                  "pegatinaGaraje": "Los Manquiñas",
+                  "MAX_SPEED": 180,
+                  "GAP_ACCELERATION": 10,
+                  "speedometer": 10,
+                  "counterKm": 1.0,
+                  "habilidadPiloto": 62
+                },
+                {
+                  "BRAND": "Ford",
+                  "MODEL": "Fiesta",
+                  "pegatinaGaraje": "Los Manquiñas",
+                  "MAX_SPEED": 180,
+                  "GAP_ACCELERATION": 10,
+                  "speedometer": 0,
+                  "counterKm": 0.0,
+                  "habilidadPiloto": 72
+                },
+                {
+                  "BRAND": "Renaul",
+                  "MODEL": "Traffic",
+                  "pegatinaGaraje": "Los Manquiñas",
+                  "MAX_SPEED": 180,
+                  "GAP_ACCELERATION": 10,
+                  "speedometer": 0,
+                  "counterKm": 0.0,
+                  "habilidadPiloto": 34
+                }
+              ]
+            }
+          ],
+          "coches": [],
+          "podio": [],
+          "carreraFinalizada": false,
+          "puestosPodio": 3
+        }
+      ],
+      "garajes": [
+        {
+          "NOMBRE": "Fordinans",
+          "coches": [
+            {
+              "BRAND": "Ford",
+              "MODEL": "Mustang",
+              "pegatinaGaraje": "Fordinans",
+              "MAX_SPEED": 180,
+              "GAP_ACCELERATION": 10,
+              "speedometer": 0,
+              "counterKm": 0.0,
+              "habilidadPiloto": 86
+            },
+            {
+              "BRAND": "Ford",
+              "MODEL": "Mondeo",
+              "pegatinaGaraje": "Fordinans",
+              "MAX_SPEED": 180,
+              "GAP_ACCELERATION": 10,
+              "speedometer": 0,
+              "counterKm": 0.0,
+              "habilidadPiloto": 53
+            },
+            {
+              "BRAND": "Ford",
+              "MODEL": "Kuga",
+              "pegatinaGaraje": "Fordinans",
+              "MAX_SPEED": 180,
+              "GAP_ACCELERATION": 10,
+              "speedometer": 0,
+              "counterKm": 0.0,
+              "habilidadPiloto": 40
+            }
+          ]
+        },
+        {
+          "NOMBRE": "Lone Wolf",
+          "coches": [
+            {
+              "BRAND": "5-Ferrari",
+              "MODEL": "F50",
+              "pegatinaGaraje": "Lone Wolf",
+              "MAX_SPEED": 180,
+              "GAP_ACCELERATION": 10,
+              "speedometer": 30,
+              "counterKm": 4.1666665,
+              "habilidadPiloto": 60
+            }
+          ]
+        },
+        {
+          "NOMBRE": "Los Manquiñas",
+          "coches": [
+            {
+              "BRAND": "Renaul",
+              "MODEL": "Clio",
+              "pegatinaGaraje": "Los Manquiñas",
+              "MAX_SPEED": 180,
+              "GAP_ACCELERATION": 10,
+              "speedometer": 10,
+              "counterKm": 1.0,
+              "habilidadPiloto": 62
+            },
+            {
+              "BRAND": "Ford",
+              "MODEL": "Fiesta",
+              "pegatinaGaraje": "Los Manquiñas",
+              "MAX_SPEED": 180,
+              "GAP_ACCELERATION": 10,
+              "speedometer": 0,
+              "counterKm": 0.0,
+              "habilidadPiloto": 72
+            },
+            {
+              "BRAND": "Renaul",
+              "MODEL": "Traffic",
+              "pegatinaGaraje": "Los Manquiñas",
+              "MAX_SPEED": 180,
+              "GAP_ACCELERATION": 10,
+              "speedometer": 0,
+              "counterKm": 0.0,
+              "habilidadPiloto": 34
+            }
+          ]
+        }
+      ],
+      "puntuacionCoches": [],
+      "torneoFinalizado": false,
       "puntosPodio": [
         100,
         50,

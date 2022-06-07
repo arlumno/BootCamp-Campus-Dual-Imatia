@@ -1,7 +1,6 @@
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -41,13 +40,16 @@ public class App {
 		menu.setTitulo("RaceControl");
 		menu.addOpcion("Iniciar Torneo", appAcciones::iniciarTorneo);
 		menu.addOpcion("Crear Coche", appAcciones::crearCoche);
-		menu.addOpcion("Listar Coches", appAcciones::listarCoches);
 		menu.addOpcion("Crear Garaje", appAcciones::crearGaraje);
+		menu.addOpcion("Crear Carrera", appAcciones::crearCarrera);
+		menu.addOpcion("Crear Torneo", appAcciones::crearTorneo);		
+		menu.addOpcion("Listar Coches", appAcciones::listarCoches);
 		menu.addOpcion("Listar Garajes", appAcciones::listarGarajes);
-		menu.addOpcion("Crear carrera", appAcciones::crearCarrera);
-		menu.addOpcion("Listar carreras", appAcciones::listarCarreras);
-		menu.addOpcion("Crear torneo", appAcciones::crearTorneo);
-		menu.addOpcion("Listar torneos", appAcciones::listarTorneos);
+		menu.addOpcion("Listar Carreras", appAcciones::listarCarreras);
+		menu.addOpcion("Listar Torneos", appAcciones::listarTorneos);
+		menu.addOpcion("Asignar Coche a Garaje", appAcciones::addCocheGaraje);
+		menu.addOpcion("Asignar Garaje a Carrera", appAcciones::addGarajeCarrera);
+		menu.addOpcion("Añadir Carrera a Torneo", appAcciones::addCarreraTorneo);
 		menu.addOpcion("Resetear Aplicación", control::resetAndLoadDefault);
 		menu.run();
 

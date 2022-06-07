@@ -29,11 +29,55 @@ public class Control {
 		return resultado;
 	}
 
-	public void listarTorneos() {
-		System.out.println("Resultado Torneos (" + torneos.size() + "):");
-		for (Torneo torneo : torneos) {
-			System.out.println(torneo.mostrarPuntuacionesCoches());
+	public void addCocheGaraje(Garaje garaje, Coche coche) {
+		garaje.addCoche(coche);
+	}
+
+	public void addGarajeCarrera(Carrera carrera, Garaje garaje) {
+		carrera.addGaraje(garaje);
+	}
+
+	public void addCarreraTorneo(Torneo torneo, Carrera carrera) {
+		torneo.addCarrera(carrera);
+	}
+
+	public List<Carrera> getCarrerasPendientes() {
+		List<Carrera> carrerasPendientes = new ArrayList<>();
+		for (Carrera carrera : carreras) {
+			if (!carrera.isCarreraFinalizada()) {
+				carrerasPendientes.add(carrera);
+			}
 		}
+		return carrerasPendientes;
+	}
+
+	public List<Carrera> getCarrerasSinAsignar() {
+		List<Carrera> carrerasAsignables = new ArrayList<>();
+		boolean valido;
+		for (Carrera carrera : carreras) {
+			valido = true;
+			if (!carrera.isCarreraFinalizada()) {
+				for (Torneo torneo : torneos) {
+					if (torneo.getCarreras().contains(carrera)) {
+						valido = false;
+					}
+				}
+				if (valido) {
+					carrerasAsignables.add(carrera);
+				}
+			}
+		}
+		return carrerasAsignables;
+	}
+
+	public List<Coche> getCochesSinAsignar() {
+		List<Coche> cochesSinAsignar = new ArrayList<>();
+		for (Coche coche : coches) {
+			if (coche.getPegatinaGaraje().equals("")) {
+				cochesSinAsignar.add(coche);
+			}
+		}
+		return cochesSinAsignar;
 	}
 
 	public boolean addCarrera(Carrera carrera) {
@@ -56,13 +100,6 @@ public class Control {
 		return resultado;
 	}
 
-	public void listarGarajes() {
-		System.out.println("Garajes: (" + garajes.size() + "):");
-		for (Garaje garaje : garajes) {
-			System.out.println(garaje.toString());
-		}
-	}
-
 	public boolean addCoche(Coche coche) {
 		boolean resultado = true;
 		if (coches.contains(coche)) {
@@ -73,11 +110,66 @@ public class Control {
 		return resultado;
 	}
 
-	public void listarCoches() {
-		System.out.println("Coches: (" + coches.size() + "):");
+	public String listarCoches() {
+		StringBuilder texto = new StringBuilder();
+		texto.append("\nCoches: (" + coches.size() + "):\n");
 		for (Coche coche : coches) {
-			System.out.println(coche.toString());
+			texto.append("\n" + coche.getBRAND() + " - " + coche.getMODEL() + " (" + coche.getPegatinaGaraje() + ")");
 		}
+		return texto.toString();
+	}
+
+	public String listarGarajes() {
+		StringBuilder texto = new StringBuilder();
+		texto.append("\nGarajes: (" + garajes.size() + "):\n");
+		for (Garaje garaje : garajes) {
+			texto.append("\n\n" + garaje.getNOMBRE());
+			if (garaje.getCoches().isEmpty()) {
+				texto.append("\n Sin Coches inscritos.");
+			} else {
+				for (Coche coche : garaje.getCoches()) {
+					texto.append("\n\t" + coche.getBRAND() + " - " + coche.getMODEL());
+				}
+			}
+		}
+		return texto.toString();
+	}
+
+	public String listarCarreras() {
+		StringBuilder texto = new StringBuilder();
+		texto.append("\nCarreras: (" + carreras.size() + "):\n");
+		for (Carrera carrera : carreras) {
+			texto.append("\n\n" + carrera.getNOMBRE());
+			texto.append("\n Tipo: " + carrera.getTipo());
+			texto.append("\n Finalizada: " + carrera.isCarreraFinalizada());
+			if (carrera.getGarajes().isEmpty()) {
+				texto.append("\n Sin garajes participantes.");
+			} else {
+				texto.append("\n Garajes participantes:");
+				for (Garaje garaje : carrera.getGarajes()) {
+					texto.append("\n\t" + garaje.getNOMBRE());
+				}
+			}
+		}
+		return texto.toString();
+	}
+
+	public String listarTorneos() {
+		StringBuilder texto = new StringBuilder();
+		texto.append("\nTorneos: (" + torneos.size() + "):\n");
+		for (Torneo torneo : torneos) {
+			texto.append("\n\n" + torneo.getNOMBRE());
+			texto.append("\n Finalizada: " + torneo.isTorneoFinalizado());
+			texto.append("\n Carreras que lo componen:");
+			if (torneo.getCarreras().isEmpty()) {
+				texto.append("\n Sin carreras asignadas.");
+			} else {
+				for (Carrera carrera : torneo.getCarreras()) {
+					texto.append("\n\t" + carrera.getNOMBRE());
+				}
+			}
+		}
+		return texto.toString();
 	}
 
 	public void mostrarResultadoTorneo(int index) {
@@ -135,30 +227,30 @@ public class Control {
 
 	public void syncAllReferences() {
 
-		for(Garaje garaje: garajes) {
+		for (Garaje garaje : garajes) {
 			garaje.syncReferences(coches);
 		}
-		
-		for(Carrera carrera: carreras) {
-			carrera.syncReferences(garajes,coches);
+
+		for (Carrera carrera : carreras) {
+			carrera.syncReferences(garajes, coches);
 		}
-		
-		for(Torneo torneo: torneos) {
-			torneo.syncReferences(carreras, garajes,coches);
+
+		for (Torneo torneo : torneos) {
+			torneo.syncReferences(carreras, garajes, coches);
 		}
 		System.err.println(">> Referencias sincronizadads");
 	}
-	
+
 	public static <T> void syncReferences(List<T> listMain, List<T> listToUpdateReferences) {
-		for(int i = 0; i < listToUpdateReferences.size();i++) {
-			if(listMain.contains(listToUpdateReferences.get(i))){
+		for (int i = 0; i < listToUpdateReferences.size(); i++) {
+			if (listMain.contains(listToUpdateReferences.get(i))) {
 				listToUpdateReferences.set(i, listMain.get(listMain.indexOf(listToUpdateReferences.get(i))));
-			}else {
+			} else {
 				listMain.add(listToUpdateReferences.get(i));
 			}
-		}		
+		}
 	}
-	
+
 	public void resetAndLoadDefault() {
 		System.err.println("********************************************");
 		System.err.println("**********CARGANDO DATOS POR DEFECTO********");
@@ -230,8 +322,7 @@ public class Control {
 		}
 
 	}
-	
-	
+
 	@Override
 	public String toString() {
 		return "Control [garajes=" + garajes + ", carreras=" + carreras + ", torneos=" + torneos + "]";

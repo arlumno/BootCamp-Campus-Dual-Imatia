@@ -8,6 +8,7 @@ import Excepciones.IncompleteException;
 public class CarreraEliminacion extends Carrera {
 
 	public final static int DURACION_MINUTOS_DEFAULT = 10;
+	protected String tipo = "Eliminación";
 
 	/**
 	 * 

@@ -7,7 +7,6 @@ import java.util.Map.Entry;
 import java.util.TreeSet;
 import java.util.Collections;
 
-
 import Excepciones.IncompleteException;
 
 public class Torneo {
@@ -28,18 +27,23 @@ public class Torneo {
 			super();
 			this.coche = coche;
 		}
-		public void addPuntuacion (int puntos) {
+
+		public void addPuntuacion(int puntos) {
 			this.puntos += puntos;
 		}
+
 		public int getPuntos() {
 			return puntos;
 		}
+
 		public Coche getCoche() {
 			return coche;
 		}
+
 		public void setCoche(Coche coche) {
 			this.coche = coche;
 		}
+
 		@Override
 		public int compareTo(Object o) {
 			if (((Puntuacion) o).puntos > puntos) {
@@ -57,14 +61,23 @@ public class Torneo {
 		}
 
 		@Override
-		public boolean equals(Object obj) {		
+		public boolean equals(Object obj) {
 			return coche.equals(((Puntuacion) obj).coche);
 		}
+
 		@Override
 		public String toString() {
 			return "Puntuacion [coche=" + coche + ", puntos=" + puntos + "]";
 		}
-		
+
+	}
+
+	public List<Carrera> getCarreras() {
+		return carreras;
+	}
+
+	public void setCarreras(List<Carrera> carreras) {
+		this.carreras = carreras;
 	}
 
 	public Torneo(String nOMBRE, List<Carrera> carreras) {
@@ -81,11 +94,9 @@ public class Torneo {
 	}
 
 	public void addCarrera(Carrera carrera) {
-		if (!torneoFinalizado) {
-			if(!carreras.contains(carrera)) {
-				carreras.add(carrera);
-				registrarGarajes(carrera);
-			}
+		if (!torneoFinalizado && !carreras.contains(carrera)) {
+			carreras.add(carrera);
+			registrarGarajes(carrera);
 		}
 	}
 
@@ -101,47 +112,40 @@ public class Torneo {
 
 	public void iniciar() throws IncompleteException {
 		if (!torneoFinalizado) {
+			boolean carrerasFinalizadas = true;
 			for (Carrera carrera : carreras) {
 				if (!carrera.isCarreraFinalizada()) {
-					carrera.iniciar();
-					guardarPuntuacion(carrera);
-					System.out.println(carrera.getNOMBRE() + " finalizada");
+					try {
+						carrera.iniciar();
+						guardarPuntuacion(carrera);
+						System.out.println(carrera.getNOMBRE() + " finalizada");
+					} catch (IncompleteException e) {
+						System.err.println(e.getMessage());
+						carrerasFinalizadas = false;
+					}
 				}
 			}
+			if (carrerasFinalizadas) {
+				Collections.sort(puntuacionCoches);
+				torneoFinalizado = true;
+			}
 		}
-		Collections.sort(puntuacionCoches);
-		torneoFinalizado = true;
 	}
 
 	private List<Coche> obtenerGanadores() {
-		//TreeSet<Integer> rankingFinal = new TreeSet<Integer>(puntuacionCoches.values());
-	//	Collections.sort(puntuacionCoches);
-		//Integer maxPuntuacion = rankingFinal.last();
 		List<Coche> ganadores = new ArrayList<>();
 		ganadores.add(puntuacionCoches.get(0).getCoche());
-		
+
 		for (int i = 1; i < puntuacionCoches.size(); i++) {
 			if (puntuacionCoches.get(i).getPuntos() == puntuacionCoches.get(0).getPuntos()) {
-				ganadores.add(puntuacionCoches.get(i).getCoche());			
-			}else {
+				ganadores.add(puntuacionCoches.get(i).getCoche());
+			} else {
 				break;
 			}
 		}
 		return ganadores;
 
 	}
-//	private List<Coche> obtenerGanadores() {
-//		TreeSet<Integer> rankingFinal = new TreeSet<Integer>(puntuacionCoches.values());
-//		Integer maxPuntuacion = rankingFinal.last();
-//		List<Coche> ganadores = new ArrayList<Coche>();
-//		for (Map.Entry<Coche, Integer> entry : puntuacionCoches.entrySet()) {
-//			if (entry.getValue() == maxPuntuacion) {
-//				ganadores.add(entry.getKey());
-//			}
-//		}
-//		return ganadores;
-//		
-//	}
 
 	private void guardarPuntuacion(Carrera carrera) {
 		List<List<Coche>> podio = carrera.getPodio();
@@ -154,27 +158,12 @@ public class Torneo {
 		if (!podio.isEmpty()) {
 			for (int i = 0; i < podio.size() && i < puntosPodio.length; i++) {
 				for (Coche coche : podio.get(i)) {
-					puntuacionCoches.get(puntuacionCoches.indexOf(new Puntuacion(coche))).addPuntuacion(puntosPodio[i] / podio.get(i).size());
+					puntuacionCoches.get(puntuacionCoches.indexOf(new Puntuacion(coche)))
+							.addPuntuacion(puntosPodio[i] / podio.get(i).size());
 				}
 			}
 		}
 	}
-//	private void guardarPuntuacion(Carrera carrera) {
-//		List<List<Coche>> podio = carrera.getPodio();
-//		for (Coche coche : carrera.getCoches()) { // añado nuevos coches participantes a las puntuaciones
-//			if (!puntuacionCoches.containsKey(coche)) {
-//				puntuacionCoches.put(coche, 0);
-//			}
-//		}
-//		
-//		if (!podio.isEmpty()) {
-//			for (int i = 0; i < podio.size() && i < puntosPodio.length; i++) {
-//				for (Coche coche : podio.get(i)) {
-//					puntuacionCoches.put(coche, puntuacionCoches.get(coche) + (puntosPodio[i]) / podio.get(i).size());
-//				}
-//			}
-//		}
-//	}
 
 	public boolean isTorneoFinalizado() {
 		return torneoFinalizado;
@@ -187,8 +176,9 @@ public class Torneo {
 	public String mostrarPuntuacionesCoches() {
 		StringBuilder texto = new StringBuilder();
 		if (torneoFinalizado) {
+			texto.append("********  " + NOMBRE + "\t *******");
 			texto.append("Puntuación Final:");
-			for (Puntuacion puntuacion: puntuacionCoches) {
+			for (Puntuacion puntuacion : puntuacionCoches) {
 				texto.append("\n " + puntuacion.getCoche().getBRAND() + " - " + puntuacion.getCoche().getMODEL() + " ("
 						+ puntuacion.getCoche().getPegatinaGaraje() + ")");
 				texto.append(" - Puntos: " + puntuacion.getPuntos());
@@ -202,7 +192,7 @@ public class Torneo {
 
 	public String mostrarGanadores() {
 		StringBuilder texto = new StringBuilder();
-		texto.append("\n\n");
+		texto.append("\n");
 		String separador = "\n************************************************";
 		texto.append(separador);
 		texto.append("\n\t\tGANADOR/ES:");
@@ -228,7 +218,7 @@ public class Torneo {
 		Control.syncReferences(garajesMain, garajes);
 		Control.syncReferences(carrerasMain, carreras);
 
-		for (Puntuacion puntuacion: puntuacionCoches) {
+		for (Puntuacion puntuacion : puntuacionCoches) {
 			if (cochesMain.contains(puntuacion.getCoche())) {
 				puntuacion.setCoche(cochesMain.get(cochesMain.indexOf(puntuacion.getCoche())));
 			} else {

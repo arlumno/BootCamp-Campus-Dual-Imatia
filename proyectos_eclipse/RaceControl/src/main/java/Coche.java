@@ -1,4 +1,6 @@
 
+import com.google.gson.annotations.Expose;
+
 import Excepciones.SuperPilotException;
 
 public class Coche implements Comparable {
@@ -7,7 +9,9 @@ public class Coche implements Comparable {
 	private String pegatinaGaraje = "";
 	public final int MAX_SPEED = 180;
 	public final int GAP_ACCELERATION = 10;
+	@Expose(serialize = false)
 	private int speedometer = 0;
+	@Expose(serialize = false)
 	private float counterKm = 0;
 	private int habilidadPiloto; // % de probabilidades de acelerar
 

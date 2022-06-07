@@ -13,6 +13,7 @@ public class Carrera {
 	private List<List<Coche>> podio = new ArrayList<>();
 	boolean carreraFinalizada = false;
 	protected int puestosPodio = 3;
+	protected String tipo = "Estándar";
 	
 	/**
 	 * 
@@ -54,7 +55,9 @@ public class Carrera {
 		}
 	}
 	
-	
+	public String getTipo() {
+		return tipo;
+	}
 	public void iniciar() throws IncompleteException {
 		// preparamos la carrera:
 		preparar();
