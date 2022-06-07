@@ -4,41 +4,31 @@ import java.util.List;
 
 import Excepciones.IncompleteException;
 
-public class Carrera {
+public abstract class Carrera {
+
 	protected final String NOMBRE;
 	protected final int DURACION_MINUTOS;
-	public final static int DURACION_MINUTOS_DEFAULT = 180;
+	public static final int DURACION_MINUTOS_DEFAULT = 180;
 	private List<Garaje> garajes = new ArrayList<>();
 	protected List<Coche> coches = new ArrayList<>();
 	private List<List<Coche>> podio = new ArrayList<>();
-	boolean carreraFinalizada = false;
+	private boolean carreraFinalizada = false;
 	protected int puestosPodio = 3;
-	protected String tipo = "Estándar";
+	protected String tipo = "-";
 	
-	/**
-	 * 
-	 * @param nOMBRE           Nombre de la carrera
-	 * @param garajes          Listado de garajes participantes
-	 * @param dURACION_MINUTOS Duración de la carrera, por defecto 180
-	 */
+	public Carrera() {
+		this.NOMBRE = "";
+		this.DURACION_MINUTOS = 0;
+	}
 	public Carrera(String nOMBRE, List<Garaje> garajes, int dURACION_MINUTOS) {
-		NOMBRE = nOMBRE;
-		DURACION_MINUTOS = dURACION_MINUTOS;
-		for (Garaje garaje : garajes) {
-			addGaraje(garaje);
-		}
+		this(nOMBRE, dURACION_MINUTOS);		
+		setGarajes(garajes);		
 	}
 
-	public Carrera(String nOMBRE, List<Garaje> garajes) {
-		this(nOMBRE, garajes, DURACION_MINUTOS_DEFAULT);
-	}
-
-	public Carrera(String nOMBRE, int dURACION_MINUTOS) {
-		this(nOMBRE, new ArrayList<Garaje>(), dURACION_MINUTOS);
-	}
-
-	public Carrera(String nOMBRE) {
-		this(nOMBRE, DURACION_MINUTOS_DEFAULT);
+	
+	public Carrera(String NOMBRE, int DURACION_MINUTOS) {
+		this.NOMBRE = NOMBRE;
+		this.DURACION_MINUTOS = DURACION_MINUTOS;
 	}
 
 	public List<Garaje> getGarajes() {
@@ -46,7 +36,9 @@ public class Carrera {
 	}
 
 	public void setGarajes(List<Garaje> garajes) {
-		this.garajes = garajes;
+		for (Garaje garaje : garajes) {
+			addGaraje(garaje);
+		}
 	}
 
 	public void addGaraje(Garaje garaje) {
@@ -54,23 +46,12 @@ public class Carrera {
 			garajes.add(garaje);
 		}
 	}
-	
+
 	public String getTipo() {
 		return tipo;
 	}
-	public void iniciar() throws IncompleteException {
-		// preparamos la carrera:
-		preparar();
-		// empieza la carrera.
-		for (int i = 0; i < DURACION_MINUTOS; i++) {
-			for (Coche coche : coches) {
-				coche.conducir();
-			}
-		}
-		carreraFinalizada = true;
-		calcularPodio();
 
-	}
+	public abstract void iniciar() throws IncompleteException;
 
 	protected void preparar() throws IncompleteException {
 		coches.clear();
@@ -108,8 +89,8 @@ public class Carrera {
 				if (coches.get(i - 1).getCounterKm() > coches.get(i).getCounterKm()) {
 					puestoPodio++;
 				}
-				if(puestoPodio < podio.size()) {
-					podio.get(puestoPodio).add(coches.get(i));				
+				if (puestoPodio < podio.size()) {
+					podio.get(puestoPodio).add(coches.get(i));
 				}
 			}
 		}
@@ -131,16 +112,24 @@ public class Carrera {
 		return coches;
 	}
 
+	public void setCarreraFinalizada(boolean carreraFinalizada) {
+		this.carreraFinalizada = carreraFinalizada;
+	}
+
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
+	}
+
 	public void syncReferences(List<Garaje> garajesMain, List<Coche> cochesMain) {
 		Control.syncReferences(garajesMain, garajes);
 		Control.syncReferences(cochesMain, coches);
-		if(!podio.isEmpty()) {
-			for(List<Coche> puesto: podio) {
+		if (!podio.isEmpty()) {
+			for (List<Coche> puesto : podio) {
 				Control.syncReferences(cochesMain, puesto);
-			}		
+			}
 		}
 	}
-	
+
 	@Override
 	public int hashCode() {
 		return NOMBRE.hashCode();
@@ -148,8 +137,8 @@ public class Carrera {
 
 	@Override
 	public boolean equals(Object obj) {
-		if (obj instanceof Carrera) {
-			return ((Carrera) obj).getNOMBRE().equals(NOMBRE);
+		if (obj instanceof CarreraEstandar) {
+			return ((CarreraEstandar) obj).getNOMBRE().equals(NOMBRE);
 		}
 		return super.equals(obj);
 	}

@@ -6,9 +6,9 @@
       "pegatinaGaraje": "Los Manquiñas",
       "MAX_SPEED": 180,
       "GAP_ACCELERATION": 10,
-      "speedometer": 10,
-      "counterKm": 1.0,
-      "habilidadPiloto": 62
+      "speedometer": 0,
+      "counterKm": 0.0,
+      "habilidadPiloto": 47
     },
     {
       "BRAND": "Ford",
@@ -18,7 +18,7 @@
       "GAP_ACCELERATION": 10,
       "speedometer": 0,
       "counterKm": 0.0,
-      "habilidadPiloto": 72
+      "habilidadPiloto": 39
     },
     {
       "BRAND": "Renaul",
@@ -28,7 +28,7 @@
       "GAP_ACCELERATION": 10,
       "speedometer": 0,
       "counterKm": 0.0,
-      "habilidadPiloto": 34
+      "habilidadPiloto": 40
     },
     {
       "BRAND": "Seat",
@@ -37,8 +37,8 @@
       "MAX_SPEED": 180,
       "GAP_ACCELERATION": 10,
       "speedometer": 0,
-      "counterKm": 0.16666667,
-      "habilidadPiloto": 36
+      "counterKm": 0.0,
+      "habilidadPiloto": 84
     },
     {
       "BRAND": "Seat",
@@ -48,7 +48,7 @@
       "GAP_ACCELERATION": 10,
       "speedometer": 0,
       "counterKm": 0.0,
-      "habilidadPiloto": 90
+      "habilidadPiloto": 68
     },
     {
       "BRAND": "Seat",
@@ -58,7 +58,7 @@
       "GAP_ACCELERATION": 10,
       "speedometer": 0,
       "counterKm": 0.0,
-      "habilidadPiloto": 42
+      "habilidadPiloto": 82
     },
     {
       "BRAND": "Seat",
@@ -68,7 +68,7 @@
       "GAP_ACCELERATION": 10,
       "speedometer": 0,
       "counterKm": 0.0,
-      "habilidadPiloto": 53
+      "habilidadPiloto": 79
     },
     {
       "BRAND": "Seat",
@@ -78,7 +78,7 @@
       "GAP_ACCELERATION": 10,
       "speedometer": 0,
       "counterKm": 0.0,
-      "habilidadPiloto": 44
+      "habilidadPiloto": 46
     },
     {
       "BRAND": "5-Ferrari",
@@ -86,8 +86,8 @@
       "pegatinaGaraje": "Lone Wolf",
       "MAX_SPEED": 180,
       "GAP_ACCELERATION": 10,
-      "speedometer": 30,
-      "counterKm": 4.1666665,
+      "speedometer": 0,
+      "counterKm": 0.0,
       "habilidadPiloto": 60
     },
     {
@@ -96,9 +96,9 @@
       "pegatinaGaraje": "Mancato",
       "MAX_SPEED": 180,
       "GAP_ACCELERATION": 10,
-      "speedometer": 20,
-      "counterKm": 5.5,
-      "habilidadPiloto": 68
+      "speedometer": 0,
+      "counterKm": 0.0,
+      "habilidadPiloto": 67
     },
     {
       "BRAND": "Fiat",
@@ -106,9 +106,9 @@
       "pegatinaGaraje": "Mancato",
       "MAX_SPEED": 180,
       "GAP_ACCELERATION": 10,
-      "speedometer": 10,
-      "counterKm": 24.833326,
-      "habilidadPiloto": 30
+      "speedometer": 0,
+      "counterKm": 0.0,
+      "habilidadPiloto": 45
     },
     {
       "BRAND": "Fiat",
@@ -117,41 +117,46 @@
       "MAX_SPEED": 180,
       "GAP_ACCELERATION": 10,
       "speedometer": 0,
-      "counterKm": 18.166664,
-      "habilidadPiloto": 35
-    },
-    {
-      "BRAND": "Ford",
-      "MODEL": "Mustang",
-      "pegatinaGaraje": "Fordinans",
-      "MAX_SPEED": 180,
-      "GAP_ACCELERATION": 10,
-      "speedometer": 0,
       "counterKm": 0.0,
-      "habilidadPiloto": 86
-    },
-    {
-      "BRAND": "Ford",
-      "MODEL": "Mondeo",
-      "pegatinaGaraje": "Fordinans",
-      "MAX_SPEED": 180,
-      "GAP_ACCELERATION": 10,
-      "speedometer": 0,
-      "counterKm": 0.0,
-      "habilidadPiloto": 53
-    },
-    {
-      "BRAND": "Ford",
-      "MODEL": "Kuga",
-      "pegatinaGaraje": "Fordinans",
-      "MAX_SPEED": 180,
-      "GAP_ACCELERATION": 10,
-      "speedometer": 0,
-      "counterKm": 0.0,
-      "habilidadPiloto": 40
+      "habilidadPiloto": 50
     }
   ],
   "garajes": [
+    {
+      "NOMBRE": "Los Manquiñas",
+      "coches": [
+        {
+          "BRAND": "Renaul",
+          "MODEL": "Clio",
+          "pegatinaGaraje": "Los Manquiñas",
+          "MAX_SPEED": 180,
+          "GAP_ACCELERATION": 10,
+          "speedometer": 0,
+          "counterKm": 0.0,
+          "habilidadPiloto": 47
+        },
+        {
+          "BRAND": "Ford",
+          "MODEL": "Fiesta",
+          "pegatinaGaraje": "Los Manquiñas",
+          "MAX_SPEED": 180,
+          "GAP_ACCELERATION": 10,
+          "speedometer": 0,
+          "counterKm": 0.0,
+          "habilidadPiloto": 39
+        },
+        {
+          "BRAND": "Renaul",
+          "MODEL": "Traffic",
+          "pegatinaGaraje": "Los Manquiñas",
+          "MAX_SPEED": 180,
+          "GAP_ACCELERATION": 10,
+          "speedometer": 0,
+          "counterKm": 0.0,
+          "habilidadPiloto": 40
+        }
+      ]
+    },
     {
       "NOMBRE": "Los Flipados",
       "coches": [
@@ -162,8 +167,8 @@
           "MAX_SPEED": 180,
           "GAP_ACCELERATION": 10,
           "speedometer": 0,
-          "counterKm": 0.16666667,
-          "habilidadPiloto": 36
+          "counterKm": 0.0,
+          "habilidadPiloto": 84
         },
         {
           "BRAND": "Seat",
@@ -173,7 +178,7 @@
           "GAP_ACCELERATION": 10,
           "speedometer": 0,
           "counterKm": 0.0,
-          "habilidadPiloto": 90
+          "habilidadPiloto": 68
         },
         {
           "BRAND": "Seat",
@@ -183,7 +188,7 @@
           "GAP_ACCELERATION": 10,
           "speedometer": 0,
           "counterKm": 0.0,
-          "habilidadPiloto": 42
+          "habilidadPiloto": 82
         },
         {
           "BRAND": "Seat",
@@ -193,7 +198,7 @@
           "GAP_ACCELERATION": 10,
           "speedometer": 0,
           "counterKm": 0.0,
-          "habilidadPiloto": 53
+          "habilidadPiloto": 79
         },
         {
           "BRAND": "Seat",
@@ -203,7 +208,22 @@
           "GAP_ACCELERATION": 10,
           "speedometer": 0,
           "counterKm": 0.0,
-          "habilidadPiloto": 44
+          "habilidadPiloto": 46
+        }
+      ]
+    },
+    {
+      "NOMBRE": "Lone Wolf",
+      "coches": [
+        {
+          "BRAND": "5-Ferrari",
+          "MODEL": "F50",
+          "pegatinaGaraje": "Lone Wolf",
+          "MAX_SPEED": 180,
+          "GAP_ACCELERATION": 10,
+          "speedometer": 0,
+          "counterKm": 0.0,
+          "habilidadPiloto": 60
         }
       ]
     },
@@ -216,9 +236,9 @@
           "pegatinaGaraje": "Mancato",
           "MAX_SPEED": 180,
           "GAP_ACCELERATION": 10,
-          "speedometer": 20,
-          "counterKm": 5.5,
-          "habilidadPiloto": 68
+          "speedometer": 0,
+          "counterKm": 0.0,
+          "habilidadPiloto": 67
         },
         {
           "BRAND": "Fiat",
@@ -226,9 +246,9 @@
           "pegatinaGaraje": "Mancato",
           "MAX_SPEED": 180,
           "GAP_ACCELERATION": 10,
-          "speedometer": 10,
-          "counterKm": 24.833326,
-          "habilidadPiloto": 30
+          "speedometer": 0,
+          "counterKm": 0.0,
+          "habilidadPiloto": 45
         },
         {
           "BRAND": "Fiat",
@@ -237,1042 +257,58 @@
           "MAX_SPEED": 180,
           "GAP_ACCELERATION": 10,
           "speedometer": 0,
-          "counterKm": 18.166664,
-          "habilidadPiloto": 35
+          "counterKm": 0.0,
+          "habilidadPiloto": 50
         }
       ]
     }
   ],
   "carreras": [
     {
-      "NOMBRE": "Primera Carrera",
-      "DURACION_MINUTOS": 180,
-      "garajes": [
-        {
-          "NOMBRE": "Los Manquiñas",
-          "coches": [
-            {
-              "BRAND": "Renaul",
-              "MODEL": "Clio",
-              "pegatinaGaraje": "Los Manquiñas",
-              "MAX_SPEED": 180,
-              "GAP_ACCELERATION": 10,
-              "speedometer": 10,
-              "counterKm": 1.0,
-              "habilidadPiloto": 62
-            },
-            {
-              "BRAND": "Ford",
-              "MODEL": "Fiesta",
-              "pegatinaGaraje": "Los Manquiñas",
-              "MAX_SPEED": 180,
-              "GAP_ACCELERATION": 10,
-              "speedometer": 0,
-              "counterKm": 0.0,
-              "habilidadPiloto": 72
-            },
-            {
-              "BRAND": "Renaul",
-              "MODEL": "Traffic",
-              "pegatinaGaraje": "Los Manquiñas",
-              "MAX_SPEED": 180,
-              "GAP_ACCELERATION": 10,
-              "speedometer": 0,
-              "counterKm": 0.0,
-              "habilidadPiloto": 34
-            }
-          ]
-        },
-        {
-          "NOMBRE": "Los Flipados",
-          "coches": [
-            {
-              "BRAND": "Seat",
-              "MODEL": "F1",
-              "pegatinaGaraje": "Los Flipados",
-              "MAX_SPEED": 180,
-              "GAP_ACCELERATION": 10,
-              "speedometer": 0,
-              "counterKm": 0.16666667,
-              "habilidadPiloto": 36
-            },
-            {
-              "BRAND": "Seat",
-              "MODEL": "F2",
-              "pegatinaGaraje": "Los Flipados",
-              "MAX_SPEED": 180,
-              "GAP_ACCELERATION": 10,
-              "speedometer": 0,
-              "counterKm": 0.0,
-              "habilidadPiloto": 90
-            },
-            {
-              "BRAND": "Seat",
-              "MODEL": "F3",
-              "pegatinaGaraje": "Los Flipados",
-              "MAX_SPEED": 180,
-              "GAP_ACCELERATION": 10,
-              "speedometer": 0,
-              "counterKm": 0.0,
-              "habilidadPiloto": 42
-            },
-            {
-              "BRAND": "Seat",
-              "MODEL": "F4",
-              "pegatinaGaraje": "Los Flipados",
-              "MAX_SPEED": 180,
-              "GAP_ACCELERATION": 10,
-              "speedometer": 0,
-              "counterKm": 0.0,
-              "habilidadPiloto": 53
-            },
-            {
-              "BRAND": "Seat",
-              "MODEL": "F5",
-              "pegatinaGaraje": "Los Flipados",
-              "MAX_SPEED": 180,
-              "GAP_ACCELERATION": 10,
-              "speedometer": 0,
-              "counterKm": 0.0,
-              "habilidadPiloto": 44
-            }
-          ]
-        },
-        {
-          "NOMBRE": "Lone Wolf",
-          "coches": [
-            {
-              "BRAND": "5-Ferrari",
-              "MODEL": "F50",
-              "pegatinaGaraje": "Lone Wolf",
-              "MAX_SPEED": 180,
-              "GAP_ACCELERATION": 10,
-              "speedometer": 30,
-              "counterKm": 4.1666665,
-              "habilidadPiloto": 60
-            }
-          ]
-        }
-      ],
-      "coches": [
-        {
-          "BRAND": "5-Ferrari",
-          "MODEL": "F50",
-          "pegatinaGaraje": "Lone Wolf",
-          "MAX_SPEED": 180,
-          "GAP_ACCELERATION": 10,
-          "speedometer": 30,
-          "counterKm": 4.1666665,
-          "habilidadPiloto": 60
-        },
-        {
-          "BRAND": "Renaul",
-          "MODEL": "Clio",
-          "pegatinaGaraje": "Los Manquiñas",
-          "MAX_SPEED": 180,
-          "GAP_ACCELERATION": 10,
-          "speedometer": 10,
-          "counterKm": 1.0,
-          "habilidadPiloto": 62
-        },
-        {
-          "BRAND": "Seat",
-          "MODEL": "F1",
-          "pegatinaGaraje": "Los Flipados",
-          "MAX_SPEED": 180,
-          "GAP_ACCELERATION": 10,
-          "speedometer": 0,
-          "counterKm": 0.16666667,
-          "habilidadPiloto": 36
-        }
-      ],
-      "podio": [
-        [
+      "type": "CarreraEstandar",
+      "data": {
+        "propiedadQueNoTieneLaAbstracta": "desdeEstandar",
+        "NOMBRE": "Primera Carrera",
+        "DURACION_MINUTOS": 180,
+        "garajes": [
           {
-            "BRAND": "5-Ferrari",
-            "MODEL": "F50",
-            "pegatinaGaraje": "Lone Wolf",
-            "MAX_SPEED": 180,
-            "GAP_ACCELERATION": 10,
-            "speedometer": 30,
-            "counterKm": 4.1666665,
-            "habilidadPiloto": 60
-          }
-        ],
-        [
-          {
-            "BRAND": "Renaul",
-            "MODEL": "Clio",
-            "pegatinaGaraje": "Los Manquiñas",
-            "MAX_SPEED": 180,
-            "GAP_ACCELERATION": 10,
-            "speedometer": 10,
-            "counterKm": 1.0,
-            "habilidadPiloto": 62
-          }
-        ],
-        [
-          {
-            "BRAND": "Seat",
-            "MODEL": "F1",
-            "pegatinaGaraje": "Los Flipados",
-            "MAX_SPEED": 180,
-            "GAP_ACCELERATION": 10,
-            "speedometer": 0,
-            "counterKm": 0.16666667,
-            "habilidadPiloto": 36
-          }
-        ]
-      ],
-      "carreraFinalizada": true,
-      "puestosPodio": 3
-    },
-    {
-      "NOMBRE": "Segunda carrera",
-      "DURACION_MINUTOS": 180,
-      "garajes": [
-        {
-          "NOMBRE": "Mancato",
-          "coches": [
-            {
-              "BRAND": "Fiat",
-              "MODEL": "500",
-              "pegatinaGaraje": "Mancato",
-              "MAX_SPEED": 180,
-              "GAP_ACCELERATION": 10,
-              "speedometer": 20,
-              "counterKm": 5.5,
-              "habilidadPiloto": 68
-            },
-            {
-              "BRAND": "Fiat",
-              "MODEL": "600",
-              "pegatinaGaraje": "Mancato",
-              "MAX_SPEED": 180,
-              "GAP_ACCELERATION": 10,
-              "speedometer": 10,
-              "counterKm": 24.833326,
-              "habilidadPiloto": 30
-            },
-            {
-              "BRAND": "Fiat",
-              "MODEL": "700",
-              "pegatinaGaraje": "Mancato",
-              "MAX_SPEED": 180,
-              "GAP_ACCELERATION": 10,
-              "speedometer": 0,
-              "counterKm": 18.166664,
-              "habilidadPiloto": 35
-            }
-          ]
-        }
-      ],
-      "coches": [
-        {
-          "BRAND": "Fiat",
-          "MODEL": "500",
-          "pegatinaGaraje": "Mancato",
-          "MAX_SPEED": 180,
-          "GAP_ACCELERATION": 10,
-          "speedometer": 20,
-          "counterKm": 5.5,
-          "habilidadPiloto": 68
-        },
-        {
-          "BRAND": "Fiat",
-          "MODEL": "600",
-          "pegatinaGaraje": "Mancato",
-          "MAX_SPEED": 180,
-          "GAP_ACCELERATION": 10,
-          "speedometer": 10,
-          "counterKm": 24.833326,
-          "habilidadPiloto": 30
-        },
-        {
-          "BRAND": "Fiat",
-          "MODEL": "700",
-          "pegatinaGaraje": "Mancato",
-          "MAX_SPEED": 180,
-          "GAP_ACCELERATION": 10,
-          "speedometer": 0,
-          "counterKm": 18.166664,
-          "habilidadPiloto": 35
-        }
-      ],
-      "podio": [
-        [
-          {
-            "BRAND": "Fiat",
-            "MODEL": "500",
-            "pegatinaGaraje": "Mancato",
-            "MAX_SPEED": 180,
-            "GAP_ACCELERATION": 10,
-            "speedometer": 20,
-            "counterKm": 5.5,
-            "habilidadPiloto": 68
-          }
-        ],
-        [
-          {
-            "BRAND": "Fiat",
-            "MODEL": "600",
-            "pegatinaGaraje": "Mancato",
-            "MAX_SPEED": 180,
-            "GAP_ACCELERATION": 10,
-            "speedometer": 10,
-            "counterKm": 24.833326,
-            "habilidadPiloto": 30
-          }
-        ],
-        [
-          {
-            "BRAND": "Fiat",
-            "MODEL": "700",
-            "pegatinaGaraje": "Mancato",
-            "MAX_SPEED": 180,
-            "GAP_ACCELERATION": 10,
-            "speedometer": 0,
-            "counterKm": 18.166664,
-            "habilidadPiloto": 35
-          }
-        ]
-      ],
-      "carreraFinalizada": true,
-      "puestosPodio": 3
-    },
-    {
-      "NOMBRE": "Tercera carrera",
-      "DURACION_MINUTOS": 180,
-      "garajes": [
-        {
-          "NOMBRE": "Los Manquiñas",
-          "coches": [
-            {
-              "BRAND": "Renaul",
-              "MODEL": "Clio",
-              "pegatinaGaraje": "Los Manquiñas",
-              "MAX_SPEED": 180,
-              "GAP_ACCELERATION": 10,
-              "speedometer": 10,
-              "counterKm": 1.0,
-              "habilidadPiloto": 62
-            },
-            {
-              "BRAND": "Ford",
-              "MODEL": "Fiesta",
-              "pegatinaGaraje": "Los Manquiñas",
-              "MAX_SPEED": 180,
-              "GAP_ACCELERATION": 10,
-              "speedometer": 0,
-              "counterKm": 0.0,
-              "habilidadPiloto": 72
-            },
-            {
-              "BRAND": "Renaul",
-              "MODEL": "Traffic",
-              "pegatinaGaraje": "Los Manquiñas",
-              "MAX_SPEED": 180,
-              "GAP_ACCELERATION": 10,
-              "speedometer": 0,
-              "counterKm": 0.0,
-              "habilidadPiloto": 34
-            }
-          ]
-        },
-        {
-          "NOMBRE": "Los Flipados",
-          "coches": [
-            {
-              "BRAND": "Seat",
-              "MODEL": "F1",
-              "pegatinaGaraje": "Los Flipados",
-              "MAX_SPEED": 180,
-              "GAP_ACCELERATION": 10,
-              "speedometer": 0,
-              "counterKm": 0.16666667,
-              "habilidadPiloto": 36
-            },
-            {
-              "BRAND": "Seat",
-              "MODEL": "F2",
-              "pegatinaGaraje": "Los Flipados",
-              "MAX_SPEED": 180,
-              "GAP_ACCELERATION": 10,
-              "speedometer": 0,
-              "counterKm": 0.0,
-              "habilidadPiloto": 90
-            },
-            {
-              "BRAND": "Seat",
-              "MODEL": "F3",
-              "pegatinaGaraje": "Los Flipados",
-              "MAX_SPEED": 180,
-              "GAP_ACCELERATION": 10,
-              "speedometer": 0,
-              "counterKm": 0.0,
-              "habilidadPiloto": 42
-            },
-            {
-              "BRAND": "Seat",
-              "MODEL": "F4",
-              "pegatinaGaraje": "Los Flipados",
-              "MAX_SPEED": 180,
-              "GAP_ACCELERATION": 10,
-              "speedometer": 0,
-              "counterKm": 0.0,
-              "habilidadPiloto": 53
-            },
-            {
-              "BRAND": "Seat",
-              "MODEL": "F5",
-              "pegatinaGaraje": "Los Flipados",
-              "MAX_SPEED": 180,
-              "GAP_ACCELERATION": 10,
-              "speedometer": 0,
-              "counterKm": 0.0,
-              "habilidadPiloto": 44
-            }
-          ]
-        },
-        {
-          "NOMBRE": "Lone Wolf",
-          "coches": [
-            {
-              "BRAND": "5-Ferrari",
-              "MODEL": "F50",
-              "pegatinaGaraje": "Lone Wolf",
-              "MAX_SPEED": 180,
-              "GAP_ACCELERATION": 10,
-              "speedometer": 30,
-              "counterKm": 4.1666665,
-              "habilidadPiloto": 60
-            }
-          ]
-        },
-        {
-          "NOMBRE": "Mancato",
-          "coches": [
-            {
-              "BRAND": "Fiat",
-              "MODEL": "500",
-              "pegatinaGaraje": "Mancato",
-              "MAX_SPEED": 180,
-              "GAP_ACCELERATION": 10,
-              "speedometer": 20,
-              "counterKm": 5.5,
-              "habilidadPiloto": 68
-            },
-            {
-              "BRAND": "Fiat",
-              "MODEL": "600",
-              "pegatinaGaraje": "Mancato",
-              "MAX_SPEED": 180,
-              "GAP_ACCELERATION": 10,
-              "speedometer": 10,
-              "counterKm": 24.833326,
-              "habilidadPiloto": 30
-            },
-            {
-              "BRAND": "Fiat",
-              "MODEL": "700",
-              "pegatinaGaraje": "Mancato",
-              "MAX_SPEED": 180,
-              "GAP_ACCELERATION": 10,
-              "speedometer": 0,
-              "counterKm": 18.166664,
-              "habilidadPiloto": 35
-            }
-          ]
-        }
-      ],
-      "coches": [
-        {
-          "BRAND": "Fiat",
-          "MODEL": "500",
-          "pegatinaGaraje": "Mancato",
-          "MAX_SPEED": 180,
-          "GAP_ACCELERATION": 10,
-          "speedometer": 20,
-          "counterKm": 5.5,
-          "habilidadPiloto": 68
-        },
-        {
-          "BRAND": "5-Ferrari",
-          "MODEL": "F50",
-          "pegatinaGaraje": "Lone Wolf",
-          "MAX_SPEED": 180,
-          "GAP_ACCELERATION": 10,
-          "speedometer": 30,
-          "counterKm": 4.1666665,
-          "habilidadPiloto": 60
-        },
-        {
-          "BRAND": "Renaul",
-          "MODEL": "Clio",
-          "pegatinaGaraje": "Los Manquiñas",
-          "MAX_SPEED": 180,
-          "GAP_ACCELERATION": 10,
-          "speedometer": 10,
-          "counterKm": 1.0,
-          "habilidadPiloto": 62
-        },
-        {
-          "BRAND": "Seat",
-          "MODEL": "F1",
-          "pegatinaGaraje": "Los Flipados",
-          "MAX_SPEED": 180,
-          "GAP_ACCELERATION": 10,
-          "speedometer": 0,
-          "counterKm": 0.16666667,
-          "habilidadPiloto": 36
-        }
-      ],
-      "podio": [
-        [
-          {
-            "BRAND": "Fiat",
-            "MODEL": "500",
-            "pegatinaGaraje": "Mancato",
-            "MAX_SPEED": 180,
-            "GAP_ACCELERATION": 10,
-            "speedometer": 20,
-            "counterKm": 5.5,
-            "habilidadPiloto": 68
-          }
-        ],
-        [
-          {
-            "BRAND": "5-Ferrari",
-            "MODEL": "F50",
-            "pegatinaGaraje": "Lone Wolf",
-            "MAX_SPEED": 180,
-            "GAP_ACCELERATION": 10,
-            "speedometer": 30,
-            "counterKm": 4.1666665,
-            "habilidadPiloto": 60
-          }
-        ],
-        [
-          {
-            "BRAND": "Renaul",
-            "MODEL": "Clio",
-            "pegatinaGaraje": "Los Manquiñas",
-            "MAX_SPEED": 180,
-            "GAP_ACCELERATION": 10,
-            "speedometer": 10,
-            "counterKm": 1.0,
-            "habilidadPiloto": 62
-          }
-        ]
-      ],
-      "carreraFinalizada": true,
-      "puestosPodio": 3
-    },
-    {
-      "NOMBRE": "Carrera Eliminatoria",
-      "DURACION_MINUTOS": 10,
-      "garajes": [
-        {
-          "NOMBRE": "Los Manquiñas",
-          "coches": [
-            {
-              "BRAND": "Renaul",
-              "MODEL": "Clio",
-              "pegatinaGaraje": "Los Manquiñas",
-              "MAX_SPEED": 180,
-              "GAP_ACCELERATION": 10,
-              "speedometer": 10,
-              "counterKm": 1.0,
-              "habilidadPiloto": 62
-            },
-            {
-              "BRAND": "Ford",
-              "MODEL": "Fiesta",
-              "pegatinaGaraje": "Los Manquiñas",
-              "MAX_SPEED": 180,
-              "GAP_ACCELERATION": 10,
-              "speedometer": 0,
-              "counterKm": 0.0,
-              "habilidadPiloto": 72
-            },
-            {
-              "BRAND": "Renaul",
-              "MODEL": "Traffic",
-              "pegatinaGaraje": "Los Manquiñas",
-              "MAX_SPEED": 180,
-              "GAP_ACCELERATION": 10,
-              "speedometer": 0,
-              "counterKm": 0.0,
-              "habilidadPiloto": 34
-            }
-          ]
-        },
-        {
-          "NOMBRE": "Los Flipados",
-          "coches": [
-            {
-              "BRAND": "Seat",
-              "MODEL": "F1",
-              "pegatinaGaraje": "Los Flipados",
-              "MAX_SPEED": 180,
-              "GAP_ACCELERATION": 10,
-              "speedometer": 0,
-              "counterKm": 0.16666667,
-              "habilidadPiloto": 36
-            },
-            {
-              "BRAND": "Seat",
-              "MODEL": "F2",
-              "pegatinaGaraje": "Los Flipados",
-              "MAX_SPEED": 180,
-              "GAP_ACCELERATION": 10,
-              "speedometer": 0,
-              "counterKm": 0.0,
-              "habilidadPiloto": 90
-            },
-            {
-              "BRAND": "Seat",
-              "MODEL": "F3",
-              "pegatinaGaraje": "Los Flipados",
-              "MAX_SPEED": 180,
-              "GAP_ACCELERATION": 10,
-              "speedometer": 0,
-              "counterKm": 0.0,
-              "habilidadPiloto": 42
-            },
-            {
-              "BRAND": "Seat",
-              "MODEL": "F4",
-              "pegatinaGaraje": "Los Flipados",
-              "MAX_SPEED": 180,
-              "GAP_ACCELERATION": 10,
-              "speedometer": 0,
-              "counterKm": 0.0,
-              "habilidadPiloto": 53
-            },
-            {
-              "BRAND": "Seat",
-              "MODEL": "F5",
-              "pegatinaGaraje": "Los Flipados",
-              "MAX_SPEED": 180,
-              "GAP_ACCELERATION": 10,
-              "speedometer": 0,
-              "counterKm": 0.0,
-              "habilidadPiloto": 44
-            }
-          ]
-        },
-        {
-          "NOMBRE": "Lone Wolf",
-          "coches": [
-            {
-              "BRAND": "5-Ferrari",
-              "MODEL": "F50",
-              "pegatinaGaraje": "Lone Wolf",
-              "MAX_SPEED": 180,
-              "GAP_ACCELERATION": 10,
-              "speedometer": 30,
-              "counterKm": 4.1666665,
-              "habilidadPiloto": 60
-            }
-          ]
-        },
-        {
-          "NOMBRE": "Mancato",
-          "coches": [
-            {
-              "BRAND": "Fiat",
-              "MODEL": "500",
-              "pegatinaGaraje": "Mancato",
-              "MAX_SPEED": 180,
-              "GAP_ACCELERATION": 10,
-              "speedometer": 20,
-              "counterKm": 5.5,
-              "habilidadPiloto": 68
-            },
-            {
-              "BRAND": "Fiat",
-              "MODEL": "600",
-              "pegatinaGaraje": "Mancato",
-              "MAX_SPEED": 180,
-              "GAP_ACCELERATION": 10,
-              "speedometer": 10,
-              "counterKm": 24.833326,
-              "habilidadPiloto": 30
-            },
-            {
-              "BRAND": "Fiat",
-              "MODEL": "700",
-              "pegatinaGaraje": "Mancato",
-              "MAX_SPEED": 180,
-              "GAP_ACCELERATION": 10,
-              "speedometer": 0,
-              "counterKm": 18.166664,
-              "habilidadPiloto": 35
-            }
-          ]
-        }
-      ],
-      "coches": [
-        {
-          "BRAND": "Fiat",
-          "MODEL": "500",
-          "pegatinaGaraje": "Mancato",
-          "MAX_SPEED": 180,
-          "GAP_ACCELERATION": 10,
-          "speedometer": 20,
-          "counterKm": 5.5,
-          "habilidadPiloto": 68
-        },
-        {
-          "BRAND": "5-Ferrari",
-          "MODEL": "F50",
-          "pegatinaGaraje": "Lone Wolf",
-          "MAX_SPEED": 180,
-          "GAP_ACCELERATION": 10,
-          "speedometer": 30,
-          "counterKm": 4.1666665,
-          "habilidadPiloto": 60
-        },
-        {
-          "BRAND": "Renaul",
-          "MODEL": "Clio",
-          "pegatinaGaraje": "Los Manquiñas",
-          "MAX_SPEED": 180,
-          "GAP_ACCELERATION": 10,
-          "speedometer": 10,
-          "counterKm": 1.0,
-          "habilidadPiloto": 62
-        },
-        {
-          "BRAND": "Seat",
-          "MODEL": "F1",
-          "pegatinaGaraje": "Los Flipados",
-          "MAX_SPEED": 180,
-          "GAP_ACCELERATION": 10,
-          "speedometer": 0,
-          "counterKm": 0.16666667,
-          "habilidadPiloto": 36
-        }
-      ],
-      "podio": [
-        [
-          {
-            "BRAND": "Fiat",
-            "MODEL": "500",
-            "pegatinaGaraje": "Mancato",
-            "MAX_SPEED": 180,
-            "GAP_ACCELERATION": 10,
-            "speedometer": 20,
-            "counterKm": 5.5,
-            "habilidadPiloto": 68
-          }
-        ],
-        [
-          {
-            "BRAND": "5-Ferrari",
-            "MODEL": "F50",
-            "pegatinaGaraje": "Lone Wolf",
-            "MAX_SPEED": 180,
-            "GAP_ACCELERATION": 10,
-            "speedometer": 30,
-            "counterKm": 4.1666665,
-            "habilidadPiloto": 60
-          }
-        ],
-        [
-          {
-            "BRAND": "Renaul",
-            "MODEL": "Clio",
-            "pegatinaGaraje": "Los Manquiñas",
-            "MAX_SPEED": 180,
-            "GAP_ACCELERATION": 10,
-            "speedometer": 10,
-            "counterKm": 1.0,
-            "habilidadPiloto": 62
-          }
-        ]
-      ],
-      "carreraFinalizada": true,
-      "puestosPodio": 3
-    },
-    {
-      "NOMBRE": "Ruta99",
-      "DURACION_MINUTOS": 180,
-      "garajes": [],
-      "coches": [],
-      "podio": [],
-      "carreraFinalizada": false,
-      "puestosPodio": 3
-    },
-    {
-      "NOMBRE": "Los 100m de Indunápolis",
-      "DURACION_MINUTOS": 180,
-      "garajes": [
-        {
-          "NOMBRE": "Fordinans",
-          "coches": [
-            {
-              "BRAND": "Ford",
-              "MODEL": "Mustang",
-              "pegatinaGaraje": "Fordinans",
-              "MAX_SPEED": 180,
-              "GAP_ACCELERATION": 10,
-              "speedometer": 0,
-              "counterKm": 0.0,
-              "habilidadPiloto": 86
-            },
-            {
-              "BRAND": "Ford",
-              "MODEL": "Mondeo",
-              "pegatinaGaraje": "Fordinans",
-              "MAX_SPEED": 180,
-              "GAP_ACCELERATION": 10,
-              "speedometer": 0,
-              "counterKm": 0.0,
-              "habilidadPiloto": 53
-            },
-            {
-              "BRAND": "Ford",
-              "MODEL": "Kuga",
-              "pegatinaGaraje": "Fordinans",
-              "MAX_SPEED": 180,
-              "GAP_ACCELERATION": 10,
-              "speedometer": 0,
-              "counterKm": 0.0,
-              "habilidadPiloto": 40
-            }
-          ]
-        },
-        {
-          "NOMBRE": "Lone Wolf",
-          "coches": [
-            {
-              "BRAND": "5-Ferrari",
-              "MODEL": "F50",
-              "pegatinaGaraje": "Lone Wolf",
-              "MAX_SPEED": 180,
-              "GAP_ACCELERATION": 10,
-              "speedometer": 30,
-              "counterKm": 4.1666665,
-              "habilidadPiloto": 60
-            }
-          ]
-        },
-        {
-          "NOMBRE": "Los Manquiñas",
-          "coches": [
-            {
-              "BRAND": "Renaul",
-              "MODEL": "Clio",
-              "pegatinaGaraje": "Los Manquiñas",
-              "MAX_SPEED": 180,
-              "GAP_ACCELERATION": 10,
-              "speedometer": 10,
-              "counterKm": 1.0,
-              "habilidadPiloto": 62
-            },
-            {
-              "BRAND": "Ford",
-              "MODEL": "Fiesta",
-              "pegatinaGaraje": "Los Manquiñas",
-              "MAX_SPEED": 180,
-              "GAP_ACCELERATION": 10,
-              "speedometer": 0,
-              "counterKm": 0.0,
-              "habilidadPiloto": 72
-            },
-            {
-              "BRAND": "Renaul",
-              "MODEL": "Traffic",
-              "pegatinaGaraje": "Los Manquiñas",
-              "MAX_SPEED": 180,
-              "GAP_ACCELERATION": 10,
-              "speedometer": 0,
-              "counterKm": 0.0,
-              "habilidadPiloto": 34
-            }
-          ]
-        }
-      ],
-      "coches": [],
-      "podio": [],
-      "carreraFinalizada": false,
-      "puestosPodio": 3
-    }
-  ],
-  "torneos": [
-    {
-      "NOMBRE": "24 horas de limons",
-      "carreras": [
-        {
-          "NOMBRE": "Primera Carrera",
-          "DURACION_MINUTOS": 180,
-          "garajes": [
-            {
-              "NOMBRE": "Los Manquiñas",
-              "coches": [
-                {
-                  "BRAND": "Renaul",
-                  "MODEL": "Clio",
-                  "pegatinaGaraje": "Los Manquiñas",
-                  "MAX_SPEED": 180,
-                  "GAP_ACCELERATION": 10,
-                  "speedometer": 10,
-                  "counterKm": 1.0,
-                  "habilidadPiloto": 62
-                },
-                {
-                  "BRAND": "Ford",
-                  "MODEL": "Fiesta",
-                  "pegatinaGaraje": "Los Manquiñas",
-                  "MAX_SPEED": 180,
-                  "GAP_ACCELERATION": 10,
-                  "speedometer": 0,
-                  "counterKm": 0.0,
-                  "habilidadPiloto": 72
-                },
-                {
-                  "BRAND": "Renaul",
-                  "MODEL": "Traffic",
-                  "pegatinaGaraje": "Los Manquiñas",
-                  "MAX_SPEED": 180,
-                  "GAP_ACCELERATION": 10,
-                  "speedometer": 0,
-                  "counterKm": 0.0,
-                  "habilidadPiloto": 34
-                }
-              ]
-            },
-            {
-              "NOMBRE": "Los Flipados",
-              "coches": [
-                {
-                  "BRAND": "Seat",
-                  "MODEL": "F1",
-                  "pegatinaGaraje": "Los Flipados",
-                  "MAX_SPEED": 180,
-                  "GAP_ACCELERATION": 10,
-                  "speedometer": 0,
-                  "counterKm": 0.16666667,
-                  "habilidadPiloto": 36
-                },
-                {
-                  "BRAND": "Seat",
-                  "MODEL": "F2",
-                  "pegatinaGaraje": "Los Flipados",
-                  "MAX_SPEED": 180,
-                  "GAP_ACCELERATION": 10,
-                  "speedometer": 0,
-                  "counterKm": 0.0,
-                  "habilidadPiloto": 90
-                },
-                {
-                  "BRAND": "Seat",
-                  "MODEL": "F3",
-                  "pegatinaGaraje": "Los Flipados",
-                  "MAX_SPEED": 180,
-                  "GAP_ACCELERATION": 10,
-                  "speedometer": 0,
-                  "counterKm": 0.0,
-                  "habilidadPiloto": 42
-                },
-                {
-                  "BRAND": "Seat",
-                  "MODEL": "F4",
-                  "pegatinaGaraje": "Los Flipados",
-                  "MAX_SPEED": 180,
-                  "GAP_ACCELERATION": 10,
-                  "speedometer": 0,
-                  "counterKm": 0.0,
-                  "habilidadPiloto": 53
-                },
-                {
-                  "BRAND": "Seat",
-                  "MODEL": "F5",
-                  "pegatinaGaraje": "Los Flipados",
-                  "MAX_SPEED": 180,
-                  "GAP_ACCELERATION": 10,
-                  "speedometer": 0,
-                  "counterKm": 0.0,
-                  "habilidadPiloto": 44
-                }
-              ]
-            },
-            {
-              "NOMBRE": "Lone Wolf",
-              "coches": [
-                {
-                  "BRAND": "5-Ferrari",
-                  "MODEL": "F50",
-                  "pegatinaGaraje": "Lone Wolf",
-                  "MAX_SPEED": 180,
-                  "GAP_ACCELERATION": 10,
-                  "speedometer": 30,
-                  "counterKm": 4.1666665,
-                  "habilidadPiloto": 60
-                }
-              ]
-            }
-          ],
-          "coches": [
-            {
-              "BRAND": "5-Ferrari",
-              "MODEL": "F50",
-              "pegatinaGaraje": "Lone Wolf",
-              "MAX_SPEED": 180,
-              "GAP_ACCELERATION": 10,
-              "speedometer": 30,
-              "counterKm": 4.1666665,
-              "habilidadPiloto": 60
-            },
-            {
-              "BRAND": "Renaul",
-              "MODEL": "Clio",
-              "pegatinaGaraje": "Los Manquiñas",
-              "MAX_SPEED": 180,
-              "GAP_ACCELERATION": 10,
-              "speedometer": 10,
-              "counterKm": 1.0,
-              "habilidadPiloto": 62
-            },
-            {
-              "BRAND": "Seat",
-              "MODEL": "F1",
-              "pegatinaGaraje": "Los Flipados",
-              "MAX_SPEED": 180,
-              "GAP_ACCELERATION": 10,
-              "speedometer": 0,
-              "counterKm": 0.16666667,
-              "habilidadPiloto": 36
-            }
-          ],
-          "podio": [
-            [
-              {
-                "BRAND": "5-Ferrari",
-                "MODEL": "F50",
-                "pegatinaGaraje": "Lone Wolf",
-                "MAX_SPEED": 180,
-                "GAP_ACCELERATION": 10,
-                "speedometer": 30,
-                "counterKm": 4.1666665,
-                "habilidadPiloto": 60
-              }
-            ],
-            [
+            "NOMBRE": "Los Manquiñas",
+            "coches": [
               {
                 "BRAND": "Renaul",
                 "MODEL": "Clio",
                 "pegatinaGaraje": "Los Manquiñas",
                 "MAX_SPEED": 180,
                 "GAP_ACCELERATION": 10,
-                "speedometer": 10,
-                "counterKm": 1.0,
-                "habilidadPiloto": 62
+                "speedometer": 0,
+                "counterKm": 0.0,
+                "habilidadPiloto": 47
+              },
+              {
+                "BRAND": "Ford",
+                "MODEL": "Fiesta",
+                "pegatinaGaraje": "Los Manquiñas",
+                "MAX_SPEED": 180,
+                "GAP_ACCELERATION": 10,
+                "speedometer": 0,
+                "counterKm": 0.0,
+                "habilidadPiloto": 39
+              },
+              {
+                "BRAND": "Renaul",
+                "MODEL": "Traffic",
+                "pegatinaGaraje": "Los Manquiñas",
+                "MAX_SPEED": 180,
+                "GAP_ACCELERATION": 10,
+                "speedometer": 0,
+                "counterKm": 0.0,
+                "habilidadPiloto": 40
               }
-            ],
-            [
+            ]
+          },
+          {
+            "NOMBRE": "Los Flipados",
+            "coches": [
               {
                 "BRAND": "Seat",
                 "MODEL": "F1",
@@ -1280,112 +316,104 @@
                 "MAX_SPEED": 180,
                 "GAP_ACCELERATION": 10,
                 "speedometer": 0,
-                "counterKm": 0.16666667,
-                "habilidadPiloto": 36
+                "counterKm": 0.0,
+                "habilidadPiloto": 84
+              },
+              {
+                "BRAND": "Seat",
+                "MODEL": "F2",
+                "pegatinaGaraje": "Los Flipados",
+                "MAX_SPEED": 180,
+                "GAP_ACCELERATION": 10,
+                "speedometer": 0,
+                "counterKm": 0.0,
+                "habilidadPiloto": 68
+              },
+              {
+                "BRAND": "Seat",
+                "MODEL": "F3",
+                "pegatinaGaraje": "Los Flipados",
+                "MAX_SPEED": 180,
+                "GAP_ACCELERATION": 10,
+                "speedometer": 0,
+                "counterKm": 0.0,
+                "habilidadPiloto": 82
+              },
+              {
+                "BRAND": "Seat",
+                "MODEL": "F4",
+                "pegatinaGaraje": "Los Flipados",
+                "MAX_SPEED": 180,
+                "GAP_ACCELERATION": 10,
+                "speedometer": 0,
+                "counterKm": 0.0,
+                "habilidadPiloto": 79
+              },
+              {
+                "BRAND": "Seat",
+                "MODEL": "F5",
+                "pegatinaGaraje": "Los Flipados",
+                "MAX_SPEED": 180,
+                "GAP_ACCELERATION": 10,
+                "speedometer": 0,
+                "counterKm": 0.0,
+                "habilidadPiloto": 46
               }
             ]
-          ],
-          "carreraFinalizada": true,
-          "puestosPodio": 3
-        },
-        {
-          "NOMBRE": "Segunda carrera",
-          "DURACION_MINUTOS": 180,
-          "garajes": [
-            {
-              "NOMBRE": "Mancato",
-              "coches": [
-                {
-                  "BRAND": "Fiat",
-                  "MODEL": "500",
-                  "pegatinaGaraje": "Mancato",
-                  "MAX_SPEED": 180,
-                  "GAP_ACCELERATION": 10,
-                  "speedometer": 20,
-                  "counterKm": 5.5,
-                  "habilidadPiloto": 68
-                },
-                {
-                  "BRAND": "Fiat",
-                  "MODEL": "600",
-                  "pegatinaGaraje": "Mancato",
-                  "MAX_SPEED": 180,
-                  "GAP_ACCELERATION": 10,
-                  "speedometer": 10,
-                  "counterKm": 24.833326,
-                  "habilidadPiloto": 30
-                },
-                {
-                  "BRAND": "Fiat",
-                  "MODEL": "700",
-                  "pegatinaGaraje": "Mancato",
-                  "MAX_SPEED": 180,
-                  "GAP_ACCELERATION": 10,
-                  "speedometer": 0,
-                  "counterKm": 18.166664,
-                  "habilidadPiloto": 35
-                }
-              ]
-            }
-          ],
-          "coches": [
-            {
-              "BRAND": "Fiat",
-              "MODEL": "500",
-              "pegatinaGaraje": "Mancato",
-              "MAX_SPEED": 180,
-              "GAP_ACCELERATION": 10,
-              "speedometer": 20,
-              "counterKm": 5.5,
-              "habilidadPiloto": 68
-            },
-            {
-              "BRAND": "Fiat",
-              "MODEL": "600",
-              "pegatinaGaraje": "Mancato",
-              "MAX_SPEED": 180,
-              "GAP_ACCELERATION": 10,
-              "speedometer": 10,
-              "counterKm": 24.833326,
-              "habilidadPiloto": 30
-            },
-            {
-              "BRAND": "Fiat",
-              "MODEL": "700",
-              "pegatinaGaraje": "Mancato",
-              "MAX_SPEED": 180,
-              "GAP_ACCELERATION": 10,
-              "speedometer": 0,
-              "counterKm": 18.166664,
-              "habilidadPiloto": 35
-            }
-          ],
-          "podio": [
-            [
+          },
+          {
+            "NOMBRE": "Lone Wolf",
+            "coches": [
+              {
+                "BRAND": "5-Ferrari",
+                "MODEL": "F50",
+                "pegatinaGaraje": "Lone Wolf",
+                "MAX_SPEED": 180,
+                "GAP_ACCELERATION": 10,
+                "speedometer": 0,
+                "counterKm": 0.0,
+                "habilidadPiloto": 60
+              }
+            ]
+          }
+        ],
+        "coches": [],
+        "podio": [],
+        "carreraFinalizada": false,
+        "puestosPodio": 3,
+        "tipo": "Estandar"
+      }
+    },
+    {
+      "type": "CarreraEstandar",
+      "data": {
+        "propiedadQueNoTieneLaAbstracta": "desdeEstandar",
+        "NOMBRE": "Segunda carrera",
+        "DURACION_MINUTOS": 180,
+        "garajes": [
+          {
+            "NOMBRE": "Mancato",
+            "coches": [
               {
                 "BRAND": "Fiat",
                 "MODEL": "500",
                 "pegatinaGaraje": "Mancato",
                 "MAX_SPEED": 180,
                 "GAP_ACCELERATION": 10,
-                "speedometer": 20,
-                "counterKm": 5.5,
-                "habilidadPiloto": 68
-              }
-            ],
-            [
+                "speedometer": 0,
+                "counterKm": 0.0,
+                "habilidadPiloto": 67
+              },
               {
                 "BRAND": "Fiat",
                 "MODEL": "600",
                 "pegatinaGaraje": "Mancato",
                 "MAX_SPEED": 180,
                 "GAP_ACCELERATION": 10,
-                "speedometer": 10,
-                "counterKm": 24.833326,
-                "habilidadPiloto": 30
-              }
-            ],
-            [
+                "speedometer": 0,
+                "counterKm": 0.0,
+                "habilidadPiloto": 45
+              },
               {
                 "BRAND": "Fiat",
                 "MODEL": "700",
@@ -1393,469 +421,1119 @@
                 "MAX_SPEED": 180,
                 "GAP_ACCELERATION": 10,
                 "speedometer": 0,
-                "counterKm": 18.166664,
-                "habilidadPiloto": 35
+                "counterKm": 0.0,
+                "habilidadPiloto": 50
               }
             ]
-          ],
-          "carreraFinalizada": true,
-          "puestosPodio": 3
-        },
-        {
-          "NOMBRE": "Tercera carrera",
-          "DURACION_MINUTOS": 180,
-          "garajes": [
-            {
-              "NOMBRE": "Los Manquiñas",
-              "coches": [
-                {
-                  "BRAND": "Renaul",
-                  "MODEL": "Clio",
-                  "pegatinaGaraje": "Los Manquiñas",
-                  "MAX_SPEED": 180,
-                  "GAP_ACCELERATION": 10,
-                  "speedometer": 10,
-                  "counterKm": 1.0,
-                  "habilidadPiloto": 62
-                },
-                {
-                  "BRAND": "Ford",
-                  "MODEL": "Fiesta",
-                  "pegatinaGaraje": "Los Manquiñas",
-                  "MAX_SPEED": 180,
-                  "GAP_ACCELERATION": 10,
-                  "speedometer": 0,
-                  "counterKm": 0.0,
-                  "habilidadPiloto": 72
-                },
-                {
-                  "BRAND": "Renaul",
-                  "MODEL": "Traffic",
-                  "pegatinaGaraje": "Los Manquiñas",
-                  "MAX_SPEED": 180,
-                  "GAP_ACCELERATION": 10,
-                  "speedometer": 0,
-                  "counterKm": 0.0,
-                  "habilidadPiloto": 34
-                }
-              ]
-            },
-            {
-              "NOMBRE": "Los Flipados",
-              "coches": [
-                {
-                  "BRAND": "Seat",
-                  "MODEL": "F1",
-                  "pegatinaGaraje": "Los Flipados",
-                  "MAX_SPEED": 180,
-                  "GAP_ACCELERATION": 10,
-                  "speedometer": 0,
-                  "counterKm": 0.16666667,
-                  "habilidadPiloto": 36
-                },
-                {
-                  "BRAND": "Seat",
-                  "MODEL": "F2",
-                  "pegatinaGaraje": "Los Flipados",
-                  "MAX_SPEED": 180,
-                  "GAP_ACCELERATION": 10,
-                  "speedometer": 0,
-                  "counterKm": 0.0,
-                  "habilidadPiloto": 90
-                },
-                {
-                  "BRAND": "Seat",
-                  "MODEL": "F3",
-                  "pegatinaGaraje": "Los Flipados",
-                  "MAX_SPEED": 180,
-                  "GAP_ACCELERATION": 10,
-                  "speedometer": 0,
-                  "counterKm": 0.0,
-                  "habilidadPiloto": 42
-                },
-                {
-                  "BRAND": "Seat",
-                  "MODEL": "F4",
-                  "pegatinaGaraje": "Los Flipados",
-                  "MAX_SPEED": 180,
-                  "GAP_ACCELERATION": 10,
-                  "speedometer": 0,
-                  "counterKm": 0.0,
-                  "habilidadPiloto": 53
-                },
-                {
-                  "BRAND": "Seat",
-                  "MODEL": "F5",
-                  "pegatinaGaraje": "Los Flipados",
-                  "MAX_SPEED": 180,
-                  "GAP_ACCELERATION": 10,
-                  "speedometer": 0,
-                  "counterKm": 0.0,
-                  "habilidadPiloto": 44
-                }
-              ]
-            },
-            {
-              "NOMBRE": "Lone Wolf",
-              "coches": [
-                {
-                  "BRAND": "5-Ferrari",
-                  "MODEL": "F50",
-                  "pegatinaGaraje": "Lone Wolf",
-                  "MAX_SPEED": 180,
-                  "GAP_ACCELERATION": 10,
-                  "speedometer": 30,
-                  "counterKm": 4.1666665,
-                  "habilidadPiloto": 60
-                }
-              ]
-            },
-            {
-              "NOMBRE": "Mancato",
-              "coches": [
-                {
-                  "BRAND": "Fiat",
-                  "MODEL": "500",
-                  "pegatinaGaraje": "Mancato",
-                  "MAX_SPEED": 180,
-                  "GAP_ACCELERATION": 10,
-                  "speedometer": 20,
-                  "counterKm": 5.5,
-                  "habilidadPiloto": 68
-                },
-                {
-                  "BRAND": "Fiat",
-                  "MODEL": "600",
-                  "pegatinaGaraje": "Mancato",
-                  "MAX_SPEED": 180,
-                  "GAP_ACCELERATION": 10,
-                  "speedometer": 10,
-                  "counterKm": 24.833326,
-                  "habilidadPiloto": 30
-                },
-                {
-                  "BRAND": "Fiat",
-                  "MODEL": "700",
-                  "pegatinaGaraje": "Mancato",
-                  "MAX_SPEED": 180,
-                  "GAP_ACCELERATION": 10,
-                  "speedometer": 0,
-                  "counterKm": 18.166664,
-                  "habilidadPiloto": 35
-                }
-              ]
-            }
-          ],
-          "coches": [
-            {
-              "BRAND": "Fiat",
-              "MODEL": "500",
-              "pegatinaGaraje": "Mancato",
-              "MAX_SPEED": 180,
-              "GAP_ACCELERATION": 10,
-              "speedometer": 20,
-              "counterKm": 5.5,
-              "habilidadPiloto": 68
-            },
-            {
-              "BRAND": "5-Ferrari",
-              "MODEL": "F50",
-              "pegatinaGaraje": "Lone Wolf",
-              "MAX_SPEED": 180,
-              "GAP_ACCELERATION": 10,
-              "speedometer": 30,
-              "counterKm": 4.1666665,
-              "habilidadPiloto": 60
-            },
-            {
-              "BRAND": "Renaul",
-              "MODEL": "Clio",
-              "pegatinaGaraje": "Los Manquiñas",
-              "MAX_SPEED": 180,
-              "GAP_ACCELERATION": 10,
-              "speedometer": 10,
-              "counterKm": 1.0,
-              "habilidadPiloto": 62
-            },
-            {
-              "BRAND": "Seat",
-              "MODEL": "F1",
-              "pegatinaGaraje": "Los Flipados",
-              "MAX_SPEED": 180,
-              "GAP_ACCELERATION": 10,
-              "speedometer": 0,
-              "counterKm": 0.16666667,
-              "habilidadPiloto": 36
-            }
-          ],
-          "podio": [
-            [
-              {
-                "BRAND": "Fiat",
-                "MODEL": "500",
-                "pegatinaGaraje": "Mancato",
-                "MAX_SPEED": 180,
-                "GAP_ACCELERATION": 10,
-                "speedometer": 20,
-                "counterKm": 5.5,
-                "habilidadPiloto": 68
-              }
-            ],
-            [
-              {
-                "BRAND": "5-Ferrari",
-                "MODEL": "F50",
-                "pegatinaGaraje": "Lone Wolf",
-                "MAX_SPEED": 180,
-                "GAP_ACCELERATION": 10,
-                "speedometer": 30,
-                "counterKm": 4.1666665,
-                "habilidadPiloto": 60
-              }
-            ],
-            [
+          }
+        ],
+        "coches": [],
+        "podio": [],
+        "carreraFinalizada": false,
+        "puestosPodio": 3,
+        "tipo": "Estandar"
+      }
+    },
+    {
+      "type": "CarreraEstandar",
+      "data": {
+        "propiedadQueNoTieneLaAbstracta": "desdeEstandar",
+        "NOMBRE": "Tercera carrera",
+        "DURACION_MINUTOS": 180,
+        "garajes": [
+          {
+            "NOMBRE": "Los Manquiñas",
+            "coches": [
               {
                 "BRAND": "Renaul",
                 "MODEL": "Clio",
                 "pegatinaGaraje": "Los Manquiñas",
                 "MAX_SPEED": 180,
                 "GAP_ACCELERATION": 10,
-                "speedometer": 10,
-                "counterKm": 1.0,
-                "habilidadPiloto": 62
-              }
-            ]
-          ],
-          "carreraFinalizada": true,
-          "puestosPodio": 3
-        },
-        {
-          "NOMBRE": "Carrera Eliminatoria",
-          "DURACION_MINUTOS": 10,
-          "garajes": [
-            {
-              "NOMBRE": "Los Manquiñas",
-              "coches": [
-                {
-                  "BRAND": "Renaul",
-                  "MODEL": "Clio",
-                  "pegatinaGaraje": "Los Manquiñas",
-                  "MAX_SPEED": 180,
-                  "GAP_ACCELERATION": 10,
-                  "speedometer": 10,
-                  "counterKm": 1.0,
-                  "habilidadPiloto": 62
-                },
-                {
-                  "BRAND": "Ford",
-                  "MODEL": "Fiesta",
-                  "pegatinaGaraje": "Los Manquiñas",
-                  "MAX_SPEED": 180,
-                  "GAP_ACCELERATION": 10,
-                  "speedometer": 0,
-                  "counterKm": 0.0,
-                  "habilidadPiloto": 72
-                },
-                {
-                  "BRAND": "Renaul",
-                  "MODEL": "Traffic",
-                  "pegatinaGaraje": "Los Manquiñas",
-                  "MAX_SPEED": 180,
-                  "GAP_ACCELERATION": 10,
-                  "speedometer": 0,
-                  "counterKm": 0.0,
-                  "habilidadPiloto": 34
-                }
-              ]
-            },
-            {
-              "NOMBRE": "Los Flipados",
-              "coches": [
-                {
-                  "BRAND": "Seat",
-                  "MODEL": "F1",
-                  "pegatinaGaraje": "Los Flipados",
-                  "MAX_SPEED": 180,
-                  "GAP_ACCELERATION": 10,
-                  "speedometer": 0,
-                  "counterKm": 0.16666667,
-                  "habilidadPiloto": 36
-                },
-                {
-                  "BRAND": "Seat",
-                  "MODEL": "F2",
-                  "pegatinaGaraje": "Los Flipados",
-                  "MAX_SPEED": 180,
-                  "GAP_ACCELERATION": 10,
-                  "speedometer": 0,
-                  "counterKm": 0.0,
-                  "habilidadPiloto": 90
-                },
-                {
-                  "BRAND": "Seat",
-                  "MODEL": "F3",
-                  "pegatinaGaraje": "Los Flipados",
-                  "MAX_SPEED": 180,
-                  "GAP_ACCELERATION": 10,
-                  "speedometer": 0,
-                  "counterKm": 0.0,
-                  "habilidadPiloto": 42
-                },
-                {
-                  "BRAND": "Seat",
-                  "MODEL": "F4",
-                  "pegatinaGaraje": "Los Flipados",
-                  "MAX_SPEED": 180,
-                  "GAP_ACCELERATION": 10,
-                  "speedometer": 0,
-                  "counterKm": 0.0,
-                  "habilidadPiloto": 53
-                },
-                {
-                  "BRAND": "Seat",
-                  "MODEL": "F5",
-                  "pegatinaGaraje": "Los Flipados",
-                  "MAX_SPEED": 180,
-                  "GAP_ACCELERATION": 10,
-                  "speedometer": 0,
-                  "counterKm": 0.0,
-                  "habilidadPiloto": 44
-                }
-              ]
-            },
-            {
-              "NOMBRE": "Lone Wolf",
-              "coches": [
-                {
-                  "BRAND": "5-Ferrari",
-                  "MODEL": "F50",
-                  "pegatinaGaraje": "Lone Wolf",
-                  "MAX_SPEED": 180,
-                  "GAP_ACCELERATION": 10,
-                  "speedometer": 30,
-                  "counterKm": 4.1666665,
-                  "habilidadPiloto": 60
-                }
-              ]
-            },
-            {
-              "NOMBRE": "Mancato",
-              "coches": [
-                {
-                  "BRAND": "Fiat",
-                  "MODEL": "500",
-                  "pegatinaGaraje": "Mancato",
-                  "MAX_SPEED": 180,
-                  "GAP_ACCELERATION": 10,
-                  "speedometer": 20,
-                  "counterKm": 5.5,
-                  "habilidadPiloto": 68
-                },
-                {
-                  "BRAND": "Fiat",
-                  "MODEL": "600",
-                  "pegatinaGaraje": "Mancato",
-                  "MAX_SPEED": 180,
-                  "GAP_ACCELERATION": 10,
-                  "speedometer": 10,
-                  "counterKm": 24.833326,
-                  "habilidadPiloto": 30
-                },
-                {
-                  "BRAND": "Fiat",
-                  "MODEL": "700",
-                  "pegatinaGaraje": "Mancato",
-                  "MAX_SPEED": 180,
-                  "GAP_ACCELERATION": 10,
-                  "speedometer": 0,
-                  "counterKm": 18.166664,
-                  "habilidadPiloto": 35
-                }
-              ]
-            }
-          ],
-          "coches": [
-            {
-              "BRAND": "Fiat",
-              "MODEL": "500",
-              "pegatinaGaraje": "Mancato",
-              "MAX_SPEED": 180,
-              "GAP_ACCELERATION": 10,
-              "speedometer": 20,
-              "counterKm": 5.5,
-              "habilidadPiloto": 68
-            },
-            {
-              "BRAND": "5-Ferrari",
-              "MODEL": "F50",
-              "pegatinaGaraje": "Lone Wolf",
-              "MAX_SPEED": 180,
-              "GAP_ACCELERATION": 10,
-              "speedometer": 30,
-              "counterKm": 4.1666665,
-              "habilidadPiloto": 60
-            },
-            {
-              "BRAND": "Renaul",
-              "MODEL": "Clio",
-              "pegatinaGaraje": "Los Manquiñas",
-              "MAX_SPEED": 180,
-              "GAP_ACCELERATION": 10,
-              "speedometer": 10,
-              "counterKm": 1.0,
-              "habilidadPiloto": 62
-            },
-            {
-              "BRAND": "Seat",
-              "MODEL": "F1",
-              "pegatinaGaraje": "Los Flipados",
-              "MAX_SPEED": 180,
-              "GAP_ACCELERATION": 10,
-              "speedometer": 0,
-              "counterKm": 0.16666667,
-              "habilidadPiloto": 36
-            }
-          ],
-          "podio": [
-            [
+                "speedometer": 0,
+                "counterKm": 0.0,
+                "habilidadPiloto": 47
+              },
               {
-                "BRAND": "Fiat",
-                "MODEL": "500",
-                "pegatinaGaraje": "Mancato",
+                "BRAND": "Ford",
+                "MODEL": "Fiesta",
+                "pegatinaGaraje": "Los Manquiñas",
                 "MAX_SPEED": 180,
                 "GAP_ACCELERATION": 10,
-                "speedometer": 20,
-                "counterKm": 5.5,
-                "habilidadPiloto": 68
+                "speedometer": 0,
+                "counterKm": 0.0,
+                "habilidadPiloto": 39
+              },
+              {
+                "BRAND": "Renaul",
+                "MODEL": "Traffic",
+                "pegatinaGaraje": "Los Manquiñas",
+                "MAX_SPEED": 180,
+                "GAP_ACCELERATION": 10,
+                "speedometer": 0,
+                "counterKm": 0.0,
+                "habilidadPiloto": 40
               }
-            ],
-            [
+            ]
+          },
+          {
+            "NOMBRE": "Los Flipados",
+            "coches": [
+              {
+                "BRAND": "Seat",
+                "MODEL": "F1",
+                "pegatinaGaraje": "Los Flipados",
+                "MAX_SPEED": 180,
+                "GAP_ACCELERATION": 10,
+                "speedometer": 0,
+                "counterKm": 0.0,
+                "habilidadPiloto": 84
+              },
+              {
+                "BRAND": "Seat",
+                "MODEL": "F2",
+                "pegatinaGaraje": "Los Flipados",
+                "MAX_SPEED": 180,
+                "GAP_ACCELERATION": 10,
+                "speedometer": 0,
+                "counterKm": 0.0,
+                "habilidadPiloto": 68
+              },
+              {
+                "BRAND": "Seat",
+                "MODEL": "F3",
+                "pegatinaGaraje": "Los Flipados",
+                "MAX_SPEED": 180,
+                "GAP_ACCELERATION": 10,
+                "speedometer": 0,
+                "counterKm": 0.0,
+                "habilidadPiloto": 82
+              },
+              {
+                "BRAND": "Seat",
+                "MODEL": "F4",
+                "pegatinaGaraje": "Los Flipados",
+                "MAX_SPEED": 180,
+                "GAP_ACCELERATION": 10,
+                "speedometer": 0,
+                "counterKm": 0.0,
+                "habilidadPiloto": 79
+              },
+              {
+                "BRAND": "Seat",
+                "MODEL": "F5",
+                "pegatinaGaraje": "Los Flipados",
+                "MAX_SPEED": 180,
+                "GAP_ACCELERATION": 10,
+                "speedometer": 0,
+                "counterKm": 0.0,
+                "habilidadPiloto": 46
+              }
+            ]
+          },
+          {
+            "NOMBRE": "Lone Wolf",
+            "coches": [
               {
                 "BRAND": "5-Ferrari",
                 "MODEL": "F50",
                 "pegatinaGaraje": "Lone Wolf",
                 "MAX_SPEED": 180,
                 "GAP_ACCELERATION": 10,
-                "speedometer": 30,
-                "counterKm": 4.1666665,
+                "speedometer": 0,
+                "counterKm": 0.0,
                 "habilidadPiloto": 60
               }
-            ],
-            [
+            ]
+          },
+          {
+            "NOMBRE": "Mancato",
+            "coches": [
+              {
+                "BRAND": "Fiat",
+                "MODEL": "500",
+                "pegatinaGaraje": "Mancato",
+                "MAX_SPEED": 180,
+                "GAP_ACCELERATION": 10,
+                "speedometer": 0,
+                "counterKm": 0.0,
+                "habilidadPiloto": 67
+              },
+              {
+                "BRAND": "Fiat",
+                "MODEL": "600",
+                "pegatinaGaraje": "Mancato",
+                "MAX_SPEED": 180,
+                "GAP_ACCELERATION": 10,
+                "speedometer": 0,
+                "counterKm": 0.0,
+                "habilidadPiloto": 45
+              },
+              {
+                "BRAND": "Fiat",
+                "MODEL": "700",
+                "pegatinaGaraje": "Mancato",
+                "MAX_SPEED": 180,
+                "GAP_ACCELERATION": 10,
+                "speedometer": 0,
+                "counterKm": 0.0,
+                "habilidadPiloto": 50
+              }
+            ]
+          }
+        ],
+        "coches": [],
+        "podio": [],
+        "carreraFinalizada": false,
+        "puestosPodio": 3,
+        "tipo": "Estandar"
+      }
+    },
+    {
+      "type": "CarreraEliminacion",
+      "data": {
+        "NOMBRE": "Carrera Eliminatoria",
+        "DURACION_MINUTOS": 10,
+        "garajes": [
+          {
+            "NOMBRE": "Los Manquiñas",
+            "coches": [
               {
                 "BRAND": "Renaul",
                 "MODEL": "Clio",
                 "pegatinaGaraje": "Los Manquiñas",
                 "MAX_SPEED": 180,
                 "GAP_ACCELERATION": 10,
-                "speedometer": 10,
-                "counterKm": 1.0,
-                "habilidadPiloto": 62
+                "speedometer": 0,
+                "counterKm": 0.0,
+                "habilidadPiloto": 47
+              },
+              {
+                "BRAND": "Ford",
+                "MODEL": "Fiesta",
+                "pegatinaGaraje": "Los Manquiñas",
+                "MAX_SPEED": 180,
+                "GAP_ACCELERATION": 10,
+                "speedometer": 0,
+                "counterKm": 0.0,
+                "habilidadPiloto": 39
+              },
+              {
+                "BRAND": "Renaul",
+                "MODEL": "Traffic",
+                "pegatinaGaraje": "Los Manquiñas",
+                "MAX_SPEED": 180,
+                "GAP_ACCELERATION": 10,
+                "speedometer": 0,
+                "counterKm": 0.0,
+                "habilidadPiloto": 40
               }
             ]
-          ],
-          "carreraFinalizada": true,
-          "puestosPodio": 3
+          },
+          {
+            "NOMBRE": "Los Flipados",
+            "coches": [
+              {
+                "BRAND": "Seat",
+                "MODEL": "F1",
+                "pegatinaGaraje": "Los Flipados",
+                "MAX_SPEED": 180,
+                "GAP_ACCELERATION": 10,
+                "speedometer": 0,
+                "counterKm": 0.0,
+                "habilidadPiloto": 84
+              },
+              {
+                "BRAND": "Seat",
+                "MODEL": "F2",
+                "pegatinaGaraje": "Los Flipados",
+                "MAX_SPEED": 180,
+                "GAP_ACCELERATION": 10,
+                "speedometer": 0,
+                "counterKm": 0.0,
+                "habilidadPiloto": 68
+              },
+              {
+                "BRAND": "Seat",
+                "MODEL": "F3",
+                "pegatinaGaraje": "Los Flipados",
+                "MAX_SPEED": 180,
+                "GAP_ACCELERATION": 10,
+                "speedometer": 0,
+                "counterKm": 0.0,
+                "habilidadPiloto": 82
+              },
+              {
+                "BRAND": "Seat",
+                "MODEL": "F4",
+                "pegatinaGaraje": "Los Flipados",
+                "MAX_SPEED": 180,
+                "GAP_ACCELERATION": 10,
+                "speedometer": 0,
+                "counterKm": 0.0,
+                "habilidadPiloto": 79
+              },
+              {
+                "BRAND": "Seat",
+                "MODEL": "F5",
+                "pegatinaGaraje": "Los Flipados",
+                "MAX_SPEED": 180,
+                "GAP_ACCELERATION": 10,
+                "speedometer": 0,
+                "counterKm": 0.0,
+                "habilidadPiloto": 46
+              }
+            ]
+          },
+          {
+            "NOMBRE": "Lone Wolf",
+            "coches": [
+              {
+                "BRAND": "5-Ferrari",
+                "MODEL": "F50",
+                "pegatinaGaraje": "Lone Wolf",
+                "MAX_SPEED": 180,
+                "GAP_ACCELERATION": 10,
+                "speedometer": 0,
+                "counterKm": 0.0,
+                "habilidadPiloto": 60
+              }
+            ]
+          },
+          {
+            "NOMBRE": "Mancato",
+            "coches": [
+              {
+                "BRAND": "Fiat",
+                "MODEL": "500",
+                "pegatinaGaraje": "Mancato",
+                "MAX_SPEED": 180,
+                "GAP_ACCELERATION": 10,
+                "speedometer": 0,
+                "counterKm": 0.0,
+                "habilidadPiloto": 67
+              },
+              {
+                "BRAND": "Fiat",
+                "MODEL": "600",
+                "pegatinaGaraje": "Mancato",
+                "MAX_SPEED": 180,
+                "GAP_ACCELERATION": 10,
+                "speedometer": 0,
+                "counterKm": 0.0,
+                "habilidadPiloto": 45
+              },
+              {
+                "BRAND": "Fiat",
+                "MODEL": "700",
+                "pegatinaGaraje": "Mancato",
+                "MAX_SPEED": 180,
+                "GAP_ACCELERATION": 10,
+                "speedometer": 0,
+                "counterKm": 0.0,
+                "habilidadPiloto": 50
+              }
+            ]
+          }
+        ],
+        "coches": [],
+        "podio": [],
+        "carreraFinalizada": false,
+        "puestosPodio": 3,
+        "tipo": "Eliminación"
+      }
+    },
+    {
+      "type": "CarreraEliminacion",
+      "data": {
+        "NOMBRE": "Carrera Eliminatoria",
+        "DURACION_MINUTOS": 10,
+        "garajes": [
+          {
+            "NOMBRE": "Los Manquiñas",
+            "coches": [
+              {
+                "BRAND": "Renaul",
+                "MODEL": "Clio",
+                "pegatinaGaraje": "Los Manquiñas",
+                "MAX_SPEED": 180,
+                "GAP_ACCELERATION": 10,
+                "speedometer": 0,
+                "counterKm": 0.0,
+                "habilidadPiloto": 47
+              },
+              {
+                "BRAND": "Ford",
+                "MODEL": "Fiesta",
+                "pegatinaGaraje": "Los Manquiñas",
+                "MAX_SPEED": 180,
+                "GAP_ACCELERATION": 10,
+                "speedometer": 0,
+                "counterKm": 0.0,
+                "habilidadPiloto": 39
+              },
+              {
+                "BRAND": "Renaul",
+                "MODEL": "Traffic",
+                "pegatinaGaraje": "Los Manquiñas",
+                "MAX_SPEED": 180,
+                "GAP_ACCELERATION": 10,
+                "speedometer": 0,
+                "counterKm": 0.0,
+                "habilidadPiloto": 40
+              }
+            ]
+          },
+          {
+            "NOMBRE": "Los Flipados",
+            "coches": [
+              {
+                "BRAND": "Seat",
+                "MODEL": "F1",
+                "pegatinaGaraje": "Los Flipados",
+                "MAX_SPEED": 180,
+                "GAP_ACCELERATION": 10,
+                "speedometer": 0,
+                "counterKm": 0.0,
+                "habilidadPiloto": 84
+              },
+              {
+                "BRAND": "Seat",
+                "MODEL": "F2",
+                "pegatinaGaraje": "Los Flipados",
+                "MAX_SPEED": 180,
+                "GAP_ACCELERATION": 10,
+                "speedometer": 0,
+                "counterKm": 0.0,
+                "habilidadPiloto": 68
+              },
+              {
+                "BRAND": "Seat",
+                "MODEL": "F3",
+                "pegatinaGaraje": "Los Flipados",
+                "MAX_SPEED": 180,
+                "GAP_ACCELERATION": 10,
+                "speedometer": 0,
+                "counterKm": 0.0,
+                "habilidadPiloto": 82
+              },
+              {
+                "BRAND": "Seat",
+                "MODEL": "F4",
+                "pegatinaGaraje": "Los Flipados",
+                "MAX_SPEED": 180,
+                "GAP_ACCELERATION": 10,
+                "speedometer": 0,
+                "counterKm": 0.0,
+                "habilidadPiloto": 79
+              },
+              {
+                "BRAND": "Seat",
+                "MODEL": "F5",
+                "pegatinaGaraje": "Los Flipados",
+                "MAX_SPEED": 180,
+                "GAP_ACCELERATION": 10,
+                "speedometer": 0,
+                "counterKm": 0.0,
+                "habilidadPiloto": 46
+              }
+            ]
+          },
+          {
+            "NOMBRE": "Lone Wolf",
+            "coches": [
+              {
+                "BRAND": "5-Ferrari",
+                "MODEL": "F50",
+                "pegatinaGaraje": "Lone Wolf",
+                "MAX_SPEED": 180,
+                "GAP_ACCELERATION": 10,
+                "speedometer": 0,
+                "counterKm": 0.0,
+                "habilidadPiloto": 60
+              }
+            ]
+          },
+          {
+            "NOMBRE": "Mancato",
+            "coches": [
+              {
+                "BRAND": "Fiat",
+                "MODEL": "500",
+                "pegatinaGaraje": "Mancato",
+                "MAX_SPEED": 180,
+                "GAP_ACCELERATION": 10,
+                "speedometer": 0,
+                "counterKm": 0.0,
+                "habilidadPiloto": 67
+              },
+              {
+                "BRAND": "Fiat",
+                "MODEL": "600",
+                "pegatinaGaraje": "Mancato",
+                "MAX_SPEED": 180,
+                "GAP_ACCELERATION": 10,
+                "speedometer": 0,
+                "counterKm": 0.0,
+                "habilidadPiloto": 45
+              },
+              {
+                "BRAND": "Fiat",
+                "MODEL": "700",
+                "pegatinaGaraje": "Mancato",
+                "MAX_SPEED": 180,
+                "GAP_ACCELERATION": 10,
+                "speedometer": 0,
+                "counterKm": 0.0,
+                "habilidadPiloto": 50
+              }
+            ]
+          }
+        ],
+        "coches": [],
+        "podio": [],
+        "carreraFinalizada": false,
+        "puestosPodio": 3,
+        "tipo": "Eliminación"
+      }
+    },
+    {
+      "type": "CarreraEliminacion",
+      "data": {
+        "NOMBRE": "Carrera Eliminatoria",
+        "DURACION_MINUTOS": 10,
+        "garajes": [
+          {
+            "NOMBRE": "Los Manquiñas",
+            "coches": [
+              {
+                "BRAND": "Renaul",
+                "MODEL": "Clio",
+                "pegatinaGaraje": "Los Manquiñas",
+                "MAX_SPEED": 180,
+                "GAP_ACCELERATION": 10,
+                "speedometer": 0,
+                "counterKm": 0.0,
+                "habilidadPiloto": 47
+              },
+              {
+                "BRAND": "Ford",
+                "MODEL": "Fiesta",
+                "pegatinaGaraje": "Los Manquiñas",
+                "MAX_SPEED": 180,
+                "GAP_ACCELERATION": 10,
+                "speedometer": 0,
+                "counterKm": 0.0,
+                "habilidadPiloto": 39
+              },
+              {
+                "BRAND": "Renaul",
+                "MODEL": "Traffic",
+                "pegatinaGaraje": "Los Manquiñas",
+                "MAX_SPEED": 180,
+                "GAP_ACCELERATION": 10,
+                "speedometer": 0,
+                "counterKm": 0.0,
+                "habilidadPiloto": 40
+              }
+            ]
+          },
+          {
+            "NOMBRE": "Los Flipados",
+            "coches": [
+              {
+                "BRAND": "Seat",
+                "MODEL": "F1",
+                "pegatinaGaraje": "Los Flipados",
+                "MAX_SPEED": 180,
+                "GAP_ACCELERATION": 10,
+                "speedometer": 0,
+                "counterKm": 0.0,
+                "habilidadPiloto": 84
+              },
+              {
+                "BRAND": "Seat",
+                "MODEL": "F2",
+                "pegatinaGaraje": "Los Flipados",
+                "MAX_SPEED": 180,
+                "GAP_ACCELERATION": 10,
+                "speedometer": 0,
+                "counterKm": 0.0,
+                "habilidadPiloto": 68
+              },
+              {
+                "BRAND": "Seat",
+                "MODEL": "F3",
+                "pegatinaGaraje": "Los Flipados",
+                "MAX_SPEED": 180,
+                "GAP_ACCELERATION": 10,
+                "speedometer": 0,
+                "counterKm": 0.0,
+                "habilidadPiloto": 82
+              },
+              {
+                "BRAND": "Seat",
+                "MODEL": "F4",
+                "pegatinaGaraje": "Los Flipados",
+                "MAX_SPEED": 180,
+                "GAP_ACCELERATION": 10,
+                "speedometer": 0,
+                "counterKm": 0.0,
+                "habilidadPiloto": 79
+              },
+              {
+                "BRAND": "Seat",
+                "MODEL": "F5",
+                "pegatinaGaraje": "Los Flipados",
+                "MAX_SPEED": 180,
+                "GAP_ACCELERATION": 10,
+                "speedometer": 0,
+                "counterKm": 0.0,
+                "habilidadPiloto": 46
+              }
+            ]
+          },
+          {
+            "NOMBRE": "Lone Wolf",
+            "coches": [
+              {
+                "BRAND": "5-Ferrari",
+                "MODEL": "F50",
+                "pegatinaGaraje": "Lone Wolf",
+                "MAX_SPEED": 180,
+                "GAP_ACCELERATION": 10,
+                "speedometer": 0,
+                "counterKm": 0.0,
+                "habilidadPiloto": 60
+              }
+            ]
+          },
+          {
+            "NOMBRE": "Mancato",
+            "coches": [
+              {
+                "BRAND": "Fiat",
+                "MODEL": "500",
+                "pegatinaGaraje": "Mancato",
+                "MAX_SPEED": 180,
+                "GAP_ACCELERATION": 10,
+                "speedometer": 0,
+                "counterKm": 0.0,
+                "habilidadPiloto": 67
+              },
+              {
+                "BRAND": "Fiat",
+                "MODEL": "600",
+                "pegatinaGaraje": "Mancato",
+                "MAX_SPEED": 180,
+                "GAP_ACCELERATION": 10,
+                "speedometer": 0,
+                "counterKm": 0.0,
+                "habilidadPiloto": 45
+              },
+              {
+                "BRAND": "Fiat",
+                "MODEL": "700",
+                "pegatinaGaraje": "Mancato",
+                "MAX_SPEED": 180,
+                "GAP_ACCELERATION": 10,
+                "speedometer": 0,
+                "counterKm": 0.0,
+                "habilidadPiloto": 50
+              }
+            ]
+          }
+        ],
+        "coches": [],
+        "podio": [],
+        "carreraFinalizada": false,
+        "puestosPodio": 3,
+        "tipo": "Eliminación"
+      }
+    }
+  ],
+  "torneos": [
+    {
+      "NOMBRE": "24 horas de limons",
+      "carreras": [
+        {
+          "type": "CarreraEstandar",
+          "data": {
+            "propiedadQueNoTieneLaAbstracta": "desdeEstandar",
+            "NOMBRE": "Primera Carrera",
+            "DURACION_MINUTOS": 180,
+            "garajes": [
+              {
+                "NOMBRE": "Los Manquiñas",
+                "coches": [
+                  {
+                    "BRAND": "Renaul",
+                    "MODEL": "Clio",
+                    "pegatinaGaraje": "Los Manquiñas",
+                    "MAX_SPEED": 180,
+                    "GAP_ACCELERATION": 10,
+                    "speedometer": 0,
+                    "counterKm": 0.0,
+                    "habilidadPiloto": 47
+                  },
+                  {
+                    "BRAND": "Ford",
+                    "MODEL": "Fiesta",
+                    "pegatinaGaraje": "Los Manquiñas",
+                    "MAX_SPEED": 180,
+                    "GAP_ACCELERATION": 10,
+                    "speedometer": 0,
+                    "counterKm": 0.0,
+                    "habilidadPiloto": 39
+                  },
+                  {
+                    "BRAND": "Renaul",
+                    "MODEL": "Traffic",
+                    "pegatinaGaraje": "Los Manquiñas",
+                    "MAX_SPEED": 180,
+                    "GAP_ACCELERATION": 10,
+                    "speedometer": 0,
+                    "counterKm": 0.0,
+                    "habilidadPiloto": 40
+                  }
+                ]
+              },
+              {
+                "NOMBRE": "Los Flipados",
+                "coches": [
+                  {
+                    "BRAND": "Seat",
+                    "MODEL": "F1",
+                    "pegatinaGaraje": "Los Flipados",
+                    "MAX_SPEED": 180,
+                    "GAP_ACCELERATION": 10,
+                    "speedometer": 0,
+                    "counterKm": 0.0,
+                    "habilidadPiloto": 84
+                  },
+                  {
+                    "BRAND": "Seat",
+                    "MODEL": "F2",
+                    "pegatinaGaraje": "Los Flipados",
+                    "MAX_SPEED": 180,
+                    "GAP_ACCELERATION": 10,
+                    "speedometer": 0,
+                    "counterKm": 0.0,
+                    "habilidadPiloto": 68
+                  },
+                  {
+                    "BRAND": "Seat",
+                    "MODEL": "F3",
+                    "pegatinaGaraje": "Los Flipados",
+                    "MAX_SPEED": 180,
+                    "GAP_ACCELERATION": 10,
+                    "speedometer": 0,
+                    "counterKm": 0.0,
+                    "habilidadPiloto": 82
+                  },
+                  {
+                    "BRAND": "Seat",
+                    "MODEL": "F4",
+                    "pegatinaGaraje": "Los Flipados",
+                    "MAX_SPEED": 180,
+                    "GAP_ACCELERATION": 10,
+                    "speedometer": 0,
+                    "counterKm": 0.0,
+                    "habilidadPiloto": 79
+                  },
+                  {
+                    "BRAND": "Seat",
+                    "MODEL": "F5",
+                    "pegatinaGaraje": "Los Flipados",
+                    "MAX_SPEED": 180,
+                    "GAP_ACCELERATION": 10,
+                    "speedometer": 0,
+                    "counterKm": 0.0,
+                    "habilidadPiloto": 46
+                  }
+                ]
+              },
+              {
+                "NOMBRE": "Lone Wolf",
+                "coches": [
+                  {
+                    "BRAND": "5-Ferrari",
+                    "MODEL": "F50",
+                    "pegatinaGaraje": "Lone Wolf",
+                    "MAX_SPEED": 180,
+                    "GAP_ACCELERATION": 10,
+                    "speedometer": 0,
+                    "counterKm": 0.0,
+                    "habilidadPiloto": 60
+                  }
+                ]
+              }
+            ],
+            "coches": [],
+            "podio": [],
+            "carreraFinalizada": false,
+            "puestosPodio": 3,
+            "tipo": "Estandar"
+          }
+        },
+        {
+          "type": "CarreraEstandar",
+          "data": {
+            "propiedadQueNoTieneLaAbstracta": "desdeEstandar",
+            "NOMBRE": "Segunda carrera",
+            "DURACION_MINUTOS": 180,
+            "garajes": [
+              {
+                "NOMBRE": "Mancato",
+                "coches": [
+                  {
+                    "BRAND": "Fiat",
+                    "MODEL": "500",
+                    "pegatinaGaraje": "Mancato",
+                    "MAX_SPEED": 180,
+                    "GAP_ACCELERATION": 10,
+                    "speedometer": 0,
+                    "counterKm": 0.0,
+                    "habilidadPiloto": 67
+                  },
+                  {
+                    "BRAND": "Fiat",
+                    "MODEL": "600",
+                    "pegatinaGaraje": "Mancato",
+                    "MAX_SPEED": 180,
+                    "GAP_ACCELERATION": 10,
+                    "speedometer": 0,
+                    "counterKm": 0.0,
+                    "habilidadPiloto": 45
+                  },
+                  {
+                    "BRAND": "Fiat",
+                    "MODEL": "700",
+                    "pegatinaGaraje": "Mancato",
+                    "MAX_SPEED": 180,
+                    "GAP_ACCELERATION": 10,
+                    "speedometer": 0,
+                    "counterKm": 0.0,
+                    "habilidadPiloto": 50
+                  }
+                ]
+              }
+            ],
+            "coches": [],
+            "podio": [],
+            "carreraFinalizada": false,
+            "puestosPodio": 3,
+            "tipo": "Estandar"
+          }
+        },
+        {
+          "type": "CarreraEstandar",
+          "data": {
+            "propiedadQueNoTieneLaAbstracta": "desdeEstandar",
+            "NOMBRE": "Tercera carrera",
+            "DURACION_MINUTOS": 180,
+            "garajes": [
+              {
+                "NOMBRE": "Los Manquiñas",
+                "coches": [
+                  {
+                    "BRAND": "Renaul",
+                    "MODEL": "Clio",
+                    "pegatinaGaraje": "Los Manquiñas",
+                    "MAX_SPEED": 180,
+                    "GAP_ACCELERATION": 10,
+                    "speedometer": 0,
+                    "counterKm": 0.0,
+                    "habilidadPiloto": 47
+                  },
+                  {
+                    "BRAND": "Ford",
+                    "MODEL": "Fiesta",
+                    "pegatinaGaraje": "Los Manquiñas",
+                    "MAX_SPEED": 180,
+                    "GAP_ACCELERATION": 10,
+                    "speedometer": 0,
+                    "counterKm": 0.0,
+                    "habilidadPiloto": 39
+                  },
+                  {
+                    "BRAND": "Renaul",
+                    "MODEL": "Traffic",
+                    "pegatinaGaraje": "Los Manquiñas",
+                    "MAX_SPEED": 180,
+                    "GAP_ACCELERATION": 10,
+                    "speedometer": 0,
+                    "counterKm": 0.0,
+                    "habilidadPiloto": 40
+                  }
+                ]
+              },
+              {
+                "NOMBRE": "Los Flipados",
+                "coches": [
+                  {
+                    "BRAND": "Seat",
+                    "MODEL": "F1",
+                    "pegatinaGaraje": "Los Flipados",
+                    "MAX_SPEED": 180,
+                    "GAP_ACCELERATION": 10,
+                    "speedometer": 0,
+                    "counterKm": 0.0,
+                    "habilidadPiloto": 84
+                  },
+                  {
+                    "BRAND": "Seat",
+                    "MODEL": "F2",
+                    "pegatinaGaraje": "Los Flipados",
+                    "MAX_SPEED": 180,
+                    "GAP_ACCELERATION": 10,
+                    "speedometer": 0,
+                    "counterKm": 0.0,
+                    "habilidadPiloto": 68
+                  },
+                  {
+                    "BRAND": "Seat",
+                    "MODEL": "F3",
+                    "pegatinaGaraje": "Los Flipados",
+                    "MAX_SPEED": 180,
+                    "GAP_ACCELERATION": 10,
+                    "speedometer": 0,
+                    "counterKm": 0.0,
+                    "habilidadPiloto": 82
+                  },
+                  {
+                    "BRAND": "Seat",
+                    "MODEL": "F4",
+                    "pegatinaGaraje": "Los Flipados",
+                    "MAX_SPEED": 180,
+                    "GAP_ACCELERATION": 10,
+                    "speedometer": 0,
+                    "counterKm": 0.0,
+                    "habilidadPiloto": 79
+                  },
+                  {
+                    "BRAND": "Seat",
+                    "MODEL": "F5",
+                    "pegatinaGaraje": "Los Flipados",
+                    "MAX_SPEED": 180,
+                    "GAP_ACCELERATION": 10,
+                    "speedometer": 0,
+                    "counterKm": 0.0,
+                    "habilidadPiloto": 46
+                  }
+                ]
+              },
+              {
+                "NOMBRE": "Lone Wolf",
+                "coches": [
+                  {
+                    "BRAND": "5-Ferrari",
+                    "MODEL": "F50",
+                    "pegatinaGaraje": "Lone Wolf",
+                    "MAX_SPEED": 180,
+                    "GAP_ACCELERATION": 10,
+                    "speedometer": 0,
+                    "counterKm": 0.0,
+                    "habilidadPiloto": 60
+                  }
+                ]
+              },
+              {
+                "NOMBRE": "Mancato",
+                "coches": [
+                  {
+                    "BRAND": "Fiat",
+                    "MODEL": "500",
+                    "pegatinaGaraje": "Mancato",
+                    "MAX_SPEED": 180,
+                    "GAP_ACCELERATION": 10,
+                    "speedometer": 0,
+                    "counterKm": 0.0,
+                    "habilidadPiloto": 67
+                  },
+                  {
+                    "BRAND": "Fiat",
+                    "MODEL": "600",
+                    "pegatinaGaraje": "Mancato",
+                    "MAX_SPEED": 180,
+                    "GAP_ACCELERATION": 10,
+                    "speedometer": 0,
+                    "counterKm": 0.0,
+                    "habilidadPiloto": 45
+                  },
+                  {
+                    "BRAND": "Fiat",
+                    "MODEL": "700",
+                    "pegatinaGaraje": "Mancato",
+                    "MAX_SPEED": 180,
+                    "GAP_ACCELERATION": 10,
+                    "speedometer": 0,
+                    "counterKm": 0.0,
+                    "habilidadPiloto": 50
+                  }
+                ]
+              }
+            ],
+            "coches": [],
+            "podio": [],
+            "carreraFinalizada": false,
+            "puestosPodio": 3,
+            "tipo": "Estandar"
+          }
+        },
+        {
+          "type": "CarreraEliminacion",
+          "data": {
+            "NOMBRE": "Carrera Eliminatoria",
+            "DURACION_MINUTOS": 10,
+            "garajes": [
+              {
+                "NOMBRE": "Los Manquiñas",
+                "coches": [
+                  {
+                    "BRAND": "Renaul",
+                    "MODEL": "Clio",
+                    "pegatinaGaraje": "Los Manquiñas",
+                    "MAX_SPEED": 180,
+                    "GAP_ACCELERATION": 10,
+                    "speedometer": 0,
+                    "counterKm": 0.0,
+                    "habilidadPiloto": 47
+                  },
+                  {
+                    "BRAND": "Ford",
+                    "MODEL": "Fiesta",
+                    "pegatinaGaraje": "Los Manquiñas",
+                    "MAX_SPEED": 180,
+                    "GAP_ACCELERATION": 10,
+                    "speedometer": 0,
+                    "counterKm": 0.0,
+                    "habilidadPiloto": 39
+                  },
+                  {
+                    "BRAND": "Renaul",
+                    "MODEL": "Traffic",
+                    "pegatinaGaraje": "Los Manquiñas",
+                    "MAX_SPEED": 180,
+                    "GAP_ACCELERATION": 10,
+                    "speedometer": 0,
+                    "counterKm": 0.0,
+                    "habilidadPiloto": 40
+                  }
+                ]
+              },
+              {
+                "NOMBRE": "Los Flipados",
+                "coches": [
+                  {
+                    "BRAND": "Seat",
+                    "MODEL": "F1",
+                    "pegatinaGaraje": "Los Flipados",
+                    "MAX_SPEED": 180,
+                    "GAP_ACCELERATION": 10,
+                    "speedometer": 0,
+                    "counterKm": 0.0,
+                    "habilidadPiloto": 84
+                  },
+                  {
+                    "BRAND": "Seat",
+                    "MODEL": "F2",
+                    "pegatinaGaraje": "Los Flipados",
+                    "MAX_SPEED": 180,
+                    "GAP_ACCELERATION": 10,
+                    "speedometer": 0,
+                    "counterKm": 0.0,
+                    "habilidadPiloto": 68
+                  },
+                  {
+                    "BRAND": "Seat",
+                    "MODEL": "F3",
+                    "pegatinaGaraje": "Los Flipados",
+                    "MAX_SPEED": 180,
+                    "GAP_ACCELERATION": 10,
+                    "speedometer": 0,
+                    "counterKm": 0.0,
+                    "habilidadPiloto": 82
+                  },
+                  {
+                    "BRAND": "Seat",
+                    "MODEL": "F4",
+                    "pegatinaGaraje": "Los Flipados",
+                    "MAX_SPEED": 180,
+                    "GAP_ACCELERATION": 10,
+                    "speedometer": 0,
+                    "counterKm": 0.0,
+                    "habilidadPiloto": 79
+                  },
+                  {
+                    "BRAND": "Seat",
+                    "MODEL": "F5",
+                    "pegatinaGaraje": "Los Flipados",
+                    "MAX_SPEED": 180,
+                    "GAP_ACCELERATION": 10,
+                    "speedometer": 0,
+                    "counterKm": 0.0,
+                    "habilidadPiloto": 46
+                  }
+                ]
+              },
+              {
+                "NOMBRE": "Lone Wolf",
+                "coches": [
+                  {
+                    "BRAND": "5-Ferrari",
+                    "MODEL": "F50",
+                    "pegatinaGaraje": "Lone Wolf",
+                    "MAX_SPEED": 180,
+                    "GAP_ACCELERATION": 10,
+                    "speedometer": 0,
+                    "counterKm": 0.0,
+                    "habilidadPiloto": 60
+                  }
+                ]
+              },
+              {
+                "NOMBRE": "Mancato",
+                "coches": [
+                  {
+                    "BRAND": "Fiat",
+                    "MODEL": "500",
+                    "pegatinaGaraje": "Mancato",
+                    "MAX_SPEED": 180,
+                    "GAP_ACCELERATION": 10,
+                    "speedometer": 0,
+                    "counterKm": 0.0,
+                    "habilidadPiloto": 67
+                  },
+                  {
+                    "BRAND": "Fiat",
+                    "MODEL": "600",
+                    "pegatinaGaraje": "Mancato",
+                    "MAX_SPEED": 180,
+                    "GAP_ACCELERATION": 10,
+                    "speedometer": 0,
+                    "counterKm": 0.0,
+                    "habilidadPiloto": 45
+                  },
+                  {
+                    "BRAND": "Fiat",
+                    "MODEL": "700",
+                    "pegatinaGaraje": "Mancato",
+                    "MAX_SPEED": 180,
+                    "GAP_ACCELERATION": 10,
+                    "speedometer": 0,
+                    "counterKm": 0.0,
+                    "habilidadPiloto": 50
+                  }
+                ]
+              }
+            ],
+            "coches": [],
+            "podio": [],
+            "carreraFinalizada": false,
+            "puestosPodio": 3,
+            "tipo": "Eliminación"
+          }
         }
       ],
       "garajes": [
@@ -1868,9 +1546,9 @@
               "pegatinaGaraje": "Los Manquiñas",
               "MAX_SPEED": 180,
               "GAP_ACCELERATION": 10,
-              "speedometer": 10,
-              "counterKm": 1.0,
-              "habilidadPiloto": 62
+              "speedometer": 0,
+              "counterKm": 0.0,
+              "habilidadPiloto": 47
             },
             {
               "BRAND": "Ford",
@@ -1880,7 +1558,7 @@
               "GAP_ACCELERATION": 10,
               "speedometer": 0,
               "counterKm": 0.0,
-              "habilidadPiloto": 72
+              "habilidadPiloto": 39
             },
             {
               "BRAND": "Renaul",
@@ -1890,7 +1568,7 @@
               "GAP_ACCELERATION": 10,
               "speedometer": 0,
               "counterKm": 0.0,
-              "habilidadPiloto": 34
+              "habilidadPiloto": 40
             }
           ]
         },
@@ -1904,8 +1582,8 @@
               "MAX_SPEED": 180,
               "GAP_ACCELERATION": 10,
               "speedometer": 0,
-              "counterKm": 0.16666667,
-              "habilidadPiloto": 36
+              "counterKm": 0.0,
+              "habilidadPiloto": 84
             },
             {
               "BRAND": "Seat",
@@ -1915,7 +1593,7 @@
               "GAP_ACCELERATION": 10,
               "speedometer": 0,
               "counterKm": 0.0,
-              "habilidadPiloto": 90
+              "habilidadPiloto": 68
             },
             {
               "BRAND": "Seat",
@@ -1925,7 +1603,7 @@
               "GAP_ACCELERATION": 10,
               "speedometer": 0,
               "counterKm": 0.0,
-              "habilidadPiloto": 42
+              "habilidadPiloto": 82
             },
             {
               "BRAND": "Seat",
@@ -1935,7 +1613,7 @@
               "GAP_ACCELERATION": 10,
               "speedometer": 0,
               "counterKm": 0.0,
-              "habilidadPiloto": 53
+              "habilidadPiloto": 79
             },
             {
               "BRAND": "Seat",
@@ -1945,7 +1623,7 @@
               "GAP_ACCELERATION": 10,
               "speedometer": 0,
               "counterKm": 0.0,
-              "habilidadPiloto": 44
+              "habilidadPiloto": 46
             }
           ]
         },
@@ -1958,8 +1636,8 @@
               "pegatinaGaraje": "Lone Wolf",
               "MAX_SPEED": 180,
               "GAP_ACCELERATION": 10,
-              "speedometer": 30,
-              "counterKm": 4.1666665,
+              "speedometer": 0,
+              "counterKm": 0.0,
               "habilidadPiloto": 60
             }
           ]
@@ -1973,9 +1651,9 @@
               "pegatinaGaraje": "Mancato",
               "MAX_SPEED": 180,
               "GAP_ACCELERATION": 10,
-              "speedometer": 20,
-              "counterKm": 5.5,
-              "habilidadPiloto": 68
+              "speedometer": 0,
+              "counterKm": 0.0,
+              "habilidadPiloto": 67
             },
             {
               "BRAND": "Fiat",
@@ -1983,9 +1661,9 @@
               "pegatinaGaraje": "Mancato",
               "MAX_SPEED": 180,
               "GAP_ACCELERATION": 10,
-              "speedometer": 10,
-              "counterKm": 24.833326,
-              "habilidadPiloto": 30
+              "speedometer": 0,
+              "counterKm": 0.0,
+              "habilidadPiloto": 45
             },
             {
               "BRAND": "Fiat",
@@ -1994,291 +1672,8 @@
               "MAX_SPEED": 180,
               "GAP_ACCELERATION": 10,
               "speedometer": 0,
-              "counterKm": 18.166664,
-              "habilidadPiloto": 35
-            }
-          ]
-        }
-      ],
-      "puntuacionCoches": [
-        {
-          "coche": {
-            "BRAND": "Fiat",
-            "MODEL": "500",
-            "pegatinaGaraje": "Mancato",
-            "MAX_SPEED": 180,
-            "GAP_ACCELERATION": 10,
-            "speedometer": 20,
-            "counterKm": 5.5,
-            "habilidadPiloto": 68
-          },
-          "puntos": 300
-        },
-        {
-          "coche": {
-            "BRAND": "5-Ferrari",
-            "MODEL": "F50",
-            "pegatinaGaraje": "Lone Wolf",
-            "MAX_SPEED": 180,
-            "GAP_ACCELERATION": 10,
-            "speedometer": 30,
-            "counterKm": 4.1666665,
-            "habilidadPiloto": 60
-          },
-          "puntos": 200
-        },
-        {
-          "coche": {
-            "BRAND": "Renaul",
-            "MODEL": "Clio",
-            "pegatinaGaraje": "Los Manquiñas",
-            "MAX_SPEED": 180,
-            "GAP_ACCELERATION": 10,
-            "speedometer": 10,
-            "counterKm": 1.0,
-            "habilidadPiloto": 62
-          },
-          "puntos": 100
-        },
-        {
-          "coche": {
-            "BRAND": "Fiat",
-            "MODEL": "600",
-            "pegatinaGaraje": "Mancato",
-            "MAX_SPEED": 180,
-            "GAP_ACCELERATION": 10,
-            "speedometer": 10,
-            "counterKm": 24.833326,
-            "habilidadPiloto": 30
-          },
-          "puntos": 50
-        },
-        {
-          "coche": {
-            "BRAND": "Seat",
-            "MODEL": "F1",
-            "pegatinaGaraje": "Los Flipados",
-            "MAX_SPEED": 180,
-            "GAP_ACCELERATION": 10,
-            "speedometer": 0,
-            "counterKm": 0.16666667,
-            "habilidadPiloto": 36
-          },
-          "puntos": 25
-        },
-        {
-          "coche": {
-            "BRAND": "Fiat",
-            "MODEL": "700",
-            "pegatinaGaraje": "Mancato",
-            "MAX_SPEED": 180,
-            "GAP_ACCELERATION": 10,
-            "speedometer": 0,
-            "counterKm": 18.166664,
-            "habilidadPiloto": 35
-          },
-          "puntos": 25
-        }
-      ],
-      "torneoFinalizado": true,
-      "puntosPodio": [
-        100,
-        50,
-        25
-      ],
-      "premioEuros": 100000
-    },
-    {
-      "NOMBRE": "Maratonton",
-      "carreras": [
-        {
-          "NOMBRE": "Ruta99",
-          "DURACION_MINUTOS": 180,
-          "garajes": [],
-          "coches": [],
-          "podio": [],
-          "carreraFinalizada": false,
-          "puestosPodio": 3
-        },
-        {
-          "NOMBRE": "Los 100m de Indunápolis",
-          "DURACION_MINUTOS": 180,
-          "garajes": [
-            {
-              "NOMBRE": "Fordinans",
-              "coches": [
-                {
-                  "BRAND": "Ford",
-                  "MODEL": "Mustang",
-                  "pegatinaGaraje": "Fordinans",
-                  "MAX_SPEED": 180,
-                  "GAP_ACCELERATION": 10,
-                  "speedometer": 0,
-                  "counterKm": 0.0,
-                  "habilidadPiloto": 86
-                },
-                {
-                  "BRAND": "Ford",
-                  "MODEL": "Mondeo",
-                  "pegatinaGaraje": "Fordinans",
-                  "MAX_SPEED": 180,
-                  "GAP_ACCELERATION": 10,
-                  "speedometer": 0,
-                  "counterKm": 0.0,
-                  "habilidadPiloto": 53
-                },
-                {
-                  "BRAND": "Ford",
-                  "MODEL": "Kuga",
-                  "pegatinaGaraje": "Fordinans",
-                  "MAX_SPEED": 180,
-                  "GAP_ACCELERATION": 10,
-                  "speedometer": 0,
-                  "counterKm": 0.0,
-                  "habilidadPiloto": 40
-                }
-              ]
-            },
-            {
-              "NOMBRE": "Lone Wolf",
-              "coches": [
-                {
-                  "BRAND": "5-Ferrari",
-                  "MODEL": "F50",
-                  "pegatinaGaraje": "Lone Wolf",
-                  "MAX_SPEED": 180,
-                  "GAP_ACCELERATION": 10,
-                  "speedometer": 30,
-                  "counterKm": 4.1666665,
-                  "habilidadPiloto": 60
-                }
-              ]
-            },
-            {
-              "NOMBRE": "Los Manquiñas",
-              "coches": [
-                {
-                  "BRAND": "Renaul",
-                  "MODEL": "Clio",
-                  "pegatinaGaraje": "Los Manquiñas",
-                  "MAX_SPEED": 180,
-                  "GAP_ACCELERATION": 10,
-                  "speedometer": 10,
-                  "counterKm": 1.0,
-                  "habilidadPiloto": 62
-                },
-                {
-                  "BRAND": "Ford",
-                  "MODEL": "Fiesta",
-                  "pegatinaGaraje": "Los Manquiñas",
-                  "MAX_SPEED": 180,
-                  "GAP_ACCELERATION": 10,
-                  "speedometer": 0,
-                  "counterKm": 0.0,
-                  "habilidadPiloto": 72
-                },
-                {
-                  "BRAND": "Renaul",
-                  "MODEL": "Traffic",
-                  "pegatinaGaraje": "Los Manquiñas",
-                  "MAX_SPEED": 180,
-                  "GAP_ACCELERATION": 10,
-                  "speedometer": 0,
-                  "counterKm": 0.0,
-                  "habilidadPiloto": 34
-                }
-              ]
-            }
-          ],
-          "coches": [],
-          "podio": [],
-          "carreraFinalizada": false,
-          "puestosPodio": 3
-        }
-      ],
-      "garajes": [
-        {
-          "NOMBRE": "Fordinans",
-          "coches": [
-            {
-              "BRAND": "Ford",
-              "MODEL": "Mustang",
-              "pegatinaGaraje": "Fordinans",
-              "MAX_SPEED": 180,
-              "GAP_ACCELERATION": 10,
-              "speedometer": 0,
               "counterKm": 0.0,
-              "habilidadPiloto": 86
-            },
-            {
-              "BRAND": "Ford",
-              "MODEL": "Mondeo",
-              "pegatinaGaraje": "Fordinans",
-              "MAX_SPEED": 180,
-              "GAP_ACCELERATION": 10,
-              "speedometer": 0,
-              "counterKm": 0.0,
-              "habilidadPiloto": 53
-            },
-            {
-              "BRAND": "Ford",
-              "MODEL": "Kuga",
-              "pegatinaGaraje": "Fordinans",
-              "MAX_SPEED": 180,
-              "GAP_ACCELERATION": 10,
-              "speedometer": 0,
-              "counterKm": 0.0,
-              "habilidadPiloto": 40
-            }
-          ]
-        },
-        {
-          "NOMBRE": "Lone Wolf",
-          "coches": [
-            {
-              "BRAND": "5-Ferrari",
-              "MODEL": "F50",
-              "pegatinaGaraje": "Lone Wolf",
-              "MAX_SPEED": 180,
-              "GAP_ACCELERATION": 10,
-              "speedometer": 30,
-              "counterKm": 4.1666665,
-              "habilidadPiloto": 60
-            }
-          ]
-        },
-        {
-          "NOMBRE": "Los Manquiñas",
-          "coches": [
-            {
-              "BRAND": "Renaul",
-              "MODEL": "Clio",
-              "pegatinaGaraje": "Los Manquiñas",
-              "MAX_SPEED": 180,
-              "GAP_ACCELERATION": 10,
-              "speedometer": 10,
-              "counterKm": 1.0,
-              "habilidadPiloto": 62
-            },
-            {
-              "BRAND": "Ford",
-              "MODEL": "Fiesta",
-              "pegatinaGaraje": "Los Manquiñas",
-              "MAX_SPEED": 180,
-              "GAP_ACCELERATION": 10,
-              "speedometer": 0,
-              "counterKm": 0.0,
-              "habilidadPiloto": 72
-            },
-            {
-              "BRAND": "Renaul",
-              "MODEL": "Traffic",
-              "pegatinaGaraje": "Los Manquiñas",
-              "MAX_SPEED": 180,
-              "GAP_ACCELERATION": 10,
-              "speedometer": 0,
-              "counterKm": 0.0,
-              "habilidadPiloto": 34
+              "habilidadPiloto": 50
             }
           ]
         }

@@ -118,7 +118,7 @@ public class Torneo {
 					try {
 						carrera.iniciar();
 						guardarPuntuacion(carrera);
-						System.out.println(carrera.getNOMBRE() + " finalizada");
+						System.out.println(carrera.getNOMBRE() + " finalizada");						
 					} catch (IncompleteException e) {
 						System.err.println(e.getMessage());
 						carrerasFinalizadas = false;
@@ -176,8 +176,8 @@ public class Torneo {
 	public String mostrarPuntuacionesCoches() {
 		StringBuilder texto = new StringBuilder();
 		if (torneoFinalizado) {
-			texto.append("********  " + NOMBRE + "\t *******");
-			texto.append("Puntuación Final:");
+			texto.append("\n********  " + NOMBRE + "\t *******");
+			texto.append("\nPuntuación Final:");
 			for (Puntuacion puntuacion : puntuacionCoches) {
 				texto.append("\n " + puntuacion.getCoche().getBRAND() + " - " + puntuacion.getCoche().getMODEL() + " ("
 						+ puntuacion.getCoche().getPegatinaGaraje() + ")");

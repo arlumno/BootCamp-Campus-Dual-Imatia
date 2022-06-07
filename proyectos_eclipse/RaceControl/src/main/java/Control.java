@@ -168,6 +168,7 @@ public class Control {
 					texto.append("\n\t" + carrera.getNOMBRE());
 				}
 			}
+			texto.append("\n"+torneo.mostrarPuntuacionesCoches());
 		}
 		return texto.toString();
 	}
@@ -286,24 +287,24 @@ public class Control {
 			g04.addCoche(new Coche("Fiat", "700"));
 
 			// carreras
-			Carrera c01 = new Carrera("Primera Carrera");
+			CarreraEstandar c01 = new CarreraEstandar("Primera Carrera");
 			carreras.add(c01);
 			c01.addGaraje(g01);
 			c01.addGaraje(g02);
 			c01.addGaraje(g03);
 
-			Carrera c02 = new Carrera("Segunda carrera");
+			CarreraEstandar c02 = new CarreraEstandar("Segunda carrera");
 			carreras.add(c02);
 			c02.addGaraje(g04);
 
-			Carrera c03 = new Carrera("Tercera carrera");
+			CarreraEstandar c03 = new CarreraEstandar("Tercera carrera");
 			carreras.add(c03);
 			c03.addGaraje(g01);
 			c03.addGaraje(g02);
 			c03.addGaraje(g03);
 			c03.addGaraje(g04);
 
-			Carrera c04 = new CarreraEliminacion("Carrera Eliminatoria");
+			CarreraEliminacion c04 = new CarreraEliminacion("Carrera Eliminatoria");
 			carreras.add(c04);
 			c04.addGaraje(g01);
 			c04.addGaraje(g02);

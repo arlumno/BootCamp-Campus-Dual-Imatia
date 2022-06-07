@@ -12,7 +12,6 @@ import com.google.gson.GsonBuilder;
 public class App {
 	private static Control control = null;
 	private static final File dataFile = new File("src/main/java/data.json");
-	private static Gson gson = new GsonBuilder().setPrettyPrinting().create();
 	// https://danielme.com/2013/07/11/json-y-java-android-introduccion-a-gson/
 
 	public static void main(String[] args) {
@@ -23,7 +22,7 @@ public class App {
 				while ((linea = br.readLine()) != null) {
 					dataJsonSB.append(linea);
 				}
-				control = gson.fromJson(dataJsonSB.toString(), Control.class);
+				control = getGson().fromJson(dataJsonSB.toString(), Control.class);
 				control.syncAllReferences();
 			} catch (IOException e) {
 				System.out.println(e.getMessage());
@@ -58,7 +57,7 @@ public class App {
 	}
 
 	public static void salir() {
-		String controlJson = gson.toJson(control);
+		String controlJson = getGson().toJson(control);
 //		System.out.println(controlJson);
 		try (BufferedWriter bw = new BufferedWriter(new FileWriter(dataFile));) {
 			bw.write(controlJson);
@@ -66,5 +65,12 @@ public class App {
 		} catch (Exception e) {
 			System.out.println(e.toString());
 		}
+	}
+	public static Gson getGson() {
+		GsonBuilder gsonBuilder = new GsonBuilder();
+		gsonBuilder.registerTypeAdapter(Carrera.class, new InterfaceAdapter<Carrera>());
+		gsonBuilder.setPrettyPrinting();
+		Gson gson = gsonBuilder.create();
+		return gson;
 	}
 }

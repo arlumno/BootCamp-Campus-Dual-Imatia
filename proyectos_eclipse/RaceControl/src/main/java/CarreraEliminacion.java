@@ -8,7 +8,6 @@ import Excepciones.IncompleteException;
 public class CarreraEliminacion extends Carrera {
 
 	public final static int DURACION_MINUTOS_DEFAULT = 10;
-	protected String tipo = "Eliminación";
 
 	/**
 	 * 
@@ -18,18 +17,19 @@ public class CarreraEliminacion extends Carrera {
 	 */
 	public CarreraEliminacion(String nOMBRE, ArrayList<Garaje> garajes, int dURACION_MINUTOS) {
 		super(nOMBRE, garajes, dURACION_MINUTOS);
+		setTipo("Eliminación");
 	}
 
 	public CarreraEliminacion(String nOMBRE, ArrayList<Garaje> garajes) {
-		super(nOMBRE, garajes,DURACION_MINUTOS_DEFAULT);
+		this(nOMBRE, garajes,DURACION_MINUTOS_DEFAULT);
 	}
 
 	public CarreraEliminacion(String nOMBRE, int dURACION_MINUTOS) {
-		super(nOMBRE, dURACION_MINUTOS);
+		this(nOMBRE,new ArrayList<>(), dURACION_MINUTOS);
 	}
 
 	public CarreraEliminacion(String nOMBRE) {
-		super(nOMBRE,DURACION_MINUTOS_DEFAULT);
+		this(nOMBRE,DURACION_MINUTOS_DEFAULT);
 	}
 
 //	@Override
@@ -107,7 +107,7 @@ public class CarreraEliminacion extends Carrera {
 			}			//
 			enCarrera.removeAll(eliminadosRonda);
 		}
-		carreraFinalizada = true;
+		setCarreraFinalizada(true);
 		calcularPodio();
 	}
 }

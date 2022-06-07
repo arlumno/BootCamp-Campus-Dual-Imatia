@@ -55,13 +55,34 @@ public class AppAcciones {
 	}
 
 	public void crearCarrera() {
+		Menu menuTipoCarrera = new Menu(false);
+		menuTipoCarrera.setTitulo("Tipos de Carreras");
+		menuTipoCarrera.setSubTitulo("Selecciona el tipo de carrera");
+		menuTipoCarrera.addOpcion("Estándar", null);
+		menuTipoCarrera.addOpcion("Eliminación", null);
+		menuTipoCarrera.run();
 		System.out.println("Introduzca el nombre de la Carrera.");
-		Carrera carrera = new Carrera(EntradasConsola.pedirString(lector));
+		Carrera carrera = null;
+		try {
 
-		if (control.addCarrera(carrera)) {
-			System.out.println("Carrera creada");
-		} else {
-			System.err.println("Error al crear carrera");
+			switch (menuTipoCarrera.getTextSeleccion()) {
+			case "Estándar":
+				carrera = new CarreraEstandar(EntradasConsola.pedirString(lector));
+				break;
+			case "Eliminación":
+				carrera = new CarreraEliminacion(EntradasConsola.pedirString(lector));
+				break;
+			default:
+				throw new Exception("Tipo de carrera no válida: " + menuTipoCarrera.getTextSeleccion());
+			}
+
+			if (control.addCarrera(carrera)) {
+				System.out.println("Carrera creada");
+			} else {
+				System.err.println("Error al crear carrera");
+			}
+		} catch (Exception e) {
+			System.err.println("Error al crear carrera:" + e.getMessage());
 		}
 	}
 
@@ -203,6 +224,7 @@ public class AppAcciones {
 			menu.run();
 			try {
 				torneosPendientes.get(menu.getIndexOpcion()).iniciar();
+				torneosPendientes.get(menu.getIndexOpcion()).mostrarPuntuacionesCoches();
 			} catch (IncompleteException e) {
 				e.printStackTrace();
 			}

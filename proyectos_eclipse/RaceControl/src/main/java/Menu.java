@@ -42,7 +42,9 @@ public class Menu {
 	public int getSeleccion() {
 		return seleccion;
 	}
-
+	public String getTextSeleccion() {
+		return opciones.get(seleccion);
+	}
 	public void run() {
 		boolean continuar = true;
 		lector = new Scanner(System.in);
