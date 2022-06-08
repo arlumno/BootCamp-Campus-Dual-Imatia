@@ -1,0 +1,394 @@
+[
+  {
+    "NOMBRE": "Gran Prince",
+    "DURACION_MINUTOS": 180,
+    "garajesParticipantes": [
+      {
+        "NOMBRE": "Los Manquiñas",
+        "coches": [
+          {
+            "MARCA": "Renaul",
+            "MODELO": "Clio",
+            "pegatinaGaraje": "Los Manquiñas",
+            "VELOCIDAD_MAXIMA": 180,
+            "TRAMO_ACELERACION": 10,
+            "habilidadPiloto": 53
+          },
+          {
+            "MARCA": "Ford",
+            "MODELO": "Fiesta",
+            "pegatinaGaraje": "Los Manquiñas",
+            "VELOCIDAD_MAXIMA": 180,
+            "TRAMO_ACELERACION": 10,
+            "habilidadPiloto": 62
+          },
+          {
+            "MARCA": "Renaul",
+            "MODELO": "Traffic",
+            "pegatinaGaraje": "Los Manquiñas",
+            "VELOCIDAD_MAXIMA": 180,
+            "TRAMO_ACELERACION": 10,
+            "habilidadPiloto": 62
+          }
+        ]
+      },
+      {
+        "NOMBRE": "Los Setas",
+        "coches": [
+          {
+            "MARCA": "Seat",
+            "MODELO": "F1",
+            "pegatinaGaraje": "Los Setas",
+            "VELOCIDAD_MAXIMA": 180,
+            "TRAMO_ACELERACION": 10,
+            "habilidadPiloto": 38
+          },
+          {
+            "MARCA": "Seat",
+            "MODELO": "F2",
+            "pegatinaGaraje": "Los Setas",
+            "VELOCIDAD_MAXIMA": 180,
+            "TRAMO_ACELERACION": 10,
+            "habilidadPiloto": 74
+          },
+          {
+            "MARCA": "Seat",
+            "MODELO": "F3",
+            "pegatinaGaraje": "Los Setas",
+            "VELOCIDAD_MAXIMA": 180,
+            "TRAMO_ACELERACION": 10,
+            "habilidadPiloto": 55
+          },
+          {
+            "MARCA": "Seat",
+            "MODELO": "F4",
+            "pegatinaGaraje": "Los Setas",
+            "VELOCIDAD_MAXIMA": 180,
+            "TRAMO_ACELERACION": 10,
+            "habilidadPiloto": 53
+          },
+          {
+            "MARCA": "Seat",
+            "MODELO": "F5",
+            "pegatinaGaraje": "Los Setas",
+            "VELOCIDAD_MAXIMA": 180,
+            "TRAMO_ACELERACION": 10,
+            "habilidadPiloto": 41
+          }
+        ]
+      },
+      {
+        "NOMBRE": "Lone Wolf",
+        "coches": [
+          {
+            "MARCA": "5-Ferrari",
+            "MODELO": "F50",
+            "pegatinaGaraje": "Lone Wolf",
+            "VELOCIDAD_MAXIMA": 180,
+            "TRAMO_ACELERACION": 10,
+            "habilidadPiloto": 40
+          }
+        ]
+      }
+    ],
+    "cochesParticipantes": [],
+    "podio": [],
+    "carreraFinalizada": false,
+    "puestosPodio": 3,
+    "tipo": "Estandar"
+  },
+  {
+    "NOMBRE": "Civil War",
+    "DURACION_MINUTOS": 180,
+    "garajesParticipantes": [
+      {
+        "NOMBRE": "Mancato",
+        "coches": [
+          {
+            "MARCA": "Fiat",
+            "MODELO": "500",
+            "pegatinaGaraje": "Mancato",
+            "VELOCIDAD_MAXIMA": 180,
+            "TRAMO_ACELERACION": 10,
+            "habilidadPiloto": 39
+          },
+          {
+            "MARCA": "Fiat",
+            "MODELO": "600",
+            "pegatinaGaraje": "Mancato",
+            "VELOCIDAD_MAXIMA": 180,
+            "TRAMO_ACELERACION": 10,
+            "habilidadPiloto": 35
+          },
+          {
+            "MARCA": "Fiat",
+            "MODELO": "700",
+            "pegatinaGaraje": "Mancato",
+            "VELOCIDAD_MAXIMA": 180,
+            "TRAMO_ACELERACION": 10,
+            "habilidadPiloto": 69
+          }
+        ]
+      }
+    ],
+    "cochesParticipantes": [],
+    "podio": [],
+    "carreraFinalizada": false,
+    "puestosPodio": 3,
+    "tipo": "Estandar"
+  },
+  {
+    "NOMBRE": "Vigo Rally",
+    "DURACION_MINUTOS": 180,
+    "garajesParticipantes": [
+      {
+        "NOMBRE": "Los Manquiñas",
+        "coches": [
+          {
+            "MARCA": "Renaul",
+            "MODELO": "Clio",
+            "pegatinaGaraje": "Los Manquiñas",
+            "VELOCIDAD_MAXIMA": 180,
+            "TRAMO_ACELERACION": 10,
+            "habilidadPiloto": 53
+          },
+          {
+            "MARCA": "Ford",
+            "MODELO": "Fiesta",
+            "pegatinaGaraje": "Los Manquiñas",
+            "VELOCIDAD_MAXIMA": 180,
+            "TRAMO_ACELERACION": 10,
+            "habilidadPiloto": 62
+          },
+          {
+            "MARCA": "Renaul",
+            "MODELO": "Traffic",
+            "pegatinaGaraje": "Los Manquiñas",
+            "VELOCIDAD_MAXIMA": 180,
+            "TRAMO_ACELERACION": 10,
+            "habilidadPiloto": 62
+          }
+        ]
+      },
+      {
+        "NOMBRE": "Los Setas",
+        "coches": [
+          {
+            "MARCA": "Seat",
+            "MODELO": "F1",
+            "pegatinaGaraje": "Los Setas",
+            "VELOCIDAD_MAXIMA": 180,
+            "TRAMO_ACELERACION": 10,
+            "habilidadPiloto": 38
+          },
+          {
+            "MARCA": "Seat",
+            "MODELO": "F2",
+            "pegatinaGaraje": "Los Setas",
+            "VELOCIDAD_MAXIMA": 180,
+            "TRAMO_ACELERACION": 10,
+            "habilidadPiloto": 74
+          },
+          {
+            "MARCA": "Seat",
+            "MODELO": "F3",
+            "pegatinaGaraje": "Los Setas",
+            "VELOCIDAD_MAXIMA": 180,
+            "TRAMO_ACELERACION": 10,
+            "habilidadPiloto": 55
+          },
+          {
+            "MARCA": "Seat",
+            "MODELO": "F4",
+            "pegatinaGaraje": "Los Setas",
+            "VELOCIDAD_MAXIMA": 180,
+            "TRAMO_ACELERACION": 10,
+            "habilidadPiloto": 53
+          },
+          {
+            "MARCA": "Seat",
+            "MODELO": "F5",
+            "pegatinaGaraje": "Los Setas",
+            "VELOCIDAD_MAXIMA": 180,
+            "TRAMO_ACELERACION": 10,
+            "habilidadPiloto": 41
+          }
+        ]
+      },
+      {
+        "NOMBRE": "Lone Wolf",
+        "coches": [
+          {
+            "MARCA": "5-Ferrari",
+            "MODELO": "F50",
+            "pegatinaGaraje": "Lone Wolf",
+            "VELOCIDAD_MAXIMA": 180,
+            "TRAMO_ACELERACION": 10,
+            "habilidadPiloto": 40
+          }
+        ]
+      },
+      {
+        "NOMBRE": "Mancato",
+        "coches": [
+          {
+            "MARCA": "Fiat",
+            "MODELO": "500",
+            "pegatinaGaraje": "Mancato",
+            "VELOCIDAD_MAXIMA": 180,
+            "TRAMO_ACELERACION": 10,
+            "habilidadPiloto": 39
+          },
+          {
+            "MARCA": "Fiat",
+            "MODELO": "600",
+            "pegatinaGaraje": "Mancato",
+            "VELOCIDAD_MAXIMA": 180,
+            "TRAMO_ACELERACION": 10,
+            "habilidadPiloto": 35
+          },
+          {
+            "MARCA": "Fiat",
+            "MODELO": "700",
+            "pegatinaGaraje": "Mancato",
+            "VELOCIDAD_MAXIMA": 180,
+            "TRAMO_ACELERACION": 10,
+            "habilidadPiloto": 69
+          }
+        ]
+      }
+    ],
+    "cochesParticipantes": [],
+    "podio": [],
+    "carreraFinalizada": false,
+    "puestosPodio": 3,
+    "tipo": "Estandar"
+  },
+  {
+    "NOMBRE": "Carrera Eliminatoria",
+    "DURACION_MINUTOS": 10,
+    "garajesParticipantes": [
+      {
+        "NOMBRE": "Los Manquiñas",
+        "coches": [
+          {
+            "MARCA": "Renaul",
+            "MODELO": "Clio",
+            "pegatinaGaraje": "Los Manquiñas",
+            "VELOCIDAD_MAXIMA": 180,
+            "TRAMO_ACELERACION": 10,
+            "habilidadPiloto": 53
+          },
+          {
+            "MARCA": "Ford",
+            "MODELO": "Fiesta",
+            "pegatinaGaraje": "Los Manquiñas",
+            "VELOCIDAD_MAXIMA": 180,
+            "TRAMO_ACELERACION": 10,
+            "habilidadPiloto": 62
+          },
+          {
+            "MARCA": "Renaul",
+            "MODELO": "Traffic",
+            "pegatinaGaraje": "Los Manquiñas",
+            "VELOCIDAD_MAXIMA": 180,
+            "TRAMO_ACELERACION": 10,
+            "habilidadPiloto": 62
+          }
+        ]
+      },
+      {
+        "NOMBRE": "Los Setas",
+        "coches": [
+          {
+            "MARCA": "Seat",
+            "MODELO": "F1",
+            "pegatinaGaraje": "Los Setas",
+            "VELOCIDAD_MAXIMA": 180,
+            "TRAMO_ACELERACION": 10,
+            "habilidadPiloto": 38
+          },
+          {
+            "MARCA": "Seat",
+            "MODELO": "F2",
+            "pegatinaGaraje": "Los Setas",
+            "VELOCIDAD_MAXIMA": 180,
+            "TRAMO_ACELERACION": 10,
+            "habilidadPiloto": 74
+          },
+          {
+            "MARCA": "Seat",
+            "MODELO": "F3",
+            "pegatinaGaraje": "Los Setas",
+            "VELOCIDAD_MAXIMA": 180,
+            "TRAMO_ACELERACION": 10,
+            "habilidadPiloto": 55
+          },
+          {
+            "MARCA": "Seat",
+            "MODELO": "F4",
+            "pegatinaGaraje": "Los Setas",
+            "VELOCIDAD_MAXIMA": 180,
+            "TRAMO_ACELERACION": 10,
+            "habilidadPiloto": 53
+          },
+          {
+            "MARCA": "Seat",
+            "MODELO": "F5",
+            "pegatinaGaraje": "Los Setas",
+            "VELOCIDAD_MAXIMA": 180,
+            "TRAMO_ACELERACION": 10,
+            "habilidadPiloto": 41
+          }
+        ]
+      },
+      {
+        "NOMBRE": "Lone Wolf",
+        "coches": [
+          {
+            "MARCA": "5-Ferrari",
+            "MODELO": "F50",
+            "pegatinaGaraje": "Lone Wolf",
+            "VELOCIDAD_MAXIMA": 180,
+            "TRAMO_ACELERACION": 10,
+            "habilidadPiloto": 40
+          }
+        ]
+      },
+      {
+        "NOMBRE": "Mancato",
+        "coches": [
+          {
+            "MARCA": "Fiat",
+            "MODELO": "500",
+            "pegatinaGaraje": "Mancato",
+            "VELOCIDAD_MAXIMA": 180,
+            "TRAMO_ACELERACION": 10,
+            "habilidadPiloto": 39
+          },
+          {
+            "MARCA": "Fiat",
+            "MODELO": "600",
+            "pegatinaGaraje": "Mancato",
+            "VELOCIDAD_MAXIMA": 180,
+            "TRAMO_ACELERACION": 10,
+            "habilidadPiloto": 35
+          },
+          {
+            "MARCA": "Fiat",
+            "MODELO": "700",
+            "pegatinaGaraje": "Mancato",
+            "VELOCIDAD_MAXIMA": 180,
+            "TRAMO_ACELERACION": 10,
+            "habilidadPiloto": 69
+          }
+        ]
+      }
+    ],
+    "cochesParticipantes": [],
+    "podio": [],
+    "carreraFinalizada": false,
+    "puestosPodio": 3,
+    "tipo": "Eliminación"
+  }
+]

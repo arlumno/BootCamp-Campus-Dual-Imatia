@@ -1,3 +1,4 @@
+package menu;
 
 /**
  *  Mensajes de la libreria con salida directa por consola.

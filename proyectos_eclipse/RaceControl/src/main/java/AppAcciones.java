@@ -3,16 +3,63 @@ import java.util.List;
 import java.util.Scanner;
 
 import Excepciones.IncompleteException;
+import controlador.Control;
+import menu.EntradasConsola;
+import menu.Menu;
+import pojos.Carrera;
+import pojos.CarreraEliminacion;
+import pojos.CarreraEstandar;
+import pojos.Coche;
+import pojos.Garaje;
+import pojos.Torneo;
 
 public class AppAcciones {
 	Scanner lector;
 	Control control;
 
+	/**
+	 * Gestor de acciones del menu.
+	 * 
+	 * @param lector  Flujo de entrada para pedir datos por consola
+	 * @param control Controlador de acciones con la aplicación
+	 */
 	public AppAcciones(Scanner lector, Control control) {
 		this.lector = lector;
 		this.control = control;
 	}
 
+	/**
+	 * Imprime por consola el listado de coches
+	 */
+	public void listarCoches() {
+		System.out.println(control.listarCoches());
+	}
+
+	/**
+	 * Imprime por consola el listado de garajes
+	 */
+	public void listarGarajes() {
+		System.out.println(control.listarGarajes());
+	}
+
+	/**
+	 * Imprime por consola el listado de carreras
+	 */
+	public void listarCarreras() {
+		System.out.println(control.listarCarreras());
+	}
+
+	/**
+	 * Imprime por consola el listado de torneos
+	 */
+	public void listarTorneos() {
+		System.out.println(control.listarTorneos());
+	}
+
+	/**
+	 * Pide por consola la marca y modelo de un nuevo coche, y lo añade a la app.
+	 * Imprime error si el coche ya existe.
+	 */
 	public void crearCoche() {
 		System.out.println("Introduzca la marca del vehículo:");
 		String marca = EntradasConsola.pedirString(lector);
@@ -27,10 +74,10 @@ public class AppAcciones {
 		}
 	}
 
-	public void listarCoches() {
-		System.out.println(control.listarCoches());
-	}
-
+	/**
+	 * Pide por consola el nombre de un nuevo garaje, y lo añade a la app. Imprime
+	 * error si el garaje ya existe.
+	 */
 	public void crearGaraje() {
 		System.out.println("Introduzca el nombre del garaje.");
 		Garaje garaje = new Garaje(EntradasConsola.pedirString(lector));
@@ -42,18 +89,10 @@ public class AppAcciones {
 		}
 	}
 
-	public void listarGarajes() {
-		System.out.println(control.listarGarajes());
-	}
-
-	public void listarCarreras() {
-		System.out.println(control.listarCarreras());
-	}
-
-	public void listarTorneos() {
-		System.out.println(control.listarTorneos());
-	}
-
+	/**
+	 * Pide por consola el nombre de una nueva carrera, y la añade a la app. Imprime
+	 * error si la carrera ya existe.
+	 */
 	public void crearCarrera() {
 		Menu menuTipoCarrera = new Menu(false);
 		menuTipoCarrera.setTitulo("Tipos de Carreras");
@@ -86,6 +125,10 @@ public class AppAcciones {
 		}
 	}
 
+	/**
+	 * Pide por consola el nombre de un nuevo Torneo, y la añade a la app. Imprime
+	 * error si el torneo ya existe.
+	 */
 	public void crearTorneo() {
 		System.out.println("Introduzca el nombre del Torneo.");
 		Torneo torneo = new Torneo(EntradasConsola.pedirString(lector));
@@ -97,11 +140,15 @@ public class AppAcciones {
 		}
 	}
 
+	/**
+	 * Selecciona una o varias carreras que no estén asignadas a un torneo y que no finalizasen,
+	 * para añadirlas a un torneo no finalizado. 
+	 */
 	public void addCarreraTorneo() {
 		List<Torneo> torneosValidos = new ArrayList<>();
 		List<Carrera> carrerasAsignables = control.getCarrerasSinAsignar();
 		torneosValidos.addAll(control.getTorneos());
-		torneosValidos.removeIf(it -> it.torneoFinalizado);
+		torneosValidos.removeIf(it -> it.isTorneoFinalizado());
 
 		if (torneosValidos.isEmpty()) {
 			System.out.println("No hay torneos disponibles.");
@@ -136,6 +183,9 @@ public class AppAcciones {
 		}
 	}
 
+	/**
+	 * Selecciona uno o varios coches no asignados a garajes, para añadirlo a un garaje.
+	 */
 	public void addCocheGaraje() {
 		List<Coche> cochesAsignables = control.getCochesSinAsignar();
 		if (control.getGarajes().isEmpty()) {
@@ -159,7 +209,7 @@ public class AppAcciones {
 				do {
 					menuCoches.resetOptions();
 					for (Coche coche : cochesAsignables) {
-						menuCoches.addOpcion(coche.getBRAND() + " - " + coche.getMODEL(), () -> control
+						menuCoches.addOpcion(coche.getMARCA() + " - " + coche.getMODELO(), () -> control
 								.addCocheGaraje(control.getGarajes().get(menuGarajes.getIndexOpcion()), coche));
 					}
 					menuCoches.run();
@@ -172,6 +222,9 @@ public class AppAcciones {
 		}
 	}
 
+	/**
+	 * Selecciona y añade uno o varios garajes a una carrera no finalizada.
+	 */
 	public void addGarajeCarrera() {
 		List<Carrera> carrerasPendientes = control.getCarrerasPendientes();
 		if (control.getGarajes().isEmpty()) {
@@ -190,7 +243,7 @@ public class AppAcciones {
 			if (menuCarreras.getSeleccion() != 0) {
 				List<Garaje> garajesAsignables = control.getGarajes();
 				// quito los garajes que ya están asignados
-				garajesAsignables.removeAll(carrerasPendientes.get(menuCarreras.getIndexOpcion()).getGarajes());
+				garajesAsignables.removeAll(carrerasPendientes.get(menuCarreras.getIndexOpcion()).getGarajesParticipantes());
 				Menu menuGarajes = new Menu(false);// sin false, es true, el menu se repite hasta salir.
 				menuGarajes.setTitulo("Garajes Disponibles");
 				menuGarajes.setSubTitulo("Que garaje quieres añadir a "
@@ -209,7 +262,10 @@ public class AppAcciones {
 			}
 		}
 	}
-
+	
+	/**
+	 * Selecciona un torneo no finalizado y lo inicia
+	 */
 	public void iniciarTorneo() {
 		List<Torneo> torneosPendientes = new ArrayList<>();
 		torneosPendientes.addAll(control.getTorneos());

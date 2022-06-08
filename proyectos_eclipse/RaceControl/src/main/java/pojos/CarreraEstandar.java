@@ -1,3 +1,4 @@
+package pojos;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -29,12 +30,17 @@ public class CarreraEstandar extends Carrera {
 		this(nOMBRE, DURACION_MINUTOS_DEFAULT);
 	}
 	
+	/**
+	 * Inicia la carrera, y calcula la velocidad recorrida durante la duración de la carrera
+	 * 
+	 * @throws IncompleteException Si la carrera no está lista para ser iniciada
+	 */
 	public void iniciar() throws IncompleteException {
 		// preparamos la carrera:
 		preparar();
 		// empieza la carrera.
 		for (int i = 0; i < DURACION_MINUTOS; i++) {
-			for (Coche coche : coches) {
+			for (Coche coche : cochesParticipantes) {
 				coche.conducir();
 			}
 		}	
