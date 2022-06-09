@@ -6,15 +6,12 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
 
-import Excepciones.SuperPilotException;
 import controlador.Control;
 import pojos.Carrera;
 import pojos.CarreraEliminacion;
@@ -41,29 +38,24 @@ public class Data {
 		coches = control.getCoches();
 		garajes = control.getGarajes();
 		carreras = control.getCarreras();
-		torneos = control.getTorneos();
+		torneos = control.getTorneos();		
 	}
 
 	public void loadData() {
+
 		if (dataFileCoches.exists() && dataFileGarajes.exists() && dataFileCarreras.exists()
 				&& dataFileTorneos.exists()) {
-			coches = getGson().fromJson(stringFromFile(dataFileCoches), new TypeToken<ArrayList<Coche>>() {
+			coches = getGson().fromJson(stringFromFile(dataFileCoches), new TypeToken<List<Coche>>() {
 			}.getType());
-			garajes = getGson().fromJson(stringFromFile(dataFileGarajes), new TypeToken<ArrayList<Garaje>>() {
+			garajes = getGson().fromJson(stringFromFile(dataFileGarajes), new TypeToken<List<Garaje>>() {
 			}.getType());
-			torneos = getGson().fromJson(stringFromFile(dataFileTorneos), new TypeToken<ArrayList<Torneo>>() {
+			torneos = getGson().fromJson(stringFromFile(dataFileTorneos), new TypeToken<List<Torneo>>() {
 			}.getType());
-			carreras = getGson().fromJson(stringFromFile(dataFileCarreras), new TypeToken<ArrayList<Carrera>>() {
-			}.getType());
+			carreras = getGson().fromJson(stringFromFile(dataFileCarreras), new TypeToken<List<Carrera>>() {}.getType());
 			control.syncAllReferences();
 		} else {
 			loadDefault();
 		}
-
-//		control.setCoches(coches);
-//		control.setGarajes(garajes);
-//		control.setCarreras(carreras);
-//		control.setTorneos(torneos);
 	}
 
 	public void saveData() {
@@ -82,12 +74,11 @@ public class Data {
 		}
 
 		// Guardar carreras a Json
-		if (stringToFile(dataFileCarreras, getGson().toJson(carreras))) {
+		if (stringToFile(dataFileCarreras, getGson().toJson(carreras,new TypeToken<List<Carrera>>() {}.getType()))) {
 			System.err.println("Carreras guardadas con éxito en " + dataFileCarreras.getName());
 		} else {
 			System.err.println("Error al guardar Carreras en " + dataFileCarreras.getName());
 		}
-
 		// Guardar torneos a Json
 		if (stringToFile(dataFileTorneos, getGson().toJson(torneos))) {
 			System.err.println("Torneos guardados con éxito en " + dataFileTorneos.getName());
