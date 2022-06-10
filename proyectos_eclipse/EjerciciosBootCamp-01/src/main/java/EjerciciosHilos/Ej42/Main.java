@@ -15,9 +15,11 @@ public class Main {
 
 		TimerTask task = new TimerTask() {
 			public void run() {
-				if (contador.getAndIncrement() < 5) {
-					System.out.println("\nxxxxxxxxxxxxxxxxxx  " + contador.get() + "  xxxxxxxxxxxxxxxxx");
-					mmf.run(); // run en lugar de start() para que la tarea se pueda repetir
+				int i;
+				if ((i = contador.getAndIncrement()) < 5) {
+					System.out.println("\nxxxxxxxxxxxxxxxxxx  " + i + "  xxxxxxxxxxxxxxxxx");
+//					mmf.run(); // run en lugar de start() para que la tarea se pueda repetir
+					System.out.println(mmf.frase());
 				} else {
 					timer.cancel();
 				}

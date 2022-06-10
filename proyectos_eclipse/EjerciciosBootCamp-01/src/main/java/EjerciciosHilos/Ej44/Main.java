@@ -1,61 +1,91 @@
 package EjerciciosHilos.Ej44;
 
-import java.util.TimerTask;
+import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.concurrent.TimeUnit;
 
-import EjerciciosHilos.Ej41.MartyMcFly;
 
 public class Main {
-	public static void main(String[] args) throws InterruptedException {
-		MartyMcFly mmf = new MartyMcFly();
-		//https://www.baeldung.com/java-future
+	public static void main(String[] args) throws InterruptedException, ExecutionException {
+		DeLorean dl = new DeLorean();
+		long inicio;
+		long fin;		
+		// https://www.baeldung.com/java-future
 		ExecutorService ex = Executors.newSingleThreadExecutor();
-		TimerTask task = new TimerTask() {
-			Future<Integer> numeroAleatorio;
-			public void run() {
-				try {
-					Thread.sleep(1000);
-				} catch (InterruptedException e) {
-					e.printStackTrace();
-				}
-				numeroAleatorio = (Future<Integer>) ThreadLocalRandom.current().nextInt(1,101);
-				System.err.println(numeroAleatorio); 
-				ex.submit(numeroAleatorio){;
-			}
-			
-		};
 
-		TimerTask task2 = new TimerTask() {
-			public void run() {
-				try {
-					Thread.sleep(1000);
-				} catch (InterruptedException e) {
-					e.printStackTrace();
-				}
-				System.err.println(ThreadLocalRandom.current().nextInt(1,101)); 
-			}
-		};
-		
+		/** ejemplo 1 **/
+		inicio = System.currentTimeMillis();
+		long primerInicio = inicio; 
+		Future<Integer> f1 = ex.submit(() -> {
+			Thread.sleep(2000);
+			System.out.println("---Anonima---");
+			return ThreadLocalRandom.current().nextInt(1, 101);
 
-		long finF1;
-		long finF2;
-		long inicio = System.currentTimeMillis();
-		Future<?> f1 = ex.submit(task);
-		Future<?> f2 = ex.submit(task2);
-		f1.isDone();
+		});
 		
+		System.out.println("Finalizada: " + f1.isDone() );
 		ex.shutdown();
-		
-		System.out.println(ex.awaitTermination(10, TimeUnit.SECONDS));
-
+		ex.awaitTermination(10, TimeUnit.SECONDS);
+		System.out.println("Finalizada: " + f1.isDone() );
 		fin = System.currentTimeMillis();
 		System.out.println("Inicio: " + inicio);
 		System.out.println("Fin: " + fin);
 		System.out.println("Duracion: " + (fin - inicio));
+		System.out.println("Duracion desde inicio programa: " + (fin - primerInicio));
+		System.err.println("RESULTADO : " + f1.get());
 
+		System.out.println();
+		System.out.println("xxxxxxxxxxxxxxxx");
+		System.out.println();
+		
+		/** ejemplo 2 **/
+		inicio = System.currentTimeMillis();
+		Future<Integer> f2 = dl.destino();
+		
+		System.out.println("Finalizada: " + f2.isDone() );
+		dl.executor.shutdown();
+		dl.executor.awaitTermination(10, TimeUnit.SECONDS);
+		System.out.println("Finalizada: " + f2.isDone() );
+		fin = System.currentTimeMillis();
+		System.out.println("Inicio: " + inicio);
+		System.out.println("Fin: " + fin);
+		System.out.println("Duracion: " + (fin - inicio));
+		System.out.println("Duracion desde inicio programa: " + (fin - primerInicio));
+		System.err.println("RESULTADO : " + f2.get());
+		
+
+		System.out.println();
+		System.out.println("xxxxxxxxxxxxxxxx");
+		System.out.println();
+		
+		/** ejemplo 3 **/
+		ex = Executors.newSingleThreadExecutor();
+		inicio = System.currentTimeMillis();
+		Future<Integer> f3 = ex.submit(dl);
+			
+		System.out.println("Finalizada: " + f3.isDone() );
+		ex.shutdown();
+		ex.awaitTermination(10, TimeUnit.SECONDS);
+		System.out.println("Finalizada: " + f3.isDone() );
+		fin = System.currentTimeMillis();
+		System.out.println("Inicio: " + inicio);
+		System.out.println("Fin: " + fin);
+		System.out.println("Duracion: " + (fin - inicio));
+		System.out.println("Duracion desde inicio programa: " + (fin - primerInicio));
+		System.err.println("RESULTADO : " + f3.get());
+
+		
+		System.out.println();
+		System.out.println("xxxxxxxxxxxxxxxx");
+		System.out.println();
+		
+		fin = System.currentTimeMillis();
+		System.out.println("Inicio del PROGRAMA: " + primerInicio);
+		System.out.println("Fin: " + fin);
+		System.err.println("DURACION TOTAL: " + (fin - primerInicio));
+		
 	}
 }

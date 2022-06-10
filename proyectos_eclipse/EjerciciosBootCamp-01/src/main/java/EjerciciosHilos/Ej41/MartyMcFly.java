@@ -1,5 +1,8 @@
 package EjerciciosHilos.Ej41;
 
+import java.util.concurrent.Future;
+import java.util.concurrent.ThreadLocalRandom;
+
 public class MartyMcFly extends Thread {
 	String[] frases = {
 			"- Hey, Doc. No tenemos suficiente carretera para ir a 140 km.\n- ¿Carretera? A donde vamos, no necesitaremos carreteras",
@@ -15,7 +18,7 @@ public class MartyMcFly extends Thread {
 		System.err.println(frase());
 	}
 
-	private String frase() {
+	public String frase() {
 		return frases[(int) (Math.random() * frases.length)];
-	}
+	}		
 }

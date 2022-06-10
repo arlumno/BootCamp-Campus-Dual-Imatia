@@ -9,14 +9,13 @@ public class Fabricante extends Thread {
 
 	@Override
 	public void run() {
-		for (int i = 0; i < 10; i++) {
+		for (int i = 0; i < 8; i++) {
 			try {
-//				distribuidor.setCochesStock(distribuidor.getCochesStock()+1);
 				distribuidor.ponerCocheALaVenta();
-				sleep(2000);
+				sleep(1000);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
-		}
+		}		
 	}
 }
