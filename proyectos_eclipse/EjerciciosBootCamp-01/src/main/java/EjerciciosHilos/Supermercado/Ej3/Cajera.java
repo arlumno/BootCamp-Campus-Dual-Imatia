@@ -2,9 +2,10 @@ package EjerciciosHilos.Supermercado.Ej3;
 
 import java.util.concurrent.TimeUnit;
 
-public class Cajera implements Runnable {
+public class Cajera extends Thread {
 	Caja caja;
 	String nombre;
+
 	public Cajera(Caja caja, String nombre) {
 		this.caja = caja;
 		this.nombre = nombre;
@@ -12,29 +13,25 @@ public class Cajera implements Runnable {
 
 	@Override
 	public void run() {
-		int proceso;
-
-		System.out.println("Pasando productos...");
-		while (!caja.getProductos().isEmpty()) {
-			while (!caja.getProductos().isEmpty()) {
-				try {
-					System.out.println("[Cajera - "+nombre+"] Coje producto");
-					TimeUnit.SECONDS.sleep(caja.getProductos().poll());
-					System.out.println("Caja " + caja.getNumeroCaja()+ " >>> BeeeEEeppp");
-				} catch (InterruptedException e) {
-					e.printStackTrace();
-				}
-			}
+		System.out.println("[" + nombre + "] atiende en caja " + caja.getNumeroCaja());
+		do {
 			try {
-				TimeUnit.SECONDS.sleep(2); // tiempo de espera en que la caja esta vacia.
-				caja.cerrar();
+				while (!caja.getProductos().isEmpty()) {
+					System.out.println("[" + nombre + " (Caja " + caja.getNumeroCaja() + ")]  Manipula producto");
+					TimeUnit.SECONDS.sleep(caja.getProductos().poll());
+					System.out.println("Caja " + caja.getNumeroCaja() + " >>> BeeeEEeppp");
+				}
+				TimeUnit.SECONDS.sleep(4); // tiempo de espera en que la caja esta vacia.
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
 
-		}
-		System.out.println("xxxxxxx Caja cerrada xxxxxxxx");
+		} while (!caja.getProductos().isEmpty());
+		caja.cerrar();
 
 	}
 
+	public String getNombre() {
+		return nombre;
+	}
 }

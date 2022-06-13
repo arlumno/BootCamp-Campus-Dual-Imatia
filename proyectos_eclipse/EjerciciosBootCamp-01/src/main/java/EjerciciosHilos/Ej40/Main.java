@@ -9,18 +9,16 @@ public class Main {
 		Comprador c2= new Comprador(distribuidor);
 		Comprador c3= new Comprador(distribuidor);
 		Comprador c4= new Comprador(distribuidor);
-		Comprador c5= new Comprador(distribuidor);
-
+	
 		fabricante.start();
 		c1.start();
+		c2.start();
+		c3.start();
+		c4.start();
 
 		while (fabricante.isAlive() || c1.isAlive()) {
 			System.out.println(">>" + distribuidor.toString());
-
-			if (!fabricante.isAlive() && !distribuidor.isStock()) {
-				distribuidor.cerrarTienda();
-			}
-			Thread.sleep(1000);
+			Thread.sleep(1005);
 
 		}
 
@@ -31,7 +29,7 @@ public class Main {
 	}
 
 	protected static void estado(Thread thread) {
-		System.err.println(">>> [" + thread.getName() + "]" + thread.getState());
+		System.err.println(">>> [" + thread.getName() + "] " + thread.getState());
 	}
 
 }

@@ -16,6 +16,7 @@ public class App {
 		Menu menu = new Menu();
 		menu.setTitulo("RaceControl");
 		menu.addOpcion("Iniciar Torneo", appAcciones::iniciarTorneo);
+		menu.addOpcion("Iniciar Carrera", appAcciones::iniciarCarrera);
 		menu.addOpcion("Crear Coche", appAcciones::crearCoche);
 		menu.addOpcion("Crear Garaje", appAcciones::crearGaraje);
 		menu.addOpcion("Crear Carrera", appAcciones::crearCarrera);
@@ -27,7 +28,7 @@ public class App {
 		menu.addOpcion("Asignar Coche a Garaje", appAcciones::addCocheGaraje);
 		menu.addOpcion("Asignar Garaje a Carrera", appAcciones::addGarajeCarrera);
 		menu.addOpcion("Añadir Carrera a Torneo", appAcciones::addCarreraTorneo);
-		menu.addOpcion("Resetear Aplicación", control::resetAndLoadDefault);
+		menu.addOpcion("Resetear Aplicación", data::loadDefault);
 		menu.addOpcion("Guardar Estado", data::saveData);
 		menu.run();
 

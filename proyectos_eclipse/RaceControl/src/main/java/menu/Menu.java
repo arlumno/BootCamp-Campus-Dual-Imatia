@@ -79,7 +79,6 @@ public class Menu {
 				System.out.println(menuString.toString());
 				try {
 					seleccion = Integer.parseInt(lector.nextLine());
-					System.out.println(seleccion);
 					if (seleccion < 0 || opciones.size() < seleccion) {
 						error = true;
 					} else {
@@ -88,10 +87,12 @@ public class Menu {
 				} catch (NumberFormatException e) {
 					error = true;
 				}
+				limpiarConsola();
 				if (error) {
 					System.err.println("Opción no valida, pulse ENTER para continuar");
 					lector.nextLine();
 				}
+				System.out.println(seleccion);
 			} while (error);
 
 			if (accionOpciones.get(seleccion) != null) {

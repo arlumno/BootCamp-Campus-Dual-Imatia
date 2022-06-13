@@ -35,10 +35,10 @@ public class Data {
 	public Data(Control control) {
 		this.control = control;
 		// delegación
-		coches = control.getCoches();
-		garajes = control.getGarajes();
-		carreras = control.getCarreras();
-		torneos = control.getTorneos();		
+//		coches = control.getCoches();
+//		garajes = control.getGarajes();
+//		carreras = control.getCarreras();
+//		torneos = control.getTorneos();		
 	}
 
 	public void loadData() {
@@ -52,7 +52,13 @@ public class Data {
 			torneos = getGson().fromJson(stringFromFile(dataFileTorneos), new TypeToken<List<Torneo>>() {
 			}.getType());
 			carreras = getGson().fromJson(stringFromFile(dataFileCarreras), new TypeToken<List<Carrera>>() {}.getType());
+			
+			control.setCoches(coches);
+			control.setGarajes(garajes);
+			control.setTorneos(torneos);
+			control.setCarreras(carreras);
 			control.syncAllReferences();
+			
 		} else {
 			loadDefault();
 		}
@@ -123,7 +129,7 @@ public class Data {
 		return gson;
 	}
 
-	private void loadDefault() {
+	public void loadDefault() {
 		System.err.println("********************************************");
 		System.err.println("**********CARGANDO DATOS POR DEFECTO********");
 		System.err.println("********************************************");

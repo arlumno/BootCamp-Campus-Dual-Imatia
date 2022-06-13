@@ -141,8 +141,8 @@ public class AppAcciones {
 	}
 
 	/**
-	 * Selecciona una o varias carreras que no estén asignadas a un torneo y que no finalizasen,
-	 * para añadirlas a un torneo no finalizado. 
+	 * Selecciona una o varias carreras que no estén asignadas a un torneo y que no
+	 * finalizasen, para añadirlas a un torneo no finalizado.
 	 */
 	public void addCarreraTorneo() {
 		List<Torneo> torneosValidos = new ArrayList<>();
@@ -184,7 +184,8 @@ public class AppAcciones {
 	}
 
 	/**
-	 * Selecciona uno o varios coches no asignados a garajes, para añadirlo a un garaje.
+	 * Selecciona uno o varios coches no asignados a garajes, para añadirlo a un
+	 * garaje.
 	 */
 	public void addCocheGaraje() {
 		List<Coche> cochesAsignables = control.getCochesSinAsignar();
@@ -243,7 +244,8 @@ public class AppAcciones {
 			if (menuCarreras.getSeleccion() != 0) {
 				List<Garaje> garajesAsignables = control.getGarajes();
 				// quito los garajes que ya están asignados
-				garajesAsignables.removeAll(carrerasPendientes.get(menuCarreras.getIndexOpcion()).getGarajesParticipantes());
+				garajesAsignables
+						.removeAll(carrerasPendientes.get(menuCarreras.getIndexOpcion()).getGarajesParticipantes());
 				Menu menuGarajes = new Menu(false);// sin false, es true, el menu se repite hasta salir.
 				menuGarajes.setTitulo("Garajes Disponibles");
 				menuGarajes.setSubTitulo("Que garaje quieres añadir a "
@@ -262,7 +264,7 @@ public class AppAcciones {
 			}
 		}
 	}
-	
+
 	/**
 	 * Selecciona un torneo no finalizado y lo inicia
 	 */
@@ -272,7 +274,7 @@ public class AppAcciones {
 		torneosPendientes.removeIf(it -> it.isTorneoFinalizado());
 		if (!torneosPendientes.isEmpty()) {
 			Menu menu = new Menu(false);
-			menu.setTitulo("Iniciar Carrera");
+			menu.setTitulo("Iniciar Torneo");
 			menu.setSubTitulo("Iniciar");
 			for (Torneo torneo : torneosPendientes) {
 				menu.addOpcion(torneo.getNOMBRE(), null);
@@ -286,6 +288,31 @@ public class AppAcciones {
 			}
 		} else {
 			System.err.println("No hay torneos pendientes");
+		}
+
+	}
+
+	/**
+	 * Selecciona una carrera no finalizada y la inicia
+	 */
+	public void iniciarCarrera() {
+		List<Carrera> carrerasPendientes = control.getCarrerasPendientes();
+		if (!carrerasPendientes.isEmpty()) {
+			Menu menu = new Menu(false);
+			menu.setTitulo("Iniciar Carrera");
+			menu.setSubTitulo("Iniciar");
+			for (Carrera carrera: carrerasPendientes) {
+				menu.addOpcion(carrera.getNOMBRE(), null);
+			}
+			menu.run();
+			try {
+				carrerasPendientes.get(menu.getIndexOpcion()).iniciar();
+				//carrerasPendientes.get(menu.getIndexOpcion()).mostrarPuntuacionesCoches();
+			} catch (IncompleteException e) {
+				e.printStackTrace();
+			}
+		} else {
+			System.err.println("No hay carreras pendientes");
 		}
 
 	}

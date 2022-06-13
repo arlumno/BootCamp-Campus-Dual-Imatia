@@ -22,11 +22,13 @@ public class Main {
 			System.out.println("---Anonima---");
 			return ThreadLocalRandom.current().nextInt(1, 101);
 		});
-		// Future<Integer> f2 = dl.destino(); // este para el proceso
+		
 		Future<Integer> f3 = ex.submit(dl);
 		
+		
+		
+		
 		while (!(f1.isDone() && f3.isDone())) {
-//		 while (!(f1.isDone() && f2.isDone() && f3.isDone())){			
 			Thread.sleep(500);
 			System.out.println("\n<<< EESTADO >>>");
 			if (f1.isDone()) {
@@ -37,12 +39,6 @@ public class Main {
 			} else {
 				System.out.println("[f1] EN PROCESO");
 			}
-
-//			if (f2.isDone()) {
-//				System.out.println("[f2] FINALIZADO -> " + f2.get());
-//			}else {
-//				System.out.println("[f2] EN PROCESO");			
-//			}
 
 			if (f3.isDone()) {
 				System.out.println("[f3] FINALIZADO -> " + f3.get());

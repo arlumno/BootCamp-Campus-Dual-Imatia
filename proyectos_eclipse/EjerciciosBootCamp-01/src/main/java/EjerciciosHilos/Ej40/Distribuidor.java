@@ -6,31 +6,40 @@ public class Distribuidor {
 	int cochesStockHistorial = 0;
 	boolean tiendaAbierta = true;
 
-//	public void ponerCocheALaVenta() {
 	public synchronized void ponerCocheALaVenta() {
 		cochesStock++;
 		cochesStockHistorial++;
+		notifyAll();
 	}
 
-//	public void venderCoche() {
-	public synchronized void venderCoche() {
-		if (isStock()) {
-			cochesStock--;
-			cochesVendidos++;
+	public synchronized void venderCoche() throws InterruptedException {
+		boolean continuar = true;
+		while (continuar) {
+			if (isStock()) {
+				cochesStock--;
+				cochesVendidos++;
+				continuar = false;
+//				notifyAll();
+			} else if (isTiendaAbierta()) {
+				wait();
+			} else {
+				continuar = false;
+			}
 		}
 	}
 
-	public boolean isStock() {
+	public synchronized boolean isStock() {
 		return cochesStock > 0;
 	}
 
-	public boolean isTiendaAbierta() {
+	public synchronized boolean isTiendaAbierta() {
 		return tiendaAbierta;
 	}
 
-	public void cerrarTienda() {
-		System.out.println("El fabricante no nos envía mas coches, tenemos que cerrar.");
+	public synchronized void cerrarTienda() {
+		System.out.println("El fabricante no nos envía mas coches, tenemos que cerrar tras vender todos.");
 		this.tiendaAbierta = false;
+		notifyAll();
 	}
 
 	@Override

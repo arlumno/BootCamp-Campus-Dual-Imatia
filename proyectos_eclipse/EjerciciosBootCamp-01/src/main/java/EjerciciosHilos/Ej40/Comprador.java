@@ -9,8 +9,13 @@ public class Comprador extends Thread {
 
 	@Override
 	public void run() {
-		while(distribuidor.isTiendaAbierta()) {
-			distribuidor.venderCoche();
+		while (distribuidor.isTiendaAbierta()) {
+			try {
+				distribuidor.venderCoche();
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+			
 		}
 	}
 }

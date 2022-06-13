@@ -5,6 +5,7 @@ import java.util.List;
 
 import Excepciones.IncompleteException;
 import controlador.Control;
+import pojos.Torneo.Puntuacion;
 
 public abstract class Carrera {
 
@@ -149,7 +150,27 @@ public abstract class Carrera {
 			}
 		}
 	}
-
+	
+	public String mostrarPodio() {
+		StringBuilder texto = new StringBuilder();
+		if (carreraFinalizada) {
+			if (!podio.isEmpty()) {
+				texto.append("<<<<<<< PODIO >>>>>>\n");					
+				for (int i = 0; i < podio.size(); i++) {
+					if(!podio.get(i).isEmpty()) {
+						texto.append("\\n\\n+++ Puesto " + (i+1)+" +++");					
+					}
+					for (Coche coche : podio.get(i)) {
+						texto.append("\n\t" + coche.getMARCA() + " - " + coche.getMODELO() + " - " + coche.getPegatinaGaraje());
+					}
+				}
+			}
+		}else {
+			texto.append("La carrera aún no se ha realizado");
+		}
+		return texto.toString();
+	}
+	
 	public boolean isCarreraFinalizada() {
 		return carreraFinalizada;
 	}

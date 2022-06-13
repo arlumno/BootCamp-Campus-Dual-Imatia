@@ -18,6 +18,7 @@ public class Main {
 				} catch (InterruptedException e) {
 					e.printStackTrace();
 				}
+				
 				mmf.run(); // run en lugar de start() para que la tarea se pueda repetir
 			}
 		};
@@ -29,7 +30,7 @@ public class Main {
 
 		ex.submit(task);
 		ex.shutdown();
-		ex.awaitTermination(10, TimeUnit.SECONDS);
+		ex.awaitTermination(100, TimeUnit.SECONDS);
 
 		fin = System.currentTimeMillis();
 		System.out.println("Inicio: " + inicio);

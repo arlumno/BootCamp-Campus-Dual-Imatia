@@ -7,12 +7,14 @@ public class Caja {
 	private Queue<Integer> productos = new LinkedList<>();
 	private int numeroCaja;
 	private boolean cajaAbierta;
-	private boolean cajaOcupada;
+	private int colaCaja;
+	private int clientesAtendidos;
 
 	public Caja(int numeroCaja) {
 		this.numeroCaja = numeroCaja;
 		cajaAbierta = true;
-		cajaOcupada = false;
+		colaCaja = 0;
+		clientesAtendidos = 0;
 		System.out.println("******* Caja " + numeroCaja + " ABIERTA *******");
 	}
 
@@ -25,25 +27,42 @@ public class Caja {
 		return numeroCaja;
 	}
 
-	public synchronized void addProducto(Integer producto) {
-		productos.add(producto);
+	public synchronized void addProducto(Integer producto, int puestoCola) throws InterruptedException {
+		boolean continuar = true;
+		while (continuar) {
+			if ((puestoCola-clientesAtendidos) == 1) {
+				productos.add(producto);
+				continuar = false;
+			} else {
+				wait();
+			}
+		}
 	}
 
 	public synchronized Queue<Integer> getProductos() {
 		return productos;
 	}
 
-	public boolean isCajaAbierta() {
+	public synchronized boolean isCajaAbierta() {
 		return cajaAbierta;
 	}
 
-	public boolean isCajaOcupada() {
-		return cajaOcupada;
+	public synchronized boolean isCajaOcupada() {
+		return colaCaja > 0;
 	}
 
-	public void setCajaOcupada(boolean cajaOcupada) {
-		this.cajaOcupada = cajaOcupada;
+	public synchronized int ponerseEnCola() {
+		colaCaja++;
+		return colaCaja;
 	}
-	
-	
+
+	public synchronized int getColaCaja() {
+		return colaCaja;
+	}
+
+	public synchronized void salirDeCaja() {
+		clientesAtendidos++;
+		notifyAll();
+	}
+
 }
