@@ -10,14 +10,20 @@ import java.util.function.Supplier;
 public class Ej47 {
 
 	public static void main(String[] args) {
+		Runnable separador = () -> System.out.println("\n--------\n");
+		/*
+		 * Crea una clase PersonaJava8 donde tenga un nombre y apellidos. Desde el main
+		 * crea un método que le cambie el nombre a una persona. Crea un método que te
+		 * pinte por pantalla un String introducido por parámetro. Llama a este método
+		 * para mostrar el contenido de un arrayList Haz un método que devuelva un
+		 * numero al azar. Crea una PersonaJava8 con la expresión Supplier y cambiale el
+		 * nombre.
+		 */
+
 		PersonaJava8 per1 = new PersonaJava8("Roberto", "Merino");
 		System.out.println(per1.toString());
-
-		Runnable separador = () -> System.out.println("\n--------\n");
-		separador.run();
 		
-		// BiConsumer<PersonaJava8, String> cambiarNombre = (p,name) ->
-		// p.setNombre(name); //opcion A
+		//BiConsumer<PersonaJava8, String> cambiarNombre = (p, name) -> p.setNombre(name); // opcion A		
 		BiConsumer<PersonaJava8, String> cambiarNombre = PersonaJava8::setNombre;// opcion B
 		cambiarNombre.accept(per1, "Paco");
 		System.out.println(per1.toString());
@@ -32,16 +38,21 @@ public class Ej47 {
 
 		separador.run();
 
-		Supplier<Integer> aleatorio = ()->  (int)(Math.random() *100d + 1d); // Opción A
+		Supplier<Integer> aleatorio = () -> (int) (Math.random() * 100d + 1d); // Opción A
 		System.out.println(aleatorio.get());
-		IntSupplier aleatorio2 = ()->  (int)(Math.random() *100d + 1d); // Opción B
-		System.out.println(aleatorio2.getAsInt());
 		
+		IntSupplier aleatorio2 = () -> (int) (Math.random() * 100d + 1d); // Opción B
+		System.out.println(aleatorio2.getAsInt());
+
 		separador.run();
 
-		Supplier<PersonaJava8> crearPersona = ()-> new PersonaJava8("Paquito", "Chocolatero");
+		Supplier<PersonaJava8> crearPersona = PersonaJava8::new;
 		PersonaJava8 per2 = crearPersona.get();
 		System.out.println(per2.toString());
+		
+		cambiarNombre.accept(per2,"Paco");
+		System.out.println(per2.toString());
+
 
 	}
 }
