@@ -43,8 +43,17 @@ public class CarreraEstandar extends Carrera {
 			for (Coche coche : cochesParticipantes) {
 				coche.conducir();
 			}
+			try {
+				Thread.sleep(100);
+				flipadaStatus(cochesParticipantes,i);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}	
 		setCarreraFinalizada(true);
 		calcularPodio();	
 	}
+	
+	
 }

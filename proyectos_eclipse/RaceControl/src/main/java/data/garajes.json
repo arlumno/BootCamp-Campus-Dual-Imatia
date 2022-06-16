@@ -8,7 +8,7 @@
         "pegatinaGaraje": "Los Manquiñas",
         "VELOCIDAD_MAXIMA": 180,
         "TRAMO_ACELERACION": 10,
-        "habilidadPiloto": 56
+        "habilidadPiloto": 57
       },
       {
         "MARCA": "Ford",
@@ -16,7 +16,7 @@
         "pegatinaGaraje": "Los Manquiñas",
         "VELOCIDAD_MAXIMA": 180,
         "TRAMO_ACELERACION": 10,
-        "habilidadPiloto": 64
+        "habilidadPiloto": 55
       },
       {
         "MARCA": "Renaul",
@@ -24,7 +24,7 @@
         "pegatinaGaraje": "Los Manquiñas",
         "VELOCIDAD_MAXIMA": 180,
         "TRAMO_ACELERACION": 10,
-        "habilidadPiloto": 30
+        "habilidadPiloto": 50
       }
     ]
   },
@@ -37,7 +37,7 @@
         "pegatinaGaraje": "Los Setas",
         "VELOCIDAD_MAXIMA": 180,
         "TRAMO_ACELERACION": 10,
-        "habilidadPiloto": 57
+        "habilidadPiloto": 78
       },
       {
         "MARCA": "Seat",
@@ -45,7 +45,7 @@
         "pegatinaGaraje": "Los Setas",
         "VELOCIDAD_MAXIMA": 180,
         "TRAMO_ACELERACION": 10,
-        "habilidadPiloto": 74
+        "habilidadPiloto": 82
       },
       {
         "MARCA": "Seat",
@@ -53,7 +53,7 @@
         "pegatinaGaraje": "Los Setas",
         "VELOCIDAD_MAXIMA": 180,
         "TRAMO_ACELERACION": 10,
-        "habilidadPiloto": 54
+        "habilidadPiloto": 57
       },
       {
         "MARCA": "Seat",
@@ -61,7 +61,7 @@
         "pegatinaGaraje": "Los Setas",
         "VELOCIDAD_MAXIMA": 180,
         "TRAMO_ACELERACION": 10,
-        "habilidadPiloto": 69
+        "habilidadPiloto": 54
       },
       {
         "MARCA": "Seat",
@@ -69,7 +69,7 @@
         "pegatinaGaraje": "Los Setas",
         "VELOCIDAD_MAXIMA": 180,
         "TRAMO_ACELERACION": 10,
-        "habilidadPiloto": 33
+        "habilidadPiloto": 84
       }
     ]
   },
@@ -82,7 +82,7 @@
         "pegatinaGaraje": "Lone Wolf",
         "VELOCIDAD_MAXIMA": 180,
         "TRAMO_ACELERACION": 10,
-        "habilidadPiloto": 80
+        "habilidadPiloto": 72
       }
     ]
   },
@@ -95,7 +95,7 @@
         "pegatinaGaraje": "Mancato",
         "VELOCIDAD_MAXIMA": 180,
         "TRAMO_ACELERACION": 10,
-        "habilidadPiloto": 70
+        "habilidadPiloto": 73
       },
       {
         "MARCA": "Fiat",
@@ -103,7 +103,7 @@
         "pegatinaGaraje": "Mancato",
         "VELOCIDAD_MAXIMA": 180,
         "TRAMO_ACELERACION": 10,
-        "habilidadPiloto": 45
+        "habilidadPiloto": 82
       },
       {
         "MARCA": "Fiat",
@@ -111,7 +111,7 @@
         "pegatinaGaraje": "Mancato",
         "VELOCIDAD_MAXIMA": 180,
         "TRAMO_ACELERACION": 10,
-        "habilidadPiloto": 54
+        "habilidadPiloto": 79
       }
     ]
   },
@@ -124,7 +124,7 @@
         "pegatinaGaraje": "Los Fordinangs",
         "VELOCIDAD_MAXIMA": 180,
         "TRAMO_ACELERACION": 10,
-        "habilidadPiloto": 68
+        "habilidadPiloto": 82
       },
       {
         "MARCA": "Ford",
@@ -132,7 +132,7 @@
         "pegatinaGaraje": "Los Fordinangs",
         "VELOCIDAD_MAXIMA": 180,
         "TRAMO_ACELERACION": 10,
-        "habilidadPiloto": 40
+        "habilidadPiloto": 68
       }
     ]
   }

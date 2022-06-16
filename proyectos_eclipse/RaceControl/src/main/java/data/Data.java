@@ -14,6 +14,7 @@ import com.google.gson.reflect.TypeToken;
 
 import controlador.Control;
 import pojos.Carrera;
+import pojos.CarreraDragster;
 import pojos.CarreraEliminacion;
 import pojos.CarreraEstandar;
 import pojos.Coche;
@@ -22,10 +23,6 @@ import pojos.Torneo;
 
 public class Data {
 	Control control;
-	List<Coche> coches;
-	List<Garaje> garajes;
-	List<Carrera> carreras;
-	List<Torneo> torneos;
 	private final File dataFileCoches = new File("src/main/java/data/coches.json");
 	private final File dataFileGarajes = new File("src/main/java/data/garajes.json");
 	private final File dataFileCarreras = new File("src/main/java/data/carreras.json");
@@ -42,6 +39,10 @@ public class Data {
 	}
 
 	public void loadData() {
+		List<Coche> coches;
+		List<Garaje> garajes;
+		List<Carrera> carreras;
+		List<Torneo> torneos;
 
 		if (dataFileCoches.exists() && dataFileGarajes.exists() && dataFileCarreras.exists()
 				&& dataFileTorneos.exists()) {
@@ -66,27 +67,27 @@ public class Data {
 
 	public void saveData() {
 		// Guardar coches a Json
-		if (stringToFile(dataFileCoches, getGson().toJson(coches))) {
+		if (stringToFile(dataFileCoches, getGson().toJson(control.getCoches()))) {
 			System.err.println("Coches guardados con éxito en " + dataFileCoches.getName());
 		} else {
 			System.err.println("Error al guardar Coches en " + dataFileCoches.getName());
 		}
 
 		// Guardar garajes a Json
-		if (stringToFile(dataFileGarajes, getGson().toJson(garajes))) {
+		if (stringToFile(dataFileGarajes, getGson().toJson(control.getGarajes()))) {
 			System.err.println("Garajes guardados con éxito en " + dataFileGarajes.getName());
 		} else {
 			System.err.println("Error al guardar Garajes en " + dataFileGarajes.getName());
 		}
 
 		// Guardar carreras a Json
-		if (stringToFile(dataFileCarreras, getGson().toJson(carreras,new TypeToken<List<Carrera>>() {}.getType()))) {
+		if (stringToFile(dataFileCarreras, getGson().toJson(control.getCarreras(),new TypeToken<List<Carrera>>() {}.getType()))) {
 			System.err.println("Carreras guardadas con éxito en " + dataFileCarreras.getName());
 		} else {
 			System.err.println("Error al guardar Carreras en " + dataFileCarreras.getName());
 		}
 		// Guardar torneos a Json
-		if (stringToFile(dataFileTorneos, getGson().toJson(torneos))) {
+		if (stringToFile(dataFileTorneos, getGson().toJson(control.getTorneos()))) {
 			System.err.println("Torneos guardados con éxito en " + dataFileTorneos.getName());
 		} else {
 			System.err.println("Error al guardar Torneos en " + dataFileTorneos.getName());
@@ -128,11 +129,12 @@ public class Data {
 		}
 		return gson;
 	}
-
+	
 	public void loadDefault() {
 		System.err.println("********************************************");
 		System.err.println("**********CARGANDO DATOS POR DEFECTO********");
 		System.err.println("********************************************");
+		control.reset();
 
 		// coches
 		control.addCoche(new Coche("Renaul", "Clio"));// 0
@@ -149,6 +151,8 @@ public class Data {
 		control.addCoche(new Coche("Fiat", "700"));// 11
 		control.addCoche(new Coche("Ford", "Mustang"));
 		control.addCoche(new Coche("Ford", "Mondeo"));
+
+		List<Coche> coches = control.getCoches();
 
 		// garajes
 		Garaje g01 = new Garaje("Los Manquiñas");
@@ -205,6 +209,15 @@ public class Data {
 		c04.addGaraje(g04);
 		control.addCarrera(c04);
 
+
+		CarreraDragster c05 = new CarreraDragster("DragDrag");
+		c05.addGaraje(g01);
+		c05.addGaraje(g02);
+		c05.addGaraje(g03);
+		c05.addGaraje(g04);
+		c05.addGaraje(g05);
+		control.addCarrera(c05);
+		
 		// torneos
 		Torneo t01 = new Torneo("24 horas de limons");
 		t01.addCarrera(c01);
@@ -213,5 +226,6 @@ public class Data {
 		t01.addCarrera(c04);
 		control.addTorneo(t01);
 
+		
 	}
 }

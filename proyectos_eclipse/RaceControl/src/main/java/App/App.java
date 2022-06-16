@@ -1,3 +1,4 @@
+package App;
 import java.util.Scanner;
 
 import controlador.Control;
@@ -29,6 +30,7 @@ public class App {
 		menu.addOpcion("Asignar Garaje a Carrera", appAcciones::addGarajeCarrera);
 		menu.addOpcion("Añadir Carrera a Torneo", appAcciones::addCarreraTorneo);
 		menu.addOpcion("Resetear Aplicación", data::loadDefault);
+		menu.addOpcion("CargarEstado", data::loadData);
 		menu.addOpcion("Guardar Estado", data::saveData);
 		menu.run();
 

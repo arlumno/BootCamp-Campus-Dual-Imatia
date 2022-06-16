@@ -50,7 +50,7 @@ public class Torneo {
 	 * @param carrera Carrera a añadir al torneo
 	 */
 	public void addCarrera(Carrera carrera) {
-		if (!torneoFinalizado && !carreras.contains(carrera)) {
+		if (!torneoFinalizado && !(carrera instanceof CarreraDragster) && !carreras.contains(carrera)) {
 			carreras.add(carrera);
 			registrarGarajes(carrera);
 		}

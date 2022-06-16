@@ -1,6 +1,5 @@
 package pojos;
 
-
 import Excepciones.SuperPilotException;
 
 public class Coche implements Comparable {
@@ -38,7 +37,7 @@ public class Coche implements Comparable {
 	public Coche(String bRAND, String mODEL) {
 		MARCA = bRAND;
 		MODELO = mODEL;
-		this.habilidadPiloto = (int) (Math.random() * 61 + 30);
+		this.habilidadPiloto = (int) (Math.random() * 41 + 50);
 	}
 
 	/**
@@ -150,6 +149,10 @@ public class Coche implements Comparable {
 
 	public void setCounterKm(int counterKm) {
 		this.cuentaKilometros = counterKm;
+	}
+
+	public int getHabilidadPiloto() {
+		return habilidadPiloto;
 	}
 
 	@Override

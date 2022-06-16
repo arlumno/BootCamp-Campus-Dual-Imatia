@@ -1,3 +1,4 @@
+package App;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -7,6 +8,7 @@ import controlador.Control;
 import menu.EntradasConsola;
 import menu.Menu;
 import pojos.Carrera;
+import pojos.CarreraDragster;
 import pojos.CarreraEliminacion;
 import pojos.CarreraEstandar;
 import pojos.Coche;
@@ -99,6 +101,7 @@ public class AppAcciones {
 		menuTipoCarrera.setSubTitulo("Selecciona el tipo de carrera");
 		menuTipoCarrera.addOpcion("Estándar", null);
 		menuTipoCarrera.addOpcion("Eliminación", null);
+		menuTipoCarrera.addOpcion("Dragster", null);
 		menuTipoCarrera.run();
 		System.out.println("Introduzca el nombre de la Carrera.");
 		Carrera carrera = null;
@@ -110,6 +113,9 @@ public class AppAcciones {
 				break;
 			case "Eliminación":
 				carrera = new CarreraEliminacion(EntradasConsola.pedirString(lector));
+				break;
+			case "Dragster":
+				carrera = new CarreraDragster(EntradasConsola.pedirString(lector));
 				break;
 			default:
 				throw new Exception("Tipo de carrera no válida: " + menuTipoCarrera.getTextSeleccion());
@@ -280,11 +286,13 @@ public class AppAcciones {
 				menu.addOpcion(torneo.getNOMBRE(), null);
 			}
 			menu.run();
-			try {
-				torneosPendientes.get(menu.getIndexOpcion()).iniciar();
-				torneosPendientes.get(menu.getIndexOpcion()).mostrarPuntuacionesCoches();
-			} catch (IncompleteException e) {
-				e.printStackTrace();
+			if (menu.getSeleccion() != 0) {
+				try {
+					torneosPendientes.get(menu.getIndexOpcion()).iniciar();
+					torneosPendientes.get(menu.getIndexOpcion()).mostrarPuntuacionesCoches();
+				} catch (IncompleteException e) {
+					e.printStackTrace();
+				}
 			}
 		} else {
 			System.err.println("No hay torneos pendientes");
@@ -301,15 +309,17 @@ public class AppAcciones {
 			Menu menu = new Menu(false);
 			menu.setTitulo("Iniciar Carrera");
 			menu.setSubTitulo("Iniciar");
-			for (Carrera carrera: carrerasPendientes) {
+			for (Carrera carrera : carrerasPendientes) {
 				menu.addOpcion(carrera.getNOMBRE(), null);
 			}
 			menu.run();
-			try {
-				carrerasPendientes.get(menu.getIndexOpcion()).iniciar();
-				//carrerasPendientes.get(menu.getIndexOpcion()).mostrarPuntuacionesCoches();
-			} catch (IncompleteException e) {
-				e.printStackTrace();
+			if (menu.getSeleccion() != 0) {
+				try {
+					carrerasPendientes.get(menu.getIndexOpcion()).iniciar();
+					System.out.println(carrerasPendientes.get(menu.getIndexOpcion()).mostrarPodio());;
+				} catch (IncompleteException e) {
+					e.printStackTrace();
+				}
 			}
 		} else {
 			System.err.println("No hay carreras pendientes");
