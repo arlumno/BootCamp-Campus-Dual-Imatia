@@ -1,5 +1,6 @@
-package EjerciciosProgFuncional.Ej51to56;
+package EjerciciosProgFuncional.Ej51to61;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.IntSummaryStatistics;
 import java.util.List;
@@ -25,20 +26,21 @@ public class Ej59 {
 		 * mayúsculas si el nombre empieza por A y devuelve el nombre en minúsculas si
 		 * empieza por T (por ejemplo, lo puedes adaptar a tu ejemplo)
 		 */
-		//https://www.delftstack.com/es/howto/java/flatmap-in-java/
+		// https://www.delftstack.com/es/howto/java/flatmap-in-java/
 		Stream<String> stream = Stream.of("Paco", "Juan", "Alberto", "Alicia", "Jaime", "Susana");
-		stream.flatMap()
-
-//		Stream<String> stream = Stream.of("ana", "amalia", "alicia", "aria", "asia");
-//		IntStream longitudes = stream.mapToInt(String::length);
-//		// longitudes.forEach(System.out::println);
-//
-//		IntSummaryStatistics estadisticas = longitudes.summaryStatistics();
-//		imprimir.accept("Max: " + estadisticas.getMax());
-//		imprimir.accept("Min: " + estadisticas.getMin());
-//		imprimir.accept("Sum: " + estadisticas.getSum());
-//		imprimir.accept("Count: " + estadisticas.getCount());
-//		imprimir.accept("Average: " + estadisticas.getAverage());
-
+		Function<String, Stream<String>> funcion = (it) -> {
+			List<String> lista = new ArrayList<>();
+			lista.add(it);
+			switch (it.charAt(0)) {
+			case 'J':
+				lista.add(it.toUpperCase());
+				break;
+			case 'P':
+				lista.add(it.toLowerCase());
+				break;
+			}
+			return lista.stream();
+		};
+		stream.flatMap(funcion).forEach(System.out::println);
 	}
 }

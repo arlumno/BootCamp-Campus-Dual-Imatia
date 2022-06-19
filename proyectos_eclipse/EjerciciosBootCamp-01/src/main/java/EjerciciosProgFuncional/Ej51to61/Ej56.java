@@ -1,4 +1,4 @@
-package EjerciciosProgFuncional.Ej51to56;
+package EjerciciosProgFuncional.Ej51to61;
 
 import java.util.Arrays;
 import java.util.List;
