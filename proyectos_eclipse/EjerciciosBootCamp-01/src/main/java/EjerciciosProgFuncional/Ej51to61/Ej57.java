@@ -1,13 +1,7 @@
 package EjerciciosProgFuncional.Ej51to61;
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.function.BiFunction;
-import java.util.function.BinaryOperator;
+import java.util.IntSummaryStatistics;
 import java.util.function.Consumer;
-import java.util.function.DoubleFunction;
-import java.util.function.Function;
-import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
@@ -26,22 +20,20 @@ public class Ej57 {
 		 * el IntStream resultado, muestra por pantalla algunas de sus estadísticas
 		 * (máximo valor, mínimo, sumatorio, contar, media,….)
 		 */
-		Stream<Integer> streamInts = Stream.of(1,2,3,4,5,6);
+		
+		Stream<Integer> streamInts = Stream.of(1,2,30,14,5,96);
 		int resultado = streamInts.reduce(0,Integer::sum);
 		imprimir.accept("Total: "+resultado);
 		
 		IntStream streamInts2 = IntStream.range(1,51);
-		//listadoInts2.forEach(System.out::println);
-		//IntStream listadoRandoms = listadoInts2.map(it -> (int) (Math.random()*51+it)).forEach(System.out::println);
-//		List<Integer> listaRandoms = streamInts2.mapToInt(it -> (int) (Math.random()*51+it));
 		IntStream streamRandoms = streamInts2.map(it -> (int) (Math.random()*51+it)).peek(System.out::println);
-//		List<Integer> listaRandoms = streamInts2.mapToInt(it -> (int) (Math.random()*51+it));
 		
-				
-
-//				
-		imprimir.accept("Mínimo: "+streamRandoms.min().getAsInt());
-		//imprimir.accept("Máximo: "+streamRandoms.max().getAsInt());
+//		imprimir.accept("Mínimo: "+streamRandoms.min().getAsInt());
 		
-	}
+		IntSummaryStatistics estadisticas = streamRandoms.summaryStatistics();
+		imprimir.accept("Max: " + estadisticas.getMax());
+		imprimir.accept("Min: " + estadisticas.getMin());
+		imprimir.accept("Sum: " + estadisticas.getSum());
+		imprimir.accept("Count: " + estadisticas.getCount());
+		imprimir.accept("Average: " + estadisticas.getAverage());	}
 }

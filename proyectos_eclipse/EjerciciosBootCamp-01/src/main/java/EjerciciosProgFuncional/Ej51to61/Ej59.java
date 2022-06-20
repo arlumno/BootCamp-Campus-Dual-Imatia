@@ -30,7 +30,7 @@ public class Ej59 {
 		Stream<String> stream = Stream.of("Paco", "Juan", "Alberto", "Alicia", "Jaime", "Susana");
 		Function<String, Stream<String>> funcion = (it) -> {
 			List<String> lista = new ArrayList<>();
-			lista.add(it);
+			// lista.add(it);
 			switch (it.charAt(0)) {
 			case 'J':
 				lista.add(it.toUpperCase());

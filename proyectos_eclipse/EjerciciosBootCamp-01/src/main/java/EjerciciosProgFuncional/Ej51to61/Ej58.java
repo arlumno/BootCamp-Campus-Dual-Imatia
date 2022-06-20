@@ -26,11 +26,10 @@ public class Ej58 {
 		 * valor, mínimo, sumatorio, contar, media,….)
 		 */
 		
-		Stream<String> stream = Stream.of("ana", "amalia", "alicia", "aria", "asia");
-		IntStream longitudes = stream.mapToInt(String::length);
-		//longitudes.forEach(System.out::println);
+		Stream<String> streamStrings = Stream.of("ana", "amalia", "alicia", "aria", "asia");
+		IntStream streamLongitudes = streamStrings.mapToInt(String::length);
 		
-		IntSummaryStatistics estadisticas = longitudes.summaryStatistics();
+		IntSummaryStatistics estadisticas = streamLongitudes.summaryStatistics();
 		imprimir.accept("Max: " + estadisticas.getMax());
 		imprimir.accept("Min: " + estadisticas.getMin());
 		imprimir.accept("Sum: " + estadisticas.getSum());

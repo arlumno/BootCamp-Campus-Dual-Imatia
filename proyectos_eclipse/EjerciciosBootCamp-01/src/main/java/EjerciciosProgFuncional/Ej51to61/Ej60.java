@@ -29,16 +29,16 @@ public class Ej60 {
 //https://www.geeksforgeeks.org/stream-generate-method-java/
 		Stream.generate(() -> {
 			int rdm = (int) (Math.random() * 2000);
-			
+
 			return rdm;
-		}).limit(25).forEach(it-> {
-			System.out.println("Pausando "+it+" ms.");
+		}).limit(25).forEach(it -> {
+			System.out.println("Pausando " + it + " ms.");
 			try {
 				Thread.sleep(it);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
-			}	
-		
+			}
+
 		});
 	}
 }
