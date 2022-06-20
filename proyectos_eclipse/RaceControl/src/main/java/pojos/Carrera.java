@@ -228,7 +228,7 @@ public abstract class Carrera {
 		coches.addAll(cochesParticipantes);
 		Collections.sort(coches);
 
-		float longitud = 8;
+		float longitud = 16;
 		float maxDistancia = coches.getFirst().getCuentaKilometros();
 		float minDistancia = coches.getLast().getCuentaKilometros();
 		float tramo = (maxDistancia - minDistancia) / (longitud - 1);
@@ -243,18 +243,31 @@ public abstract class Carrera {
 		pantalla.append("\n\t********************************************************\n");
 
 		int posicion;
+		String etiquetaCoche;
 		for (Coche coche : cochesParticipantes) {
 			posicion = (int) Math.floor((coche.getCuentaKilometros() - minDistancia) / tramo);
 			pantalla.append("\n");
 			for (int i = 0; i < longitud; i++) {
 				if (i == posicion) {
-					pantalla.append(" \\O=o> ");
+					pantalla.append("\\O=o>   ");
 				} else {
-					pantalla.append("\t");
+					pantalla.append("    ");
 				}
 			}
-			pantalla.append("\t[" + coche.getMARCA() + " - " + coche.getMODELO() + "] --- Hab.: "
-					+ coche.getHabilidadPiloto() + " ---- " + coche.getCuentaKilometros());
+			etiquetaCoche = "\t[" + coche.getMARCA() + " - " + coche.getMODELO() + "]";
+			pantalla.append(etiquetaCoche);
+
+			switch ((etiquetaCoche.length()-1) / 8) {
+			case 1:
+				pantalla.append("\t");
+			case 2:
+				pantalla.append("\t");
+			case 3:
+				pantalla.append("\t");
+				break;
+			}
+			pantalla.append(((double) Math.round(coche.getCuentaKilometros() * 10) / 10) + " Km  ("
+					+ coche.getVelocimetro() + " Km/h.)" + " - Habilidad: " + coche.getHabilidadPiloto());
 		}
 
 		System.out.println(pantalla.toString());
@@ -263,7 +276,8 @@ public abstract class Carrera {
 	protected void cuentaAtras() {
 		for (int i = 5; i >= 0; i--) {
 			StringBuilder pantalla = new StringBuilder();
-			pantalla.append("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+			pantalla.append(
+					"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
 			pantalla.append("\n\t********************************************************");
 			pantalla.append("\n\t**************** Carrera " + NOMBRE + " \t****************");
 			pantalla.append("\n\t********************************************************");
