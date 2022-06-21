@@ -547,9 +547,81 @@
           ]
         }
       ],
-      "cochesParticipantes": [],
-      "podio": [],
-      "carreraFinalizada": false,
+      "cochesParticipantes": [
+        {
+          "MARCA": "Ford",
+          "MODELO": "Mustang",
+          "pegatinaGaraje": "Los Fordinangs",
+          "VELOCIDAD_MAXIMA": 180,
+          "TRAMO_ACELERACION": 10,
+          "habilidadPiloto": 82
+        },
+        {
+          "MARCA": "5-Ferrari",
+          "MODELO": "F50",
+          "pegatinaGaraje": "Lone Wolf",
+          "VELOCIDAD_MAXIMA": 180,
+          "TRAMO_ACELERACION": 10,
+          "habilidadPiloto": 72
+        },
+        {
+          "MARCA": "Seat",
+          "MODELO": "F1",
+          "pegatinaGaraje": "Los Setas",
+          "VELOCIDAD_MAXIMA": 180,
+          "TRAMO_ACELERACION": 10,
+          "habilidadPiloto": 78
+        },
+        {
+          "MARCA": "Fiat",
+          "MODELO": "500",
+          "pegatinaGaraje": "Mancato",
+          "VELOCIDAD_MAXIMA": 180,
+          "TRAMO_ACELERACION": 10,
+          "habilidadPiloto": 73
+        },
+        {
+          "MARCA": "Renaul",
+          "MODELO": "Clio",
+          "pegatinaGaraje": "Los Manquiñas",
+          "VELOCIDAD_MAXIMA": 180,
+          "TRAMO_ACELERACION": 10,
+          "habilidadPiloto": 57
+        }
+      ],
+      "podio": [
+        [
+          {
+            "MARCA": "Ford",
+            "MODELO": "Mustang",
+            "pegatinaGaraje": "Los Fordinangs",
+            "VELOCIDAD_MAXIMA": 180,
+            "TRAMO_ACELERACION": 10,
+            "habilidadPiloto": 82
+          }
+        ],
+        [
+          {
+            "MARCA": "5-Ferrari",
+            "MODELO": "F50",
+            "pegatinaGaraje": "Lone Wolf",
+            "VELOCIDAD_MAXIMA": 180,
+            "TRAMO_ACELERACION": 10,
+            "habilidadPiloto": 72
+          }
+        ],
+        [
+          {
+            "MARCA": "Seat",
+            "MODELO": "F1",
+            "pegatinaGaraje": "Los Setas",
+            "VELOCIDAD_MAXIMA": 180,
+            "TRAMO_ACELERACION": 10,
+            "habilidadPiloto": 78
+          }
+        ]
+      ],
+      "carreraFinalizada": true,
       "puestosPodio": 3,
       "tipo": "Estandar"
     }
